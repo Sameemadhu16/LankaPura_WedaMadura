@@ -1,13 +1,13 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
-// dotenv.config();
+dotenv.config();
 
 mongoose
     .connect(
-        'mongodb+srv://lankapura:lankapura@cluster0.uqmkz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+        process.env.MONGODB_URI,)
     .then(() => {
       console.log('Connected to MongoDB');
     })
@@ -19,6 +19,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.listen(3000,() =>{
-    console.log(`Server running on port 3000`);
+app.listen(process.env.PORT,() =>{
+    console.log(`Server running on port ${process.env.PORT}`);
 });
