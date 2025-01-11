@@ -8,7 +8,7 @@ import Appointment from './pages/Appointment.jsx'
 import Ourtreat from './pages/Ourtreat.jsx'
 import Products from './pages/Products.jsx'
 
-function App() 
+function App()
 {
   return (
     <Router>
