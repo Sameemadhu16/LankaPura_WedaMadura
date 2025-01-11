@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from '../components/footer';
-import Header from '../components/header';
+// import Footer from '../components/footer';
+// import Header from '../components/header';
 import landing from '../assets/landing_banner.jpg';
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <main
         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
         style={{ backgroundImage: `url(${landing})` }}
@@ -16,7 +16,7 @@ const Home = () => {
         <div className="text-lg mb-2">dvknfdlvkjd</div>
         <div className="text-lg">sdafsdfsdf</div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
