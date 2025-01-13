@@ -15,7 +15,6 @@ function App()
   return (
     <Router>
       <Header />
-      <div className="relative min-h-screen flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
@@ -25,7 +24,7 @@ function App()
           <Route path="/ourtreat" element={<Ourtreat />} />
           <Route path="/products" element={<Products />} />
         </Routes>
-      </div>
+      
       <Footer />
     </Router>
   )
