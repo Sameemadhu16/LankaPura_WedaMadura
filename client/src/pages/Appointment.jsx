@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from '../assets/image-2.jpg';
 
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
@@ -39,21 +40,18 @@ const AppointmentForm = () => {
     if (!formData.date || !formData.disease) return [];
 
     const selectedDate = new Date(formData.date);
-    const dayOfWeek = selectedDate.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    const dayOfWeek = selectedDate.getDay();
     const disease = formData.disease;
 
     if (disease === "dengue" || disease === "corona") {
-      return allTimeSlots; // Dengue and Corona: All slots every day
+      return allTimeSlots;
     } else {
-      // Other diseases: Only Saturday, Sunday, Monday
       if (dayOfWeek === 0 || dayOfWeek === 6) {
-        // Saturday or Sunday
-        return allTimeSlots.slice(0, 16); // 9:00 AM to 5:00 PM
+        return allTimeSlots.slice(0, 16);
       } else if (dayOfWeek === 1) {
-        // Monday
-        return allTimeSlots.slice(0, 14); // 9:30 AM to 4:00 PM
+        return allTimeSlots.slice(0, 14);
       } else {
-        return []; // No slots available on other days
+        return [];
       }
     }
   };
@@ -90,117 +88,130 @@ const AppointmentForm = () => {
   };
 
   return (
-    <div className="w-2/3 mx-auto p-6 bg-white shadow-lg rounded-md mt-10">
-      <h2 className="text-2xl font-bold text-center mb-6">Book Your Appointment</h2>
-      <div className="mb-6 p-4 bg-blue-50 border-l-4 border-blue-500 text-blue-700">
-        <h3 className="font-bold text-lg mb-2">Appointment Booking Guidelines</h3>
-        <p className="mb-2">
-          <strong>For Dengue and Corona Patients:</strong><br />
-          Time slots are available <strong>every day</strong> from <strong>9:00 AM to 5:00 PM</strong>.
-        </p>
-        <p className="mb-2">
-          <strong>For Other Diseases:</strong><br />
-          Time slots are available only on:<br />
-          - <strong>Saturday and Sunday:</strong> From <strong>9:00 AM to 5:00 PM</strong>.<br />
-          - <strong>Monday:</strong> From <strong>9:30 AM to 4:00 PM</strong>.
-        </p>
-        <p>No slots are available on other weekdays.</p>
-        <p className="mt-2"><em>Please select the appropriate date and disease to view the available time slots.</em></p>
+    <div className="flex flex-row h-screen gap-5 w-5/6 mx-auto bg-yellow-50 shadow-xl rounded-[24px] mt-10">
+      <div className="w-1/2 bg-brown-900 h-full hidden rounded-l-[24px] overflow-hidden md:flex">
+        <div className="sticky w-full top-0">
+          <img src={Image} alt="" className="w-full h-full object-cover" />
+        </div>
       </div>
-
-      <form onSubmit={handleSubmit}>
-        <div className="flex flex-wrap -mx-2">
-          <div className="w-full md:w-1/2 px-2">
-            <label className="block mb-2 text-gray-700">Name</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-              placeholder="Enter your name"
-              required
-            />
-
-            <label className="block mb-2 text-gray-700">Age</label>
-            <input
-              type="number"
-              name="age"
-              value={formData.age}
-              onChange={handleInputChange}
-              className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-              placeholder="Enter your age"
-              required
-            />
-          </div>
-
-          <div className="w-full md:w-1/2 px-2">
-            <label className="block mb-2 text-gray-700">Village</label>
-            <input
-              type="text"
-              name="village"
-              value={formData.village}
-              onChange={handleInputChange}
-              className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-              placeholder="Enter your village"
-              required
-            />
-
-            <label className="block mb-2 text-gray-700">Select Date</label>
-            <input
-              type="date"
-              name="date"
-              value={formData.date}
-              onChange={handleInputChange}
-              className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            />
-          </div>
+      <div className="w-full md:w-1/2 h-screen overflow-y-auto p-6 scroll-hidden" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <style>
+          {`
+            .scroll-hidden::-webkit-scrollbar {
+              display: none;
+            }
+          `}
+        </style>
+        <h2 className="text-[32px] font-bold text-black text-center mb-6">Book Your Appointment</h2>
+        <div className="mb-6 p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700">
+          <h3 className="font-bold text-lg mb-2">Appointment Booking Guidelines</h3>
+          <p className="mb-2">
+            <strong>For Dengue and Corona Patients:</strong><br />
+            Time slots are available <strong>every day</strong> from <strong>9:00 AM to 5:00 PM</strong>.
+          </p>
+          <p className="mb-2">
+            <strong>For Other Diseases:</strong><br />
+            Time slots are available only on:<br />
+            - <strong>Saturday and Sunday:</strong> From <strong>9:00 AM to 5:00 PM</strong>.<br />
+            - <strong>Monday:</strong> From <strong>9:30 AM to 4:00 PM</strong>.
+          </p>
+          <p>No slots are available on other weekdays.</p>
+          <p className="mt-2"><em>Please select the appropriate date and disease to view the available time slots.</em></p>
         </div>
 
-        <label className="block mb-2 text-gray-700">Disease Type</label>
-        <select
-          name="disease"
-          value={formData.disease}
-          onChange={handleInputChange}
-          className="w-1/2 p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"
-          required
-        >
-          <option value="" disabled>
-            Select your disease type
-          </option>
-          <option value="dengue">Dengue</option>
-          <option value="corona">Corona</option>
-          <option value="other">Other Diseases</option>
-        </select>
+        <form onSubmit={handleSubmit}>
+          <div className="flex flex-wrap -mx-2">
+            <div className="w-full md:w-1/2 px-2">
+              <label className="block mb-2 text-brown-700">Name</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                className="w-full p-3 border-[1px] border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+                placeholder="Enter your name"
+                required
+              />
 
-        <label className="block mb-2 text-gray-700">Available Time Slots</label>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-          {availableTimeSlots.map((slot, index) => (
-            <button
-              key={index}
-              type="button"
-              className={`p-3 rounded-md border ${formData.timeSlot === slot
+              <label className="block mb-2 text-brown-700">Age</label>
+              <input
+                type="number"
+                name="age"
+                value={formData.age}
+                onChange={handleInputChange}
+                className="w-full p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+                placeholder="Enter your age"
+                required
+              />
+            </div>
+
+            <div className="w-full md:w-1/2 px-2">
+              <label className="block mb-2 text-brown-700">Village</label>
+              <input
+                type="text"
+                name="village"
+                value={formData.village}
+                onChange={handleInputChange}
+                className="w-full p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+                placeholder="Enter your village"
+                required
+              />
+
+              <label className="block mb-2 text-brown-700">Select Date</label>
+              <input
+                type="date"
+                name="date"
+                value={formData.date}
+                onChange={handleInputChange}
+                className="w-full p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+                required
+              />
+            </div>
+          </div>
+
+          <label className="block mb-2 text-brown-700">Disease Type</label>
+          <select
+            name="disease"
+            value={formData.disease}
+            onChange={handleInputChange}
+            className="w-1/2 p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+            required
+          >
+            <option value="" disabled>
+              Select your disease type
+            </option>
+            <option value="dengue">Dengue</option>
+            <option value="corona">Corona</option>
+            <option value="other">Other Diseases</option>
+          </select>
+
+          <label className="block mb-2 text-brown-700">Available Time Slots</label>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            {availableTimeSlots.map((slot, index) => (
+              <button
+                key={index}
+                type="button"
+                className={`p-3 rounded-md border ${formData.timeSlot === slot
                   ? "bg-green-200 border-green-500 text-green-700"
-                  : "bg-gray-100 hover:bg-green-100"
-                }`}
-              onClick={() => handleSlotSelect(slot)}
+                  : "bg-yellow-100 hover:bg-green-100"
+                  }`}
+                onClick={() => handleSlotSelect(slot)}
+              >
+                {slot}
+              </button>
+            ))}
+          </div>
+
+          <div className="flex justify-center mt-6">
+            <button
+              type="submit"
+              className="w-full font-semibold bg-yellow-500 text-white p-3 rounded-md  hover:bg-opacity-95"
             >
-              {slot}
+              Book Appointment
             </button>
-          ))}
-        </div>
-
-        <div className="flex justify-center mt-6"> 
-        <button
-          type="submit"
-          className="w-1/2  bg-green-500 text-white p-3 rounded-md hover:bg-green-600"
-        >
-          Book Your Appointment
-        </button>
-
-        </div>
-      </form>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
