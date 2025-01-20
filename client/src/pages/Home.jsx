@@ -4,6 +4,8 @@ import Aboutthedoctor from '../components/Home_Compo/Aboutthedoctor';
 import Whoweare from '../components/Home_Compo/Whoweare';
 import Landingview from '../components/Home_Compo/Landingview';
 import Treatment from '../components/Home_Compo/Treatment';
+import Othertreatment from '../components/Home_Compo/Othertreatment';
+
 
 
 
@@ -22,6 +24,8 @@ const Home = () => {
         <Whoweare/>
         {/*Treatment*/}
         <Treatment/>
+        {/* Other traeatment */}
+        <Othertreatment/>
       </main>
       <Footer />
     </div>
