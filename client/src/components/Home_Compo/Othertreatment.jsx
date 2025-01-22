@@ -19,7 +19,7 @@ const Othertreatment = () => {
         <div className='flex justify-center'>
             <SlidingCard />
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-center items-center ml-[1.2%] '>
             <button
                 className='hover:bg-[#348101] hover:text-white border mt-5 border-black px-4 py-2  rounded-lg font-semibold font-[Raleway] hover:border-transparent'
                 onClick={() => alert('View All Clicked!')}

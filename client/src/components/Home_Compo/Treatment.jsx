@@ -25,11 +25,11 @@ const Treatment = () => {
         <span className="font-[Raleway] text-red-600 text-4xl font-semibold">{highlight}</span>
       </h1>
       {description.map((line, index) => (
-        <p key={index} className="font-[Raleway] text-black text-2xl mt-4">
+        <p key={index} className="font-[Raleway] text-black text-xl mt-4">
           {line}
         </p>
       ))}
-      <button className="border border-black bg-black text-white px-4 py-1 rounded-lg mt-6 font-[Raleway] hover:bg-[#348101] transition duration-300">
+      <button className="border border-black bg-black text-white px-4 py-1 rounded-lg mt-6 font-[Raleway] hover:bg-[#348101] hover:border-transparent transition duration-300">
         {buttonText}
       </button>
     </div>

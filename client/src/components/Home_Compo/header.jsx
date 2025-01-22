@@ -47,8 +47,8 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full p-4 z-50 ${
-        isScrolled ? "bg-[#33180699] shadow-lg" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full p-3 z-50 ${
+        isScrolled ? "bg-[#331806e4] shadow-lg" : "bg-transparent"
       } transition-all duration-300 ${headerVisible ? "opacity-100" : "opacity-0"}`}
     >
       <div className="container mx-auto flex items-center justify-between">
@@ -58,14 +58,14 @@ const Header = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-[60px] md:h-[70px] lg:h-[80px] w-auto"
+              className="h-[50px] md:h-[60px] lg:h-[70px] w-auto mb-3"
             />
           </a>
-          <div className="flex flex-col text-white ml-4">
-            <span className="text-xl md:text-3xl lg:text-xl font-normal leading-tight font-[Raleway]">
+          <div className="flex flex-col text-white ml-2">
+            <span className="text-lg md:text-xl lg:text-xl font-normal leading-tight font-[Raleway]">
               LANKAPURA
             </span>
-            <span className="text-xl md:text-3xl lg:text-xl font-normal leading-tight font-[Raleway]">
+            <span className="text-lg md:text-xl lg:text-xl font-normal leading-tight font-[Raleway]">
               WEDAMADURA
             </span>
           </div>

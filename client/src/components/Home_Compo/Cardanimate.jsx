@@ -4,6 +4,7 @@ import Treatcard from "./Treatcard"; // Import Treatcard component
 import { MdOutlineArrowBack } from "react-icons/md";
 import { MdOutlineArrowForward } from "react-icons/md";
 
+
 import Covid from '../../assets/Home_Assets/disease images/Covid19.jpg';
 import dengu from '../../assets/Home_Assets/disease images/Dengue.jpg';
 import cancer from '../../assets/Home_Assets/disease images/All type of cancers.jpg';
@@ -89,7 +90,7 @@ const SlidingCard = () => {
     >
       {/* Sliding Cards Container */}
       <div
-        className="h-1000"
+        className="h-1000 justify-center items-center"
         style={{
           display: "flex",
           transition: "transform 1s ease",

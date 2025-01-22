@@ -3,22 +3,20 @@ import PropTypes from "prop-types";
 
 const Treatcard = ({ imageUrl, title, onButtonClick }) => {
   return (
-    <div className="max-w-md bg-white rounded-3xl shadow-lg overflow-hidden">
-      {/* Image Section */}
-      <div className="relative">
+    <div className="max-w-md bg-white rounded-3xl shadow-lg overflow-hidden w-80 h-96">
+      <div className="relative w-full h-2/3 overflow-hidden">
         <img
-          src={imageUrl} // Use the image URL passed as a prop
+          src={imageUrl}
           alt={title}
-          className="w-full h-60 object-cover" // Increased height for the image
+          className="w-full h-full object-cover"
         />
       </div>
-
-      {/* Text and Button Section */}
-      <div className="p-6 text-center"> {/* Increased padding */}
-        <h3 className="text-xl font-[Raleway] font-semibold text-black">{title}</h3> {/* Increased font size */}
+      <div className="p-4 text-center h-1/3 flex flex-col justify-center items-center ">
+        <h3 className="text-xl font-[Raleway] font-semibold text-black">{title}</h3>
         <button
-          className="mt-4 px-8 py-3 bg-black text-white text-sm font-[Raleway] font-medium rounded-lg focus:ring-2 hover:bg-[#348101] transition duration-300" // Increased padding and font size
-          onClick={onButtonClick} // Trigger the button action
+          style={{width:'160px'}}
+          className="mt-4 px-8 py-3 bg-black text-white text-sm font-[Raleway] font-medium rounded-lg focus:ring-2 hover:bg-[#348101] transition duration-300"
+          onClick={onButtonClick}
         >
           Read more
         </button>
@@ -27,16 +25,14 @@ const Treatcard = ({ imageUrl, title, onButtonClick }) => {
   );
 };
 
-// Define PropTypes to enforce proper usage
 Treatcard.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   onButtonClick: PropTypes.func,
 };
 
-// Default props for optional props
 Treatcard.defaultProps = {
-  onButtonClick: () => {}, // No-op if no action is passed
+  onButtonClick: () => {},
 };
 
 export default Treatcard;

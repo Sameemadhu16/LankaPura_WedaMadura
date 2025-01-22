@@ -13,12 +13,12 @@ const Aboutthedoctor = () => {
         <div className="w-full items-center max-w-[600px] md:w-1/2 -ml-[50px]" >
             <h1 className="font-[playfair] blod text-6xl mb-14 text-center ">
                 <span className="text-black ">ABOUT THE </span>
-                <span className="text-[#8CC85F]">DOCTOR</span>
+                <span className="text-[#348101]">DOCTOR</span>
             </h1>
             <h2 className="text-2xl font-medium text-center font-[Raleway]">
                 Dr. Tharanga Kumari Wickramasooriya
             </h2>
-            <h2 className="text-2xl font-medium mb-9 text-center  font-[Raleway] text-[#8CC85F]">
+            <h2 className="text-2xl font-medium mb-9 text-center  font-[Raleway] text-[#348101]">
             - A Legacy in Herbal Healing -
             </h2>
             <p className="text-gray-600 mb-6 text-center font-[Raleway] mb-8">
@@ -45,7 +45,7 @@ const Aboutthedoctor = () => {
             </div> 
             {/* Read More Button */}
             <div className="w-full flex justify-center mt-6">
-                <button className="px-4 py-2 text-black rounded-lg shadow-md border border-black hover:bg-[#8CC85F] hover:text-white hover:border-transparent ">
+                <button className="px-4 py-2 text-black rounded-lg shadow-md border border-black hover:bg-[#348101] hover:text-white hover:border-transparent ">
                 Read More {'>>>'}
                 </button>
             </div>

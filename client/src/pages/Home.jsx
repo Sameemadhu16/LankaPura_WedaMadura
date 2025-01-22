@@ -5,8 +5,7 @@ import Whoweare from '../components/Home_Compo/Whoweare';
 import Landingview from '../components/Home_Compo/Landingview';
 import Treatment from '../components/Home_Compo/Treatment';
 import Othertreatment from '../components/Home_Compo/Othertreatment';
-
-
+import Whypeople from '../components/Home_Compo/Whypeople';
 
 
 
@@ -26,6 +25,8 @@ const Home = () => {
         <Treatment/>
         {/* Other traeatment */}
         <Othertreatment/>
+        {/* Why people choose us  */}
+        <Whypeople/>
       </main>
       <Footer />
     </div>
