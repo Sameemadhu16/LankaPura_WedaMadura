@@ -192,8 +192,8 @@ const AppointmentForm = () => {
                 key={index}
                 type="button"
                 className={`p-3 rounded-md border ${formData.timeSlot === slot
-                  ? "bg-green-200 border-green-500 text-green-700"
-                  : "bg-yellow-100 hover:bg-green-100"
+                  ? "bg-yellow-400 border-yellow-500"
+                  : "bg-yellow-200 hover:bg-yellow-300"
                   }`}
                 onClick={() => handleSlotSelect(slot)}
               >
@@ -205,7 +205,7 @@ const AppointmentForm = () => {
           <div className="flex justify-center mt-6">
             <button
               type="submit"
-              className="w-full font-semibold bg-yellow-500 text-white p-3 rounded-md  hover:bg-opacity-95"
+              className="w-full font-semibold bg-yellow-500 text-white p-3 rounded-md  hover:bg-yellow-600"
             >
               Book Appointment
             </button>
