@@ -17,7 +17,7 @@ mongoose
     });
 
 const app = express();
-app.use(cors());
+app.use(cors());//enable CORS(Cross Origin Resource Sharing)
 app.use(express.json());
 
 app.listen(process.env.PORT,() =>{
