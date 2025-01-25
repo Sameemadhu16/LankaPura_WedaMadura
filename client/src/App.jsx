@@ -7,6 +7,11 @@ import Contactus from './pages/Contactus.jsx'
 import Appointment from './pages/Appointment.jsx'
 import Ourtreat from './pages/Ourtreat.jsx'
 import Products from './pages/Products.jsx'
+import KidneyDisease from './diseasepages/kidneydisease.jsx'
+import LiverDisease from './diseasepages/liverdisease.jsx'
+import AllTypeOfCancers from './diseasepages/alltypeofcancers.jsx'
+import Diabetic from './diseasepages/diabetic.jsx'
+
 
 function App() 
 {
@@ -21,6 +26,10 @@ function App()
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/ourtreat" element={<Ourtreat />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/kidneydisease" element={<KidneyDisease />} />
+          <Route path="/liverdisease" element={<LiverDisease />} />
+          <Route path="/alltypeofcancers" element={<AllTypeOfCancers />} />
+          <Route path="/diabetic" element={<Diabetic />} />
         </Routes>
       </div>
     </Router>

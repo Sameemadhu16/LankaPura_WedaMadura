@@ -1,9 +1,1253 @@
-import React from 'react'
+//whole code
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/candle-front-bowl-wheat.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import liverImage from "../assets/cancer.jpg";
+// import cancerImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+
+// const Ourtreat = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: `url(${landing})` }}
+//       >
+//         <h1 className="text-4xl font-bold mb-4">
+//           Tailored Treatments to Help You Heal and Thrive
+//         </h1>
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our
+//           personalized treatments designed just for you.
+//         </p>
+//         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Cards Section */}
+//       <section className="bg-gray-100 text-gray-800 py-12 px-6">
+//         <div className="max-w-6xl mx-auto text-center">
+//           <p
+//             className="text-lg mb-6 text-center"
+//             style={{ letterSpacing: "0.0005em", wordSpacing: "0.1em" }}
+//           >
+//             W e c u r e d i s e a s e s w i t h H e l a m e d i c i n e i n S r i
+//             L a n k a
+//           </p>
+//           <p className="text-lg mb-6">
+//             Our team of experts focuses on providing holistic treatments to
+//             ensure your complete well-being. Discover the difference of truly
+//             personalized care.
+//           </p>
+
+//           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+//             {[
+//               {
+//                 title: "Kidney disease (C.K.D)",
+//                 description:
+//                   "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney…",
+//                 image: kidneyImage,
+//                 link: "/kidneydisease",
+//               },
+//               {
+//                 title: "Liver Diseases",
+//                 description:
+//                   "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism…",
+//                 image: liverImage,
+//                 link: "/liver-diseases",
+//               },
+//               {
+//                 title: "All Type of Cancers",
+//                 description:
+//                   "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly…",
+//                 image: cancerImage,
+//                 link: "/cancer-diseases",
+//               },
+//               {
+//                 title: "Diabetic",
+//                 description:
+//                   "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The…",
+//                 image: diabeticImage,
+//                 link: "/diabetic",
+//               },
+//             ].map((card, index) => (
+//               <Link to={card.link} key={index}>
+//                 <div className="group hover-card-container relative">
+//                   {/* Card */}
+//                   <div className="hover-card relative w-64 h-58 transform transition-transform duration-500 group-hover:rotate-x-6 group-hover:rotate-y-6 group-hover:scale-105 bg-white rounded-xl shadow-lg overflow-hidden">
+//                     {/* Image */}
+//                     <img
+//                       src={card.image}
+//                       alt={card.title}
+//                       className="h-40 w-full object-cover"
+//                     />
+
+//                     {/* Title */}
+//                     <div className="p-4">
+//                       <h3 className="font-bold text-xl mb-2">{card.title}</h3>
+//                     </div>
+
+//                     {/* Description */}
+//                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 text-white text-center opacity-0 transform transition-opacity duration-300 group-hover:opacity-100">
+//                       <p className="px-4">{card.description}</p>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
+
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/candle-front-bowl-wheat.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import liverImage from "../assets/cancer.jpg";
+// import cancerImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+// import "./Ourtreat.css";
+
+// const Ourtreat = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: `url(${landing})` }}
+//       >
+//         <h1 className="text-4xl font-bold mb-4">
+//           Tailored Treatments to Help You Heal and Thrive
+//         </h1>
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our
+//           personalized treatments designed just for you.
+//         </p>
+//         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Cards Section */}
+//       <section className="bg-gray-100 text-gray-800 py-12 px-6">
+//         <div className="max-w-6xl mx-auto text-center">
+//           <p
+//             className="text-lg mb-6 text-center"
+//             style={{ letterSpacing: "0.0005em", wordSpacing: "0.1em" }}
+//           >
+//             W e c u r e d i s e a s e s w i t h H e l a m e d i c i n e i n S r i
+//             L a n k a
+//           </p>
+//           <p className="text-lg mb-6">
+//             Our team of experts focuses on providing holistic treatments to
+//             ensure your complete well-being. Discover the difference of truly
+//             personalized care.
+//           </p>
+
+//           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+//             {[
+//               {
+//                 title: "Kidney disease (C.K.D)",
+//                 description:
+//                   "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney…",
+//                 image: kidneyImage,
+//                 link: "/kidneydisease",
+//               },
+//               {
+//                 title: "Liver Diseases",
+//                 description:
+//                   "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism…",
+//                 image: liverImage,
+//                 link: "/liver-diseases",
+//               },
+//               {
+//                 title: "All Type of Cancers",
+//                 description:
+//                   "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly…",
+//                 image: cancerImage,
+//                 link: "/cancer-diseases",
+//               },
+//               {
+//                 title: "Diabetic",
+//                 description:
+//                   "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The…",
+//                 image: diabeticImage,
+//                 link: "/diabetic",
+//               },
+//             ].map((card, index) => (
+//               <Link to={card.link} key={index}>
+//                 <div className="flip-card">
+//                   <div className="flip-card-inner">
+//                     {/* Front Side */}
+//                     <div className="flip-card-front">
+//                       <img
+//                         src={card.image}
+//                         alt={card.title}
+//                         className="h-full w-full object-cover"
+//                       />
+//                       <h3 className="font-bold text-lg mt-2">{card.title}</h3>
+//                     </div>
+//                     {/* Back Side */}
+//                     <div className="flip-card-back">
+//                       <h1>{card.title}</h1>
+//                       <p>{card.description}</p>
+//                       <p>Learn more</p>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
+
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/candle-front-bowl-wheat.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import liverImage from "../assets/cancer.jpg";
+// import cancerImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+// import "./Ourtreat.css";
+
+// const Ourtreat = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: `url(${landing})` }}
+//       >
+//         <h1 className="text-4xl font-bold mb-4">
+//           Tailored Treatments to Help You Heal and Thrive
+//         </h1>
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our
+//           personalized treatments designed just for you.
+//         </p>
+//         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Cards Section */}
+//       <section className="bg-gray-100 text-gray-800 py-12 px-6">
+//         <div className="max-w-6xl mx-auto text-center">
+//           <p
+//             className="text-lg mb-6 text-center"
+//             style={{ letterSpacing: "0.0005em", wordSpacing: "0.1em" }}
+//           >
+//             W e c u r e d i s e a s e s w i t h H e l a m e d i c i n e i n S r i
+//             L a n k a
+//           </p>
+//           <p className="text-lg mb-6">
+//             Our team of experts focuses on providing holistic treatments to
+//             ensure your complete well-being. Discover the difference of truly
+//             personalized care.
+//           </p>
+
+//           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+//             {[
+//               {
+//                 title: "Kidney disease (C.K.D)",
+//                 description:
+//                   "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney…",
+//                 image: kidneyImage,
+//                 link: "/kidneydisease",
+//               },
+//               {
+//                 title: "Liver Diseases",
+//                 description:
+//                   "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism…",
+//                 image: liverImage,
+//                 link: "/liver-diseases",
+//               },
+//               {
+//                 title: "All Type of Cancers",
+//                 description:
+//                   "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly…",
+//                 image: cancerImage,
+//                 link: "/cancer-diseases",
+//               },
+//               {
+//                 title: "Diabetic",
+//                 description:
+//                   "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The…",
+//                 image: diabeticImage,
+//                 link: "/diabetic",
+//               },
+//             ].map((card, index) => (
+//               <Link to={card.link} key={index}>
+//                 <div className="flip-card">
+//                   <div className="flip-card-inner">
+//                     {/* Front Side */}
+//                     <div className="flip-card-front">
+//                       <img
+//                         src={card.image}
+//                         alt={card.title}
+//                         className="h-full w-full object-cover"
+//                       />
+//                     </div>
+//                     {/* Back Side with description */}
+//                     <div className="flip-card-back">
+//                       <h1>{card.title}</h1>
+//                       <p>{card.description}</p>
+//                       <p>Learn more</p>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/candle-front-bowl-wheat.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import cancerImage from "../assets/cancer.jpg";
+// import liverImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+// import "./Ourtreat.css";
+
+// const Ourtreat = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: `url(${landing})` }}
+//       >
+//         <h1 className="text-4xl font-bold mb-4">
+//           Tailored Treatments to Help You Heal and Thrive
+//         </h1>
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our
+//           personalized treatments designed just for you.
+//         </p>
+//         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Cards Section */}
+//       <section className="bg-gray-100 text-gray-800 py-12 px-6">
+//         <div className="max-w-6xl mx-auto text-center">
+//           <p
+//             className="text-lg mb-6 text-center"
+//             style={{ letterSpacing: "0.0005em", wordSpacing: "0.1em" }}
+//           >
+//             W e c u r e d i s e a s e s w i t h H e l a m e d i c i n e i n S r i
+//             L a n k a
+//           </p>
+//           <p className="text-lg mb-6">
+//             Our team of experts focuses on providing holistic treatments to
+//             ensure your complete well-being. Discover the difference of truly
+//             personalized care.
+//           </p>
+
+//           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+//             {[
+//               {
+//                 title: "Kidney disease (C.K.D)",
+//                 description:
+//                   "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney…",
+//                 image: kidneyImage,
+//                 link: "/kidneydisease",
+//               },
+//               {
+//                 title: "Liver Diseases",
+//                 description:
+//                   "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism…",
+//                 image: liverImage,
+//                 link: "/liver-diseases",
+//               },
+//               {
+//                 title: "All Type of Cancers",
+//                 description:
+//                   "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly…",
+//                 image: cancerImage,
+//                 link: "/cancer-diseases",
+//               },
+//               {
+//                 title: "Diabetic",
+//                 description:
+//                   "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The…",
+//                 image: diabeticImage,
+//                 link: "/diabetic",
+//               },
+//             ].map((card, index) => (
+//               <Link to={card.link} key={index}>
+//                 <div className="flip-card">
+//                   <div className="flip-card-inner">
+//                     {/* Front Side */}
+//                     <div className="flip-card-front">
+//                       <img
+//                         src={card.image}
+//                         alt={card.title}
+//                         className="h-full w-full object-cover"
+//                       />
+//                     </div>
+//                     {/* Back Side with description */}
+//                     <div className="flip-card-back">
+//                       <h1>{card.title}</h1>
+//                       <p>{card.description}</p>
+//                       <p>Learn more</p>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
+
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/candle-front-bowl-wheat.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import cancerImage from "../assets/cancer.jpg";
+// import liverImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+// import "./Ourtreat.css";
+
+// const Ourtreat = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: `url(${landing})` }}
+//       >
+//         <h1 className="text-4xl font-bold mb-4">
+//           Tailored Treatments to Help You Heal and Thrive
+//         </h1>
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our
+//           personalized treatments designed just for you.
+//         </p>
+//         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Flip Cards Section */}
+//       <section className="bg-gray-100 text-gray-800 py-12 px-6">
+//         <div className="max-w-6xl mx-auto text-center">
+//           <p
+//             className="text-lg mb-6 text-center"
+//             style={{ letterSpacing: "0.0005em", wordSpacing: "0.1em" }}
+//           >
+//             W e c u r e d i s e a s e s w i t h H e l a m e d i c i n e i n S r i
+//             L a n k a
+//           </p>
+//           <p className="text-lg mb-6">
+//             Our team of experts focuses on providing holistic treatments to
+//             ensure your complete well-being. Discover the difference of truly
+//             personalized care.
+//           </p>
+
+//           <div className="row flip-boxes justify-center">
+//             {[
+//               {
+//                 title: "Kidney disease (C.K.D)",
+//                 description:
+//                   "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney…",
+//                 image: kidneyImage,
+//                 link: "/kidneydisease",
+//               },
+//               {
+//                 title: "Liver Diseases",
+//                 description:
+//                   "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism…",
+//                 image: liverImage,
+//                 link: "/liver-diseases",
+//               },
+//               {
+//                 title: "All Type of Cancers",
+//                 description:
+//                   "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly…",
+//                 image: cancerImage,
+//                 link: "/cancer-diseases",
+//               },
+//               {
+//                 title: "Diabetic",
+//                 description:
+//                   "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The…",
+//                 image: diabeticImage,
+//                 link: "/diabetic",
+//               },
+//             ].map((card, index) => (
+//               <Link to={card.link} key={index}>
+//                 <div className="flip-box col-md-3 col-sm-4 col-6">
+//                   <div
+//                     className="front"
+//                     style={{ backgroundImage: `url(${card.image})` }}
+//                   >
+//                     <div className="content text-center">
+//                       <h2>{card.title}</h2>
+//                     </div>
+//                   </div>
+//                   <div className="back">
+//                     <div className="content">
+//                       <h2>{card.title}</h2>
+//                       <p>{card.description}</p>
+//                       <p>Learn more</p>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/candle-front-bowl-wheat.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import cancerImage from "../assets/cancer.jpg";
+// import liverImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+// import "./Ourtreat.css";
+
+// const Ourtreat = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: `url(${landing})` }}
+//       >
+//         <h1 className="text-4xl font-bold mb-4">
+//           Tailored Treatments to Help You Heal and Thrive
+//         </h1>
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our
+//           personalized treatments designed just for you.
+//         </p>
+//         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Flip Cards Section */}
+//       <section className="bg-gray-100 text-gray-800 py-12 px-6">
+//         <div className="max-w-6xl mx-auto text-center">
+//           <p
+//             className="text-lg mb-6 text-center"
+//             style={{ letterSpacing: "0.0005em", wordSpacing: "0.1em" }}
+//           >
+//             W e c u r e d i s e a s e s w i t h H e l a m e d i c i n e i n S r i
+//             L a n k a
+//           </p>
+//           <p className="text-lg mb-6">
+//             Our team of experts focuses on providing holistic treatments to
+//             ensure your complete well-being. Discover the difference of truly
+//             personalized care.
+//           </p>
+
+//           <div className="flip-boxes justify-center">
+//             {[ 
+//               {
+//                 title: "Kidney disease (C.K.D)",
+//                 description:
+//                   "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney…",
+//                 image: kidneyImage,
+//                 link: "/kidneydisease",
+//               },
+//               {
+//                 title: "Liver Diseases",
+//                 description:
+//                   "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism…",
+//                 image: liverImage,
+//                 link: "/liver-diseases",
+//               },
+//               {
+//                 title: "All Type of Cancers",
+//                 description:
+//                   "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly…",
+//                 image: cancerImage,
+//                 link: "/cancer-diseases",
+//               },
+//               {
+//                 title: "Diabetic",
+//                 description:
+//                   "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The…",
+//                 image: diabeticImage,
+//                 link: "/diabetic",
+//               },
+//             ].map((card, index) => (
+//               <Link to={card.link} key={index}>
+//                 <div className="flip-box">
+//                   <div
+//                     className="front"
+//                     style={{ backgroundImage: `url(${card.image})` }}
+//                   >
+//                     <div className="content text-center">
+//                       <h2>{card.title}</h2>
+//                     </div>
+//                   </div>
+//                   <div className="back">
+//                     <div className="content">
+//                       <h2>{card.title}</h2>
+//                       <p>{card.description}</p>
+//                       <p>Learn more</p>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/candle-front-bowl-wheat.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import cancerImage from "../assets/cancer.jpg";
+// import liverImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+// import "./Ourtreat.css";
+
+// const Ourtreat = () => {
+//   return (
+//     <div>
+//       <Header />
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: `url(${landing})` }}
+//       >
+//         <h1 className="text-4xl font-bold mb-4">
+//           Tailored Treatments to Help You Heal and Thrive
+//         </h1>
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our personalized treatments designed just for you.
+//         </p>
+//         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Flip Cards Section */}
+//       <section className="bg-gray-100 text-gray-800 py-12 px-6">
+//         <div className="max-w-6xl mx-auto text-center">
+//           <p className="text-lg mb-6 text-center" style={{ letterSpacing: "0.0005em", wordSpacing: "0.1em" }}>
+//             W e c u r e d i s e a s e s w i t h H e l a m e d i c i n e i n S r i L a n k a
+//           </p>
+//           <p className="text-lg mb-6">
+//             Our team of experts focuses on providing holistic treatments to ensure your complete well-being. Discover the difference of truly personalized care.
+//           </p>
+
+//           <div className="flip-boxes">
+//             {[{
+//               title: "Kidney disease (C.K.D)",
+//               description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage...",
+//               image: kidneyImage,
+//               link: "/kidneydisease",
+//             }, {
+//               title: "Liver Diseases",
+//               description: "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism...",
+//               image: liverImage,
+//               link: "/liver-diseases",
+//             }, {
+//               title: "All Type of Cancers",
+//               description: "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly...",
+//               image: cancerImage,
+//               link: "/cancer-diseases",
+//             }, {
+//               title: "Diabetic",
+//               description: "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar...",
+//               image: diabeticImage,
+//               link: "/diabetic",
+//             }].map((card, index) => (
+//               <Link to={card.link} key={index}>
+//                 <div className="flip-box">
+//                   <div
+//                     className="front"
+//                     style={{ backgroundImage: `url(${card.image})` }}
+//                   >
+//                     <div className="content text-center">
+//                       <h2>{card.title}</h2>
+//                     </div>
+//                   </div>
+//                   <div className="back">
+//                     <div className="content">
+//                       <h2>{card.title}</h2>
+//                       <p>{card.description}</p>
+//                       {/* Updated Learn More as Button */}
+//                       <Link to={card.link}>
+//                         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 mt-4">
+//                           Learn More
+//                         </button>
+//                       </Link>
+//                     </div>
+//                   </div>
+//                 </div>
+//               </Link>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
+
+
+
+
+
+
+
+
+// import React from "react";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/candle-front-bowl-wheat.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import cancerImage from "../assets/cancer.jpg";
+// import liverImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+// import Card from "../components/Card"; // Import Card component
+// import "./Ourtreat.css";
+
+// const Ourtreat = () => {
+//   const cards = [
+//     {
+//       title: "Kidney disease (C.K.D)",
+//       description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage...",
+//       image: kidneyImage,
+//       link: "/kidneydisease",
+//     },
+//     {
+//       title: "Liver Diseases",
+//       description: "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism...",
+//       image: liverImage,
+//       link: "/liver-diseases",
+//     },
+//     {
+//       title: "All Type of Cancers",
+//       description: "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly...",
+//       image: cancerImage,
+//       link: "/cancer-diseases",
+//     },
+//     {
+//       title: "Diabetic",
+//       description: "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar...",
+//       image: diabeticImage,
+//       link: "/diabetic",
+//     },
+//   ];
+
+//   return (
+//     <div>
+//       <Header />
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: `url(${landing})` }}
+//       >
+//         <h1 className="text-4xl font-bold mb-4">
+//           Tailored Treatments to Help You Heal and Thrive
+//         </h1>
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our personalized treatments designed just for you.
+//         </p>
+//         <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Flip Cards Section */}
+//       <section
+//         className="py-12 px-6"
+//         style={{
+//           backgroundColor: "#FEF7FF", // Wheat background color (yellow-brownish tone)
+//           color: "#8B4513", // SaddleBrown text color
+//         }}
+//       >
+//         <div className="max-w-6xl mx-auto text-center">
+//           {/* Create a spaced version of the text */}
+//           <p className="text-lg mb-6 text-center">
+//             {"W e   c u r e   d i s e a s e s    w i t h   H e l a m e d i c i n e    i n    S r i L a n k a"
+//               .split("")
+//               .map((char, index) => (
+//                 <span key={index} style={{ marginRight: char === " " ? "0.3em" : "0.001em" }}>
+//                   {char}
+//                 </span>
+//               ))}
+//           </p>
+//           <p className="text-lg mb-6">
+//             Our team of experts focuses on providing holistic treatments to ensure your complete well-being. Discover the difference of truly personalized care.
+//           </p>
+
+//           <div className="flip-boxes">
+//             {cards.map((card, index) => (
+//               <Card
+//                 key={index}
+//                 title={card.title}
+//                 description={card.description}
+//                 image={card.image}
+//                 link={card.link}
+//               />
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
+
+
+
+
+
+
+
+
+import React from "react";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import landing from "../assets/treatment.png";
+import kidneyImage from "../assets/kidney disease.jpg";
+import cancerImage from "../assets/cancer.jpg";
+import liverImage from "../assets/liver disease.jpg";
+import diabeticImage from "../assets/diabetic.avif";
+import dengueImage from "../assets/dengue.jpg";
+import leptospirosisImage from "../assets/leptospirosis.jpg";
+import itpImage from "../assets/ITP.webp";
+import infertilityImage from "../assets/infertility.jpg";
+import covid19Image from "../assets/covid19.jpg";
+import stdImage from "../assets/STD.webp";
+import sciaticaImage from "../assets/sciatica.webp";
+import Card from "../components/Card"; // Import Card component
+import "./Ourtreat.css"; // Ensure this CSS file exists and includes styles
 
 const Ourtreat = () => {
-  return (
-    <div>Ourtreat</div>
-  )
-}
+  const cards = [
+    {
+      title: "Kidney disease (C.K.D)",
+      description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage...",
+      image: kidneyImage,
+      link: "/kidneydisease",
+    },
+    {
+      title: "Liver Diseases",
+      description: "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism...",
+      image: liverImage,
+      link: "/liverdisease",
+    },
+    {
+      title: "All Type of Cancers",
+      description: "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly...",
+      image: cancerImage,
+      link: "/alltypeofcancers",
+    },
+    {
+      title: "Diabetic",
+      description: "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar...",
+      image: diabeticImage,
+      link: "/diabetic",
+    },
+    {
+      title: "Dengue",
+      description: "Dengue is the most common and high-risk mosquito-borne viral infection. The virus which causes dengue is …. ",
+      image: dengueImage,
+      link: "/dengue",
+    },
+    {
+      title: "Leptospirosis",
+      description: "Leptospirosis is a relatively rare bacterial infection that affects people and animals. It can pass from animals to...",
+      image: leptospirosisImage,
+      link: "/leptospirosis",
+    },
+    {
+      title: "Sexually transmitted diseases",
+      description: "Leptospirosis is a relatively rare bacterial infection that affects people and animals. It can pass from animals to...",
+      image: stdImage,
+      link: "/leptospirosis",
+    },
+    {
+      title: "I.T.P",
+      description: "I.T.P is an immune disorder in which the blood doesn’t clot normally. This is a blood disorder characterized by a...",
+      image: itpImage,
+      link: "/ITP",
+    },
+    {
+      title: "Infertility",
+      description: "Infertility is defined as trying to get pregnant (with frequent intercourse) for at least a year with no...",
+      image: infertilityImage,
+      link: "/infertility",
+    },
+    {
+      title: "Covid 19",
+      description: "Herbal treatments for COVID-19 have been a topic of interest and discussion throughout the...",
+      image: covid19Image,
+      link: "/covid 19",
+    },
+    {
+      title: "Sciatica",
+      description: "Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back…",
+      image: sciaticaImage,
+      link: "/sciatica",
+    },
+  ];
 
-export default Ourtreat
+  return (
+    <div>
+      <Header />
+      <main
+        className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+        style={{ backgroundImage: `url(${landing})` }}
+      >
+        <h1
+            className="text-4xl font-bold mb-4 animated-title"
+            style={{
+                fontFamily: "'Playfair Display SC', serif", // Apply font style
+                fontWeight: 700, // Make the font bold
+            }}
+        >
+          Tailored Treatments to Help You Heal and Thrive
+        </h1>
+
+        <p className="text-lg mb-8 max-w-2xl text-center">
+          Experience the perfect blend of care and expertise with our personalized treatments designed just for you.
+        </p>
+        {/* <button className="explore-button">
+          Explore Our Services
+          <span className="animated-arrow"></span>
+        </button> */}
+        <div className="animated-arrow-container">
+          <span className="animated-arrow"></span> {/* Retain only the arrow */}
+        </div>
+
+      </main>
+      <section
+        className="py-12 px-6"
+        style={{
+          backgroundColor: "#FEF7FF", // Light wheat background
+        }}
+      >
+        <div className="max-w-6xl mx-auto text-center">
+          <p
+            className="text-lg mb-6 text-center"
+            style={{
+              color: "#006400",
+              fontFamily: "'Playfair Display SC', serif",
+              fontSize: "1.3rem",
+              fontWeight: 540,
+              marginTop: "2rem",
+            }}
+          >
+            {"W e   c u r e   d i s e a s e s    w i t h   H e l a m e d i c i n e    i n    S r i L a n k a"
+              .split("")
+              .map((char, index) => (
+                <span key={index} style={{ marginRight: char === " " ? "0.3em" : "0.001em" }}>
+                  {char}
+                </span>
+              ))}
+          </p>
+          <p
+            className="text-lg mb-6"
+            style={{ color: "black" }}
+          >
+            Our team of experts focuses on providing holistic treatments to ensure your complete well-being. Discover the difference of truly personalized care.
+          </p>
+
+          <div className="flip-boxes">
+            {cards.map((card, index) => (
+              <Card
+                key={index}
+                title={card.title}
+                description={card.description}
+                image={card.image}
+                link={card.link}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+};
+
+export default Ourtreat;
+
+
+
+
+
+
+// import React from "react";
+// import Footer from "../components/footer";
+// import Header from "../components/header";
+// import landing from "../assets/lankapura.jpg";
+// import kidneyImage from "../assets/kidney disease.jpg";
+// import cancerImage from "../assets/cancer.jpg";
+// import liverImage from "../assets/liver disease.jpg";
+// import diabeticImage from "../assets/diabetic.avif";
+// import dengueImage from "../assets/dengue.jpg";
+// import leptospirosisImage from "../assets/leptospirosis.jpg";
+// import itpImage from "../assets/ITP.webp";
+// import infertilityImage from "../assets/infertility.jpg";
+// import covid19Image from "../assets/covid19.jpg";
+// import stdImage from "../assets/STD.webp";
+// import sciaticaImage from "../assets/sciatica.webp";
+// import Card from "../components/Card"; // Import Card component
+// import "./Ourtreat.css"; // Ensure this CSS file exists and includes global styles if needed
+
+// const Ourtreat = () => {
+//   const cards = [
+//     {
+//       title: "Kidney disease (C.K.D)",
+//       description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage...",
+//       image: kidneyImage,
+//       link: "/kidneydisease",
+//     },
+//     {
+//       title: "Liver Diseases",
+//       description: "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism...",
+//       image: liverImage,
+//       link: "/liverdisease",
+//     },
+//     {
+//       title: "All Type of Cancers",
+//       description: "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly...",
+//       image: cancerImage,
+//       link: "/alltypeofcancers",
+//     },
+//     {
+//       title: "Diabetic",
+//       description: "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar...",
+//       image: diabeticImage,
+//       link: "/diabetic",
+//     },
+//     {
+//       title: "Dengue",
+//       description: "Dengue is the most common and high-risk mosquito-borne viral infection. The virus which causes dengue is …. ",
+//       image: dengueImage,
+//       link: "/dengue",
+//     },
+//     {
+//       title: "Leptospirosis",
+//       description: "Leptospirosis is a relatively rare bacterial infection that affects people and animals. It can pass from animals to...",
+//       image: leptospirosisImage,
+//       link: "/leptospirosis",
+//     },
+//     {
+//       title: "Sexually transmitted diseases",
+//       description: "Leptospirosis is a relatively rare bacterial infection that affects people and animals. It can pass from animals to...",
+//       image: stdImage,
+//       link: "/leptospirosis",
+//     },
+//     {
+//       title: "I.T.P",
+//       description: "I.T.P is an immune disorder in which the blood doesn’t clot normally. This is a blood disorder characterized by a...",
+//       image: itpImage,
+//       link: "/ITP",
+//     },
+//     {
+//       title: "Infertility",
+//       description: "Infertility is defined as trying to get pregnant (with frequent intercourse) for at least a year with no...",
+//       image: infertilityImage,
+//       link: "/infertility",
+//     },
+//     {
+//       title: "Covid 19",
+//       description: "Herbal treatments for COVID-19 have been a topic of interest and discussion throughout the...",
+//       image: covid19Image,
+//       link: "/covid 19",
+//     },
+//     {
+//       title: "Sciatica",
+//       description: "Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back…",
+//       image: sciaticaImage,
+//       link: "/sciatica",
+//     },
+//   ];
+
+//   return (
+//     <div>
+//       <Header />
+      
+//       {/* Inline CSS for animation */}
+//       <style>
+//         {`
+//           @keyframes fadeUp {
+//             from {
+//               opacity: 0;
+//               transform: translateY(20px);
+//             }
+//             to {
+//               opacity: 1;
+//               transform: translateY(0);
+//             }
+//           }
+
+//           .animated-title {
+//             animation: fadeUp 2s ease-in-out;
+//           }
+//         `}
+//       </style>
+
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
+//         style={{ backgroundImage: url(${landing}) }}
+//       >
+//         {/* Title with animation */}
+        // <h1
+        //   className="text-4xl font-bold mb-4 animated-title"
+        //   style={{
+        //     fontFamily: "'Playfair Display SC', serif", // Apply font style
+        //     fontWeight: 700, // Make the font bold
+        //   }}
+        // >
+        //   Tailored Treatments to Help You Heal and Thrive
+        // </h1>
+
+//         {/* Subtitle */}
+//         <p className="text-lg mb-8 max-w-2xl text-center">
+//           Experience the perfect blend of care and expertise with our personalized treatments designed just for you.
+//         </p>
+
+//         {/* Button */}
+//         <button className="bg-yellow-900 text-white py-2 px-4 rounded hover:bg-yellow-950">
+//           Explore Our Services
+//         </button>
+//       </main>
+
+//       {/* 3D Flip Cards Section */}
+      // <section
+      //   className="py-12 px-6"
+      //   style={{
+      //     backgroundColor: "#FEF7FF", // Light wheat background
+      //   }}
+      // >
+      //   <div className="max-w-6xl mx-auto text-center">
+      //     <p
+      //       className="text-lg mb-6 text-center"
+      //       style={{
+      //         color: "#006400",
+      //         fontFamily: "'Playfair Display SC', serif",
+      //         fontSize: "1.3rem",
+      //         fontWeight: 540,
+      //         marginTop: "2rem",
+      //       }}
+      //     >
+      //       {"W e   c u r e   d i s e a s e s    w i t h   H e l a m e d i c i n e    i n    S r i L a n k a"
+      //         .split("")
+      //         .map((char, index) => (
+      //           <span key={index} style={{ marginRight: char === " " ? "0.3em" : "0.001em" }}>
+      //             {char}
+      //           </span>
+      //         ))}
+      //     </p>
+      //     <p
+      //       className="text-lg mb-6"
+      //       style={{ color: "black" }}
+      //     >
+      //       Our team of experts focuses on providing holistic treatments to ensure your complete well-being. Discover the difference of truly personalized care.
+      //     </p>
+
+      //     <div className="flip-boxes">
+      //       {cards.map((card, index) => (
+      //         <Card
+      //           key={index}
+      //           title={card.title}
+      //           description={card.description}
+      //           image={card.image}
+      //           link={card.link}
+      //         />
+      //       ))}
+      //     </div>
+      //   </div>
+      // </section>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+// export default Ourtreat;
