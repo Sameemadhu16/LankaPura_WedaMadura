@@ -13,7 +13,7 @@ import AllTypeOfCancers from './diseasepages/alltypeofcancers.jsx'
 import Diabetic from './diseasepages/diabetic.jsx'
 
 
-function App() 
+function App()
 {
   return (
     <Router>
