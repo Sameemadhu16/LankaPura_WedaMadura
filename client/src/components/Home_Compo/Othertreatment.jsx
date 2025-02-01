@@ -11,7 +11,7 @@ const Othertreatment = () => {
         
       }
   return (
-    <div style={tap} className='mt-6  justify-center '>
+    <div style={tap} className='mt-10  justify-center '>
         <h1 className='flex justify-center pt-8'>
             <span className='text-6xl font-[playfair] blod text-center text-black font-semibold'>OTHER</span>
             <span className='text-6xl font-[playfair] blod text-center text-[#348101] font-semibold ml-4'> TREATMENTS</span>
