@@ -7,12 +7,14 @@ import Contactus from './pages/Contactus.jsx'
 import Appointment from './pages/Appointment.jsx'
 import Ourtreat from './pages/Ourtreat.jsx'
 import Products from './pages/Products.jsx'
+import Header from './components/header.jsx'
+import Footer from './components/footer.jsx'
 
 function App()
 {
   return (
     <Router>
-      <div className="relative min-h-screen flex flex-col">
+      {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
@@ -22,7 +24,8 @@ function App()
           <Route path="/ourtreat" element={<Ourtreat />} />
           <Route path="/products" element={<Products />} />
         </Routes>
-      </div>
+      
+      <Footer />
     </Router>
   )
 }
