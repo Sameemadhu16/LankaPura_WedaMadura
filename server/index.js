@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import appointmentRoutes from './routes/appointment.route.js';
 
 // Import the routes
 const ourtreatmentRoutes = require('./routes/ourtreatmentroute');
@@ -19,7 +20,7 @@ mongoose
     });
 
 const app = express();
-app.use(cors());
+app.use(cors());//enable CORS(Cross Origin Resource Sharing)
 app.use(express.json());
 
 
@@ -31,3 +32,5 @@ app.use('/api/treatments', ourtreatmentRoutes); // Add treatment routes under th
 app.listen(process.env.PORT,() =>{
     console.log(`Server running on port ${process.env.PORT}`);
 });
+
+app.use('/api/appointments', appointmentRoutes);

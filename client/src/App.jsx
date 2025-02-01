@@ -12,12 +12,14 @@ import LiverDisease from './diseasepages/liverdisease.jsx'
 import AllTypeOfCancers from './diseasepages/alltypeofcancers.jsx'
 import Diabetic from './diseasepages/diabetic.jsx'
 
+import Header from './components/header.jsx'
+import Footer from './components/footer.jsx'
 
 function App()
 {
   return (
     <Router>
-      <div className="relative min-h-screen flex flex-col">
+      {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
@@ -31,7 +33,8 @@ function App()
           <Route path="/alltypeofcancers" element={<AllTypeOfCancers />} />
           <Route path="/diabetic" element={<Diabetic />} />
         </Routes>
-      </div>
+      
+      <Footer />
     </Router>
   )
 }
