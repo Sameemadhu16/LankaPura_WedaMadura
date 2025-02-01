@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const AyurvedicTreatmentSchema = new mongoose.Schema({
   treatmentName: {
@@ -18,4 +18,4 @@ const AyurvedicTreatmentSchema = new mongoose.Schema({
 
 const AyurvedicTreatment = mongoose.model('ourtreatmentmodel', AyurvedicTreatmentSchema);
 
-module.exports = AyurvedicTreatment;
+export default AyurvedicTreatment;

@@ -49,7 +49,7 @@ const AppointmentForm = () => {
       if (dayOfWeek === 0 || dayOfWeek === 6) {
         return allTimeSlots.slice(0, 16);
       } else if (dayOfWeek === 1) {
-        return allTimeSlots.slice(0, -4);
+        return allTimeSlots.slice(0, 14);
       } else {
         return [];
       }
@@ -71,13 +71,12 @@ const AppointmentForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log("Form Data:", formData); // Debug log
     if (!formData.timeSlot) {
       alert("Please select a time slot!");
       return;
     }
     try {
-      const response = await fetch('http://localhost:3000/api/appointments/createAppointment', {
+      const response = await fetch('http://localhost:5000/api/appointments/createAppointment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -85,7 +84,6 @@ const AppointmentForm = () => {
         body: JSON.stringify(formData),
       });
       const data = await response.json();
-      // console.log("Response Data:", data); // Debug log
       if (response.ok) {
         console.log("Appointment Data:", data);
         alert("Appointment booked successfully!");
@@ -97,10 +95,7 @@ const AppointmentForm = () => {
           timeSlot: "",
           disease: "",
         });
-      } else {
-        // console.error("Error Response:", data); // Debug log
-        alert("There was an error booking the appointment!");
-      }
+      } 
     } catch (error) {
       console.error("There was an error booking the appointment!", error);
       alert("There was an error booking the appointment!");
