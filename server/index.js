@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 // Import the routes
-const ourtreatmentRoutes = require('./routes/ourtreatmentroute');
+const ourtreatmentRoutes = import('./routes/ourtreatmentroute.js');
 
 dotenv.config();
 

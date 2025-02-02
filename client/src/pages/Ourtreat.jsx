@@ -909,7 +909,7 @@ const Ourtreat = () => {
   const cards = [
     {
       title: "Kidney disease (C.K.D)",
-      description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage...",
+      description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage vdfvdf vfvfdvdfv mjkumimum scdscsc...",
       image: kidneyImage,
       link: "/kidneydisease",
     },
