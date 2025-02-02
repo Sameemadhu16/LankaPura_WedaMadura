@@ -1049,7 +1049,7 @@ const Ourtreat = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

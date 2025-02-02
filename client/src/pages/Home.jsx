@@ -16,7 +16,7 @@ const Home = () => {
         <div className="text-lg mb-2">dvknfdlvkjd</div>
         <div className="text-lg">sdafsdfsdf</div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

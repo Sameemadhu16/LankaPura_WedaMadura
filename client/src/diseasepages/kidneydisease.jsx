@@ -251,7 +251,7 @@ export default function kidneydisease() {
         />
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
