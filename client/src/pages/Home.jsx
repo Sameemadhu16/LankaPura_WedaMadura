@@ -1,25 +1,34 @@
-import React from 'react';
-// import Footer from '../components/footer';
-// import Header from '../components/header';
-import landing from '../assets/landing_banner.jpg';
+import Footer from '../components/Home_Compo/footer';
+import Header from '../components/Home_Compo/header';
+import Aboutthedoctor from '../components/Home_Compo/Aboutthedoctor';
+import Whoweare from '../components/Home_Compo/Whoweare';
+import Landingview from '../components/Home_Compo/Landingview';
+import Treatment from '../components/Home_Compo/Treatment';
+import Othertreatment from '../components/Home_Compo/Othertreatment';
+import Whypeople from '../components/Home_Compo/Whypeople';
+
 
 const Home = () => {
   return (
     <div>
-      {/* <Header /> */}
-      <main
-        className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
-        style={{ backgroundImage: `url(${landing})` }}
-      >
-        {/* Main content goes here */}
-        <h1 className="text-4xl font-bold mb-4">Welcome to the Home Page</h1>
-        <div className="text-lg mb-2">dvknfdlvkjd</div>
-        <div className="text-lg">sdafsdfsdf</div>
+      {/* <Header/> */}
+      <main>
+        {/* LAnding view */}
+        <Landingview/>
+        {/*About the Doctor*/}
+        <Aboutthedoctor/>
+        {/*Who we are*/}
+        <Whoweare/>
+        {/*Treatment*/}
+        <Treatment/>
+        {/* Other traeatment */}
+        <Othertreatment/>
+        {/* Why people choose us  */}
+        <Whypeople/>
       </main>
-      {/* <Footer /> */}
+      {/* <Footer/> */}
     </div>
   );
 };
 
 export default Home;
-

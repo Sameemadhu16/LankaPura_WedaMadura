@@ -8,6 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
+        "wedamadura-yellow": "#EEE183",
+        "wedamadura-blue": "#0F3057",
+        "wedamadura-dark-blue": "#0D1B2A",
+        "wedamadura-white": "#F5F5F5",
+        "wedamadura-light-blue": "#1D4E89",
+        "wedamadura-light-yellow": "#F6E27F",
+      },
+      fontFamily: {
+        Raleway: ["Raleway", "sans-serif"],
+        Playfair: ["Playfair Display", "serif"],
         green: {
           light: '#a3e635',    // Light green
           DEFAULT: '#4caf50',  // Default green

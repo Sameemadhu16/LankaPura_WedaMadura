@@ -7,14 +7,14 @@ import Contactus from './pages/Contactus.jsx'
 import Appointment from './pages/Appointment.jsx'
 import Ourtreat from './pages/Ourtreat.jsx'
 import Products from './pages/Products.jsx'
-import Header from './components/header.jsx'
-import Footer from './components/footer.jsx'
+import Header from './components/Home_Compo/header.jsx'
+import Footer from './components/Home_Compo/footer.jsx'
 
 function App()
 {
   return (
     <Router>
-      {/* <Header /> */}
+      <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
@@ -24,7 +24,6 @@ function App()
           <Route path="/ourtreat" element={<Ourtreat />} />
           <Route path="/products" element={<Products />} />
         </Routes>
-      
       <Footer />
     </Router>
   )
