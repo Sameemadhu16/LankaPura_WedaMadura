@@ -11,7 +11,7 @@ import Whypeople from '../components/Home_Compo/Whypeople';
 const Home = () => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <main>
         {/* LAnding view */}
         <Landingview/>
@@ -25,9 +25,8 @@ const Home = () => {
         <Othertreatment/>
         {/* Why people choose us  */}
         <Whypeople/>
-
       </main>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
