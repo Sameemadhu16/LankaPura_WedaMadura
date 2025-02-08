@@ -12,8 +12,8 @@ const Whypp2 = () => {
                 <span className="text-[#348101] text-6xl font-[playfair] font-bold">Us? </span>
             </h1>
         </div>
-        <div className='flex justify-center'>
-            <div className='flex mt-10 mr-20 w-[700px]'>
+        <div className='flex justify-center mt-10'>
+            <div className='flex mt-1 mr-20 w-[620px]'>
                 <img src={WPCU} alt="WHY PEOPLE CHOSE US !!! " className='drop-shadow-2xl' />
             </div>
             <div className='flex flex-col justify-center'>
