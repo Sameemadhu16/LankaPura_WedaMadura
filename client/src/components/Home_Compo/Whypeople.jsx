@@ -2,6 +2,8 @@ import React from 'react'
 import WPCU from '../../assets/Home_Assets/WPCU.webp'
 import Roundanimation from './Roundanimation'
 import Whypp2 from './Whypp2'
+import Archivement from './Archivement'
+import Ourlocation from './Ourlocation'
 
 
 const Whypeople = () => {
@@ -28,6 +30,14 @@ const Whypeople = () => {
         <div>
             {/* Why people choose us2  */}
             <Whypp2/>
+        </div>
+        <div>
+            {/* Archivement */}
+            <Archivement/>
+        </div>
+        <div>
+            {/* Our location */}
+            <Ourlocation/>  
         </div>    
     </div>
   )

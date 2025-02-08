@@ -1,17 +1,16 @@
-import Footer from '../components/Home_Compo/footer';
-import Header from '../components/Home_Compo/header';
+
 import Aboutthedoctor from '../components/Home_Compo/Aboutthedoctor';
 import Whoweare from '../components/Home_Compo/Whoweare';
 import Landingview from '../components/Home_Compo/Landingview';
 import Treatment from '../components/Home_Compo/Treatment';
 import Othertreatment from '../components/Home_Compo/Othertreatment';
 import Whypeople from '../components/Home_Compo/Whypeople';
+import Treatmenthours from '../components/Home_Compo/Treatmenthours';
 
 
 const Home = () => {
   return (
     <div>
-      {/* <Header/> */}
       <main>
         {/* LAnding view */}
         <Landingview/>
@@ -25,8 +24,9 @@ const Home = () => {
         <Othertreatment/>
         {/* Why people choose us  */}
         <Whypeople/>
+        {/* Treatment hours */}
+        <Treatmenthours/>
       </main>
-      {/* <Footer/> */}
     </div>
   );
 };
