@@ -4,7 +4,7 @@ import Header from "../components/header";
 import landing from "../assets/lankapura.jpg";
 import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function liverdisease() {
+export default function infertility() {
   return (
     <div>
       <Header />
@@ -137,7 +137,8 @@ export default function liverdisease() {
               fontSize: "3rem",
             }}
           >
-            Liver Disease
+            Infertility
+
           </h1>
         </div>
 
@@ -153,7 +154,7 @@ export default function liverdisease() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1000px", // Set the height to 500px
+          height: "1150px", // Set the height to 500px
         }}
       >
         <h2
@@ -166,56 +167,25 @@ export default function liverdisease() {
             fontSize: "3rem",
           }}
         >
-          Liver Disease
+          Infertility
+
         </h2>
         <p
           style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Your liver is the largest organ inside your body which performs hundreds 
-          of tasks related to metabolism, energy storage, and detoxification of waste. 
-          It helps your body digest food, store energy, and remove poisons and store the energy until you need it.
-          Liver disease is a general term that refers to any condition affecting your liver. These conditions
-          may develop for different reasons, but they can all damage your liver and impact its function.
-        </p>
-        
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Liver Disease Types
-        </h2>
-
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver diseases are categorized as follows,
-        </p>
-
-        <ul
-          style={{
-            fontWeight: 400,
             
-          }}        
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
         >
-          <li>Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C</li>
-          <li>Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis</li>
-          <li>Liver cancer</li>
-          <li>Inherited diseases, such as hemochromatosis and Wilson disease</li>
-          
-        </ul>
+          Infertility is defined as trying to get pregnant (with frequent intercourse) 
+          for at least a year with no success. Female infertility, male infertility 
+          or a combination of the two affects millions of couples. An estimated 10 to 18 
+          percent of couples have trouble getting pregnant or having a successful delivery. 
+          Infertility results from female factors about one-third of the time and male 
+          factors about one-third of the time. The cause is either unknown or a combination
+          of male and female factors in the remaining cases.
+        </p>
 
         <h2
           style={{
@@ -227,33 +197,77 @@ export default function liverdisease() {
         >
           Symptoms
         </h2>
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver disease symptoms vary, depending on the underlying cause. 
-          However, there are some general symptoms that may indicate some kind of liver disease.
-        </p>
         <ul
           style={{
             fontWeight: 400,
-            
+          }}
+        >
+          <li>Main symptom is not getting pregnant.</li>
+          <li>A menstrual cycle that’s too long (35 days or more), too short (less than 21 days)</li>
+          <li>A man with infertility may have some signs of hormonal problems, such as changes in hair growth or sexual function.</li>
+          
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          When you need {" "}
+          <span style={{ color: "#006400" }}>treatments</span>?
+        </h2>
+
+
+        <p
+          style={{
+            fontWeight: 400,
           }}        
         >
-          <li>Yellow skin and eyes, known as jaundice</li>
-          <li>Dark urine</li>
-          <li>Pale, bloody, or black stool</li>
-          <li>Swollen ankles, legs, or abdomen</li>
-          <li>Nausea</li>
-          <li>Vomiting</li>
-          <li>Decreased appetite</li>
-          <li>Ongoing fatigue</li>
-          <li>Itchy skin</li>
-          <li>Easy bruising</li>
-          
+          You probably don’t need to go for treatments or advice about infertility unless 
+          you have been trying regularly to get pregnant for at least one year.
+          A woman should go for treatments or advice if,
+        </p>
+
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
+          <li>Age 35 or older and have been trying to conceive for six months or longer</li>
+          <li>Over age 40</li>
+          <li>Have irregular or absent periods</li>
+          <li>Have very painful periods</li>
+          <li>Have known fertility problems</li>
+          <li>Have been diagnosed with endometriosis or pelvic inflammatory disease</li>
+          <li>Have had multiple miscarriages</li>
+          <li>Have undergone treatment for cancer</li>
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          A man should go for treatments or advice if,
+        </h2>
+
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
+          <li>A low sperm counts or other problems with sperm</li>
+          <li>A history of testicular, prostate or sexual problems</li>
+          <li>Undergone treatment for cancer</li>
+          <li>Small testicles or swelling in the scrotum</li>
+          <li>Others in your family with infertility problems</li>
+
         </ul>
 
         {/* Plant Image */}

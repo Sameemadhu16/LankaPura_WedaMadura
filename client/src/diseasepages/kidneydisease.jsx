@@ -161,7 +161,7 @@ export default function kidneydisease() {
           style={{
             color: "#5A3D00",
             fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
+            fontWeight: 600,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "3rem",
           }}
@@ -170,7 +170,8 @@ export default function kidneydisease() {
         </h2>
         <p
           style={{
-            fontWeight: 500,
+            
+            fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
             fontSize: "1.2rem",
           }}
@@ -196,7 +197,11 @@ export default function kidneydisease() {
         >
           Symptoms
         </h2>
-        <ul>
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
           <li>Fatigue</li>
           <li>Difficulty concentrating</li>
           <li>Trouble sleeping</li>
@@ -213,7 +218,11 @@ export default function kidneydisease() {
           <li>Fluid retention</li>
         </ul>
 
-        <p>
+        <p
+          style={{
+            fontWeight: 400,
+          }}        
+        >
           But it’s better if you can ask your doctor about getting a blood test
           for kidney problems. Kidney problems generally don’t cause symptoms
           until they’re more advanced. So, don’t wait until the last moment.
@@ -231,7 +240,11 @@ export default function kidneydisease() {
           <span style={{ color: "#006400" }}>Kidney Disease</span>?
         </h2>
 
-        <ul>
+        <ul
+          style={{
+            fontWeight: 400,
+          }}        
+        >
           <li>Drink plenty of water</li>
           <li>If you have diabetes, control your blood sugar</li>
           <li>Control blood pressure</li>

@@ -885,12 +885,14 @@
 
 
 
-
+//correct one
 
 import React from "react";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import landing from "../assets/treatment.png";
+
+
 import kidneyImage from "../assets/kidney disease.jpg";
 import cancerImage from "../assets/cancer.jpg";
 import liverImage from "../assets/liver disease.jpg";
@@ -902,14 +904,24 @@ import infertilityImage from "../assets/infertility.jpg";
 import covid19Image from "../assets/covid19.jpg";
 import stdImage from "../assets/STD.webp";
 import sciaticaImage from "../assets/sciatica.webp";
+import nsdImage from "../assets/Nervous System Diseases.jpg";
+import migraineImage from "../assets/Migraine.webp";
+import lunginfectionImage from "../assets/Lung Insfection.webp";
+import lungdiseasesImage from "../assets/Lung diseases.webp";
+import catarrhImage from "../assets/Catarrh.webp";
+import arthritisImage from "../assets/Arthritis.jpg";
+
+
 import Card from "../components/Card"; // Import Card component
 import "./Ourtreat.css"; // Ensure this CSS file exists and includes styles
 
 const Ourtreat = () => {
   const cards = [
+    
+    
     {
       title: "Kidney disease (C.K.D)",
-      description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage vdfvdf vfvfdvdfv mjkumimum scdscsc...",
+      description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney on each side...",
       image: kidneyImage,
       link: "/kidneydisease",
     },
@@ -947,13 +959,13 @@ const Ourtreat = () => {
       title: "Sexually transmitted diseases",
       description: "Leptospirosis is a relatively rare bacterial infection that affects people and animals. It can pass from animals to...",
       image: stdImage,
-      link: "/leptospirosis",
+      link: "/std",
     },
     {
       title: "I.T.P",
       description: "I.T.P is an immune disorder in which the blood doesn’t clot normally. This is a blood disorder characterized by a...",
       image: itpImage,
-      link: "/ITP",
+      link: "/itp",
     },
     {
       title: "Infertility",
@@ -965,13 +977,49 @@ const Ourtreat = () => {
       title: "Covid 19",
       description: "Herbal treatments for COVID-19 have been a topic of interest and discussion throughout the...",
       image: covid19Image,
-      link: "/covid 19",
+      link: "/covid19",
     },
     {
       title: "Sciatica",
       description: "Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back…",
       image: sciaticaImage,
       link: "/sciatica",
+    },
+    {
+      title: "Nervous System Diseases",
+      description: "Principal organs of the nervous system-Eyes –Ears –Sensory organs of taste – Sensory organs of smell…",
+      image: nsdImage,
+      link: "/nsd",
+    },
+    {
+      title: "Migraine",
+      description: "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It’s often…",
+      image: migraineImage,
+      link: "/migraine",
+    },
+    {
+      title: "Lung Infection",
+      description: "Pneumonia is an infection of the lungs that may be caused by bacteria, viruses, or fungi. The infection causes the…",
+      image: lunginfectionImage,
+      link: "/lunginfection",
+    },
+    {
+      title: "Lung diseases",
+      description: "Lung disease refers to several types of diseases or disorders that prevent the lungs from functioning…",
+      image: lungdiseasesImage,
+      link: "/lungdiseases",
+    },
+    {
+      title: "Catarrh",
+      description: "The term catarrh, or postnasal drip, describes a buildup of mucus in the back of the nose, throat, or sinuses….",
+      image: catarrhImage,
+      link: "/catarrh",
+    },
+    {
+      title: "Arthritis",
+      description: "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint…",
+      image: arthritisImage,
+      link: "/arthritis",
     },
   ];
 
@@ -1007,7 +1055,7 @@ const Ourtreat = () => {
       <section
         className="py-12 px-6"
         style={{
-          backgroundColor: "#FEF7FF", // Light wheat background
+          backgroundColor: "#FEF7FF", // Light wheat background  #FEF7FF
         }}
       >
         <div className="max-w-6xl mx-auto text-center">
@@ -1251,3 +1299,6 @@ export default Ourtreat;
 // };
 
 // export default Ourtreat;
+
+
+

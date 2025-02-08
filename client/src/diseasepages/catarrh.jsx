@@ -2,9 +2,9 @@ import React from 'react'
 import Footer from "../components/footer";
 import Header from "../components/header";
 import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import plantImage from "../assets/plantcrop.png";
 
-export default function liverdisease() {
+export default function catarrh() {
   return (
     <div>
       <Header />
@@ -31,7 +31,7 @@ export default function liverdisease() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 35%; /* Adjust size to cover the right side */
+            width: 30%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -137,16 +137,10 @@ export default function liverdisease() {
               fontSize: "3rem",
             }}
           >
-            Liver Disease
+            Catarrh
           </h1>
         </div>
 
-        {/* Curved Image on the Right */}
-        {/* <img
-          src={kidneyImage} // Replace with the image path
-          alt="Curved Right Image"
-          className="curved-image"
-        /> */}
       </main>
 
       <section
@@ -166,56 +160,25 @@ export default function liverdisease() {
             fontSize: "3rem",
           }}
         >
-          Liver Disease
+          Catarrh
         </h2>
         <p
           style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Your liver is the largest organ inside your body which performs hundreds 
-          of tasks related to metabolism, energy storage, and detoxification of waste. 
-          It helps your body digest food, store energy, and remove poisons and store the energy until you need it.
-          Liver disease is a general term that refers to any condition affecting your liver. These conditions
-          may develop for different reasons, but they can all damage your liver and impact its function.
-        </p>
-        
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Liver Disease Types
-        </h2>
-
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver diseases are categorized as follows,
-        </p>
-
-        <ul
-          style={{
-            fontWeight: 400,
             
-          }}        
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
         >
-          <li>Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C</li>
-          <li>Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis</li>
-          <li>Liver cancer</li>
-          <li>Inherited diseases, such as hemochromatosis and Wilson disease</li>
-          
-        </ul>
+          The term catarrh, or postnasal drip, describes a buildup of mucus in 
+          the back of the nose, throat, or sinuses. Mucus is a slippery, fluid 
+          substance that the mucus glands in the nose and throat produce. It helps 
+          moisten the nasal passages while trapping any debris, viruses, or bacteria 
+          a person inhale. This helps prevent pathogens from getting into the body, 
+          where they could cause an infection.
+        </p>
+
+        
 
         <h2
           style={{
@@ -227,34 +190,54 @@ export default function liverdisease() {
         >
           Symptoms
         </h2>
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
+          <li>Rasping or gurgling when talking</li>
+          <li>Tickling feeling of mucus draining into the throat</li>
+          <li>Feeling as though there is a lump in the throat</li>
+          <li>Having to clear the throat frequently</li>
+          <li>Coughing</li>
+          <li>Having to swallow frequently</li>
+          <li>Difficulty swallowing</li>
+          <li>A sore throat</li>
+          <li>A blocked or stuffy nose</li>
+          <li>A headache</li>
+          <li>Facial pain</li>
+          <li>A loss of taste or smell</li>
+          <li>Difficulty of sleeping</li>
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Can we prevent {" "}
+          <span style={{ color: "#006400" }}>Catarrh</span>?
+        </h2>
+
         <p
           style={{
+            
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
             fontSize: "1.2rem",
           }}
         >
-          Liver disease symptoms vary, depending on the underlying cause. 
-          However, there are some general symptoms that may indicate some kind of liver disease.
+          It is recommended that you avoid things which can trigger catarrh 
+          (such as smoky places or allergens) and take sips of cold water when 
+          you feel the need to clear your throat. It is important to note that 
+          constantly clearing your throat may make things worse. Catarrh can 
+          also be caused by warm and dry atmospheres like air conditioning or 
+          car heating. So, if you can avoid these environments, combined with 
+          staying well hydrated should help.
         </p>
-        <ul
-          style={{
-            fontWeight: 400,
-            
-          }}        
-        >
-          <li>Yellow skin and eyes, known as jaundice</li>
-          <li>Dark urine</li>
-          <li>Pale, bloody, or black stool</li>
-          <li>Swollen ankles, legs, or abdomen</li>
-          <li>Nausea</li>
-          <li>Vomiting</li>
-          <li>Decreased appetite</li>
-          <li>Ongoing fatigue</li>
-          <li>Itchy skin</li>
-          <li>Easy bruising</li>
-          
-        </ul>
 
         {/* Plant Image */}
         <img

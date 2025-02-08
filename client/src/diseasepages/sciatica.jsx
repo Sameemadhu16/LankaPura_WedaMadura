@@ -2,9 +2,9 @@ import React from 'react'
 import Footer from "../components/footer";
 import Header from "../components/header";
 import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import plantImage from "../assets/plantcrop.png"; 
 
-export default function liverdisease() {
+export default function sciatica() {
   return (
     <div>
       <Header />
@@ -137,7 +137,7 @@ export default function liverdisease() {
               fontSize: "3rem",
             }}
           >
-            Liver Disease
+            Sciatica
           </h1>
         </div>
 
@@ -153,7 +153,7 @@ export default function liverdisease() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1000px", // Set the height to 500px
+          height: "1300px", // Set the height to 500px
         }}
       >
         <h2
@@ -166,56 +166,23 @@ export default function liverdisease() {
             fontSize: "3rem",
           }}
         >
-          Liver Disease
+          Sciatica
         </h2>
         <p
           style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Your liver is the largest organ inside your body which performs hundreds 
-          of tasks related to metabolism, energy storage, and detoxification of waste. 
-          It helps your body digest food, store energy, and remove poisons and store the energy until you need it.
-          Liver disease is a general term that refers to any condition affecting your liver. These conditions
-          may develop for different reasons, but they can all damage your liver and impact its function.
-        </p>
-        
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Liver Disease Types
-        </h2>
-
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver diseases are categorized as follows,
-        </p>
-
-        <ul
-          style={{
-            fontWeight: 400,
             
-          }}        
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
         >
-          <li>Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C</li>
-          <li>Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis</li>
-          <li>Liver cancer</li>
-          <li>Inherited diseases, such as hemochromatosis and Wilson disease</li>
-          
-        </ul>
+          Sciatica refers to pain that radiates along the path of the sciatic 
+          nerve, which branches from your lower back through your hips and 
+          buttocks and down each leg. Typically, sciatica affects only one 
+          side of your body. The most common cause is a herniated or slipped 
+          disk that causes pressure on the nerve root. This causes inflammation, 
+          pain and often some numbness in the affected leg.
+        </p>
 
         <h2
           style={{
@@ -227,34 +194,102 @@ export default function liverdisease() {
         >
           Symptoms
         </h2>
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver disease symptoms vary, depending on the underlying cause. 
-          However, there are some general symptoms that may indicate some kind of liver disease.
-        </p>
         <ul
           style={{
             fontWeight: 400,
-            
-          }}        
+          }}
         >
-          <li>Yellow skin and eyes, known as jaundice</li>
-          <li>Dark urine</li>
-          <li>Pale, bloody, or black stool</li>
-          <li>Swollen ankles, legs, or abdomen</li>
-          <li>Nausea</li>
-          <li>Vomiting</li>
-          <li>Decreased appetite</li>
-          <li>Ongoing fatigue</li>
-          <li>Itchy skin</li>
-          <li>Easy bruising</li>
+          <li>Lower back pain</li>
+          <li>Pain in the rear or leg that is worse when sitting</li>
+          <li>Hip pain</li>
+          <li>Burning or tingling down the leg</li>
+          <li>Weakness, numbness, or a hard time moving the leg or foot</li>
+          <li>A constant pain on one side of the rear</li>
+          <li>A shooting pain that makes it hard to stand up</li>
           
         </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+         
+          <span style={{ color: "#006400" }}>Sciatica</span>{" "} pain feel like
+        </h2>
+
+        <p
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          People describe sciatica pain in different ways, 
+          it depends on its cause. Some people describe the 
+          pain as sharp, shooting or jolts of pain. While 
+          some describe this pain as “burning,” “electric” or “stabbing.”
+        </p>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Are you at a risk of{" "}
+          <span style={{ color: "#006400" }}>Sciatica</span>?
+        </h2>
+
+        <p
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          If you have following factors, you have a greater risk,
+        </p>
+
+        <ul
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          <li>Have or previously had an injury to your lower back or spine</li>
+          <li>When a person gets old</li>
+          <li>Overweight</li>
+          <li>Lack a strong core</li>
+          <li>Doing jobs that require heavy lifting</li>
+          <li>Incorrect posture</li>
+          <li>Have diabetes or Osteoarthritis</li>
+          <li>Inactive lifestyle</li>
+          <li>Smoking</li>
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Is the {" "}
+          <span style={{ color: "#006400" }}>increase of weight of a pregnant person</span>{" "}also a reason?
+        </h2>
+
+        <p
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          It’s true that sciatica is common in pregnancy. 
+          But increased weight is not the main reason why 
+          pregnant women get sciatica. It happens because 
+          certain hormones of pregnancy cause a loosening of their ligaments.
+        </p>
 
         {/* Plant Image */}
         <img

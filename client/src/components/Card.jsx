@@ -178,10 +178,17 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+// bg-gradient-to-r from-[rgba(108,32,32,0.94)]  to-[rgba(255,64,64,0.91)]
+// bg-gradient-to-r from-[rgba(194,65,12,0.7)] via-[rgba(194,65,12,0.7)]  to-[rgba(134,104,30,0.8)]
+// bg-[rgba(134,104,30,0.8)] bg-opacity-20
 
 const Card = ({ title, description, image, link }) => {
   return (
-    <div className="bg-yellow-800 relative w-auto sm:w-[20rem] h-auto rounded-lg p-4 border  dark:border-white/[0.2] border-black/[0.1] shadow-lg transform transition-transform duration-300 ease-out hover:scale-105 hover:shadow-2xl ml-4"> {/* Added ml-4 for shifting the card */}
+    <div className="bg-[rgba(134,104,30,0.8)]
+
+
+
+        relative w-auto sm:w-[20rem] h-auto rounded-lg p-4 border  dark:border-white/[0.2] border-black/[0.1] shadow-lg transform transition-transform duration-300 ease-out hover:scale-105 hover:shadow-2xl ml-4"> {/* Added ml-4 for shifting the card */}
       <h2 className="text-lg font-bold text-neutral-600 dark:text-black">
         {title}
       </h2>

@@ -2,9 +2,9 @@ import React from 'react'
 import Footer from "../components/footer";
 import Header from "../components/header";
 import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import plantImage from "../assets/plantcrop.png";
 
-export default function liverdisease() {
+export default function nsd() {
   return (
     <div>
       <Header />
@@ -137,23 +137,18 @@ export default function liverdisease() {
               fontSize: "3rem",
             }}
           >
-            Liver Disease
+            Nervous System Diseases
           </h1>
         </div>
 
-        {/* Curved Image on the Right */}
-        {/* <img
-          src={kidneyImage} // Replace with the image path
-          alt="Curved Right Image"
-          className="curved-image"
-        /> */}
+       
       </main>
 
       <section
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1000px", // Set the height to 500px
+          height: "1250px", // Set the height to 500px
         }}
       >
         <h2
@@ -166,22 +161,9 @@ export default function liverdisease() {
             fontSize: "3rem",
           }}
         >
-          Liver Disease
+          Nervous System Diseases
         </h2>
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Your liver is the largest organ inside your body which performs hundreds 
-          of tasks related to metabolism, energy storage, and detoxification of waste. 
-          It helps your body digest food, store energy, and remove poisons and store the energy until you need it.
-          Liver disease is a general term that refers to any condition affecting your liver. These conditions
-          may develop for different reasons, but they can all damage your liver and impact its function.
-        </p>
-        
+
 
         <h2
           style={{
@@ -191,31 +173,41 @@ export default function liverdisease() {
             fontSize: "2rem",
           }}
         >
-          Liver Disease Types
+          Principal organs of the nervous system
         </h2>
 
         <p
           style={{
             fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver diseases are categorized as follows,
-        </p>
-
-        <ul
-          style={{
-            fontWeight: 400,
-            
           }}        
         >
-          <li>Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C</li>
-          <li>Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis</li>
-          <li>Liver cancer</li>
-          <li>Inherited diseases, such as hemochromatosis and Wilson disease</li>
-          
-        </ul>
+          –Eyes –Ears –Sensory organs of taste – Sensory organs of smell
+        </p>
+
+        <p
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          –Sensory receptors in skin, joints, muscles and other parts of the body
+        </p>
+
+
+        <p
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          Nervous system disease or disorders that affect the functioning 
+          of the human nervous system. Everything that human’s sense, consider, 
+          and effect and all the unlearned reflexes of the body depend on 
+          the functioning of the nervous system. The skeleton and muscles 
+          support and transport the body, and the digestive system, heart, 
+          and lungs provide nutrients; but the nervous system contains the 
+          epitome of the human—the mind—and commands all perception, thought, 
+          and action. Disturbance or malfunction of the functions of the nervous 
+          system causes changes felt throughout the body.
+        </p>
 
         <h2
           style={{
@@ -227,32 +219,50 @@ export default function liverdisease() {
         >
           Symptoms
         </h2>
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver disease symptoms vary, depending on the underlying cause. 
-          However, there are some general symptoms that may indicate some kind of liver disease.
-        </p>
         <ul
           style={{
             fontWeight: 400,
-            
+          }}
+        >
+          <li>Persistent or sudden onset of a headache</li>
+          <li>A headache that changes or is different</li>
+          <li>Loss of feeling or tingling</li>
+          <li>Weakness or loss of muscle strength</li>
+          <li>Loss of sight or double vision</li>
+          <li>Memory loss</li>
+          <li>Impaired mental ability</li>
+          <li>Lack of coordination</li>
+          <li>Muscle rigidity</li>
+          <li>Tremors and seizures</li>
+          <li>Back pain which radiates to the feet, toes, or other parts of the body</li>
+          <li>Muscle wasting and slurred speech</li>
+          <li>New language impairment (expression or comprehension)</li>
+         
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Your nervous system can be  {" "}
+          <span style={{ color: "#006400" }}>damaged</span>{" "}by the followings
+        </h2>
+
+        <ul
+          style={{
+            fontWeight: 400,
           }}        
         >
-          <li>Yellow skin and eyes, known as jaundice</li>
-          <li>Dark urine</li>
-          <li>Pale, bloody, or black stool</li>
-          <li>Swollen ankles, legs, or abdomen</li>
-          <li>Nausea</li>
-          <li>Vomiting</li>
-          <li>Decreased appetite</li>
-          <li>Ongoing fatigue</li>
-          <li>Itchy skin</li>
-          <li>Easy bruising</li>
+          <li>Injury</li>
+          <li>Infections</li>
+          <li>Degeneration</li>
+          <li>Tumors</li>
+          <li>Blood flow disruption</li>
+          <li>Autoimmune disorders</li>
           
         </ul>
 
@@ -264,7 +274,7 @@ export default function liverdisease() {
         />
       </section>
 
-      {/* <Footer /> */}
+      {/* <Footer /> */}      
     </div>
   )
 }

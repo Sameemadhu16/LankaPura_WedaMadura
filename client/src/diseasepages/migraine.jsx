@@ -2,9 +2,9 @@ import React from 'react'
 import Footer from "../components/footer";
 import Header from "../components/header";
 import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import plantImage from "../assets/plantcrop.png";
 
-export default function liverdisease() {
+export default function migraine() {
   return (
     <div>
       <Header />
@@ -31,7 +31,7 @@ export default function liverdisease() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 35%; /* Adjust size to cover the right side */
+            width: 25%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -137,23 +137,17 @@ export default function liverdisease() {
               fontSize: "3rem",
             }}
           >
-            Liver Disease
+            Migraine
           </h1>
         </div>
 
-        {/* Curved Image on the Right */}
-        {/* <img
-          src={kidneyImage} // Replace with the image path
-          alt="Curved Right Image"
-          className="curved-image"
-        /> */}
       </main>
 
       <section
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1000px", // Set the height to 500px
+          height: "860px", // Set the height to 500px
         }}
       >
         <h2
@@ -166,56 +160,25 @@ export default function liverdisease() {
             fontSize: "3rem",
           }}
         >
-          Liver Disease
+          Migraine
         </h2>
         <p
           style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Your liver is the largest organ inside your body which performs hundreds 
-          of tasks related to metabolism, energy storage, and detoxification of waste. 
-          It helps your body digest food, store energy, and remove poisons and store the energy until you need it.
-          Liver disease is a general term that refers to any condition affecting your liver. These conditions
-          may develop for different reasons, but they can all damage your liver and impact its function.
-        </p>
-        
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Liver Disease Types
-        </h2>
-
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver diseases are categorized as follows,
-        </p>
-
-        <ul
-          style={{
-            fontWeight: 400,
             
-          }}        
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
         >
-          <li>Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C</li>
-          <li>Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis</li>
-          <li>Liver cancer</li>
-          <li>Inherited diseases, such as hemochromatosis and Wilson disease</li>
-          
-        </ul>
+          A migraine can cause severe throbbing pain or a pulsing sensation, usually on
+           one side of the head. It’s often accompanied by nausea, vomiting, and extreme 
+           sensitivity to light and sound. Migraine attacks can last for hours to days, 
+           and the pain can be so severe that it interferes with your daily activities. 
+           For some people, a warning symptom known as an aura occurs before or with the 
+           headache. An aura can include visual disturbances, such as flashes of light 
+           or blind spots, or other disturbances, such as tingling on one side of the 
+           face or in an arm or leg and difficulty speaking.
+        </p>
 
         <h2
           style={{
@@ -227,32 +190,41 @@ export default function liverdisease() {
         >
           Symptoms
         </h2>
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver disease symptoms vary, depending on the underlying cause. 
-          However, there are some general symptoms that may indicate some kind of liver disease.
-        </p>
         <ul
           style={{
             fontWeight: 400,
-            
+          }}
+        >
+          <li>A severe headache</li>
+          <li>Constipation</li>
+          <li>Mood changes, from depression to euphoria</li>
+          <li>Food cravings</li>
+          <li>Neck stiffness</li>
+          <li>Increased thirst and urination</li>
+          <li>Frequent yawning</li>
+          
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          4 Stages of a migraine
+        </h2>
+
+        <ul
+          style={{
+            fontWeight: 400,
           }}        
         >
-          <li>Yellow skin and eyes, known as jaundice</li>
-          <li>Dark urine</li>
-          <li>Pale, bloody, or black stool</li>
-          <li>Swollen ankles, legs, or abdomen</li>
-          <li>Nausea</li>
-          <li>Vomiting</li>
-          <li>Decreased appetite</li>
-          <li>Ongoing fatigue</li>
-          <li>Itchy skin</li>
-          <li>Easy bruising</li>
+          <li>Prodromal stage – Change in mood/energy levels/behavior and appetite</li>
+          <li>Aura – Usually visual problems</li>
+          <li>Headache stage – Pulsation pain on usually one side of the head</li>
+          <li>Resolution stage – Above symptoms gradually fade away but may feel tires for few days afterwards</li>
           
         </ul>
 

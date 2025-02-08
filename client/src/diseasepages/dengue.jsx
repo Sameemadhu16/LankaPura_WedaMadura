@@ -4,7 +4,7 @@ import Header from "../components/header";
 import landing from "../assets/lankapura.jpg";
 import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function liverdisease() {
+export default function dengue() {
   return (
     <div>
       <Header />
@@ -31,7 +31,7 @@ export default function liverdisease() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 35%; /* Adjust size to cover the right side */
+            width: 20%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -137,7 +137,7 @@ export default function liverdisease() {
               fontSize: "3rem",
             }}
           >
-            Liver Disease
+            Dengue
           </h1>
         </div>
 
@@ -153,7 +153,7 @@ export default function liverdisease() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1000px", // Set the height to 500px
+          height: "700px", // Set the height to 500px
         }}
       >
         <h2
@@ -166,95 +166,68 @@ export default function liverdisease() {
             fontSize: "3rem",
           }}
         >
-          Liver Disease
+          Dengue
         </h2>
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Your liver is the largest organ inside your body which performs hundreds 
-          of tasks related to metabolism, energy storage, and detoxification of waste. 
-          It helps your body digest food, store energy, and remove poisons and store the energy until you need it.
-          Liver disease is a general term that refers to any condition affecting your liver. These conditions
-          may develop for different reasons, but they can all damage your liver and impact its function.
-        </p>
-        
+
 
         <h2
           style={{
             fontFamily: "'Playfair Display SC', serif",
             fontWeight: 500,
+            marginTop: "50px", // Additional margin for the second line
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
           }}
         >
-          Liver Disease Types
+          What is{" "}
+          <span style={{ color: "#006400" }}>Dengue</span>?
         </h2>
 
         <p
           style={{
+            
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
             fontSize: "1.2rem",
           }}
         >
-          Liver diseases are categorized as follows,
+          Dengue is a viral infection caused by the dengue virus (DENV), which is transmitted to humans through the bites of infected female Aedes mosquitoes, primarily Aedes aegypti. This disease is common in tropical and subtropical regions, including Southeast Asia, South America, and Africa.
         </p>
 
-        <ul
-          style={{
-            fontWeight: 400,
-            
-          }}        
-        >
-          <li>Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C</li>
-          <li>Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis</li>
-          <li>Liver cancer</li>
-          <li>Inherited diseases, such as hemochromatosis and Wilson disease</li>
-          
-        </ul>
 
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Symptoms
-        </h2>
         <p
           style={{
+            
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
             fontSize: "1.2rem",
           }}
         >
-          Liver disease symptoms vary, depending on the underlying cause. 
-          However, there are some general symptoms that may indicate some kind of liver disease.
+          Dengue typically manifests as a sudden onset of high fever, severe headache, pain behind the eyes, joint and muscle pain, fatigue, nausea, vomiting, skin rash, and mild bleeding (like nosebleeds or gum bleeding). These symptoms usually appear 4-10 days after being bitten by an infected mosquito and can last up to a week.
         </p>
-        <ul
+
+
+        <p
           style={{
-            fontWeight: 400,
             
-          }}        
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
         >
-          <li>Yellow skin and eyes, known as jaundice</li>
-          <li>Dark urine</li>
-          <li>Pale, bloody, or black stool</li>
-          <li>Swollen ankles, legs, or abdomen</li>
-          <li>Nausea</li>
-          <li>Vomiting</li>
-          <li>Decreased appetite</li>
-          <li>Ongoing fatigue</li>
-          <li>Itchy skin</li>
-          <li>Easy bruising</li>
-          
-        </ul>
+          In some cases, dengue can progress to severe forms, such as dengue hemorrhagic fever (DHF) or dengue shock syndrome (DSS), which involve severe bleeding, organ damage, and dangerously low blood pressure. These complications can be life-threatening without immediate medical attention.
+        </p>
+
+        <p
+          style={{
+            
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
+        >
+          There is no specific antiviral treatment for dengue. Management focuses on supportive care, such as hydration and pain relief, with severe cases requiring hospitalization. Preventing dengue involves controlling mosquito populations, using insect repellents, wearing protective clothing, and eliminating stagnant water where mosquitoes breed. Vaccines like Dengvaxia are available in some regions, but they are not suitable for everyone. Early detection and prevention are key to reducing dengue’s impact.
+        </p>
 
         {/* Plant Image */}
         <img

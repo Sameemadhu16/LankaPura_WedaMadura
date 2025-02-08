@@ -4,7 +4,7 @@ import Header from "../components/header";
 import landing from "../assets/lankapura.jpg";
 import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function liverdisease() {
+export default function covid19() {
   return (
     <div>
       <Header />
@@ -31,7 +31,7 @@ export default function liverdisease() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 35%; /* Adjust size to cover the right side */
+            width: 20%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -137,7 +137,7 @@ export default function liverdisease() {
               fontSize: "3rem",
             }}
           >
-            Liver Disease
+            Covid 19
           </h1>
         </div>
 
@@ -153,7 +153,7 @@ export default function liverdisease() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1000px", // Set the height to 500px
+          height: "500px", // Set the height to 500px
         }}
       >
         <h2
@@ -166,95 +166,56 @@ export default function liverdisease() {
             fontSize: "3rem",
           }}
         >
-          Liver Disease
+          Covid 19
         </h2>
+
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginTop: "50px", // Additional margin for the second line
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          What is this {" "}
+          <span style={{ color: "#006400" }}>EPIREPIES</span>?
+        </h2>
+
         <p
           style={{
+            
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
             fontSize: "1.2rem",
           }}
         >
-          Your liver is the largest organ inside your body which performs hundreds 
-          of tasks related to metabolism, energy storage, and detoxification of waste. 
-          It helps your body digest food, store energy, and remove poisons and store the energy until you need it.
-          Liver disease is a general term that refers to any condition affecting your liver. These conditions
-          may develop for different reasons, but they can all damage your liver and impact its function.
+          Epirepies is a Natural Herbal Medicine, Containing the Extracts 
+          of Timeless Medicinal Herbs. It Aids the Body in Curing Ailments 
+          such as Phlegm, Dry Cough, Shortness of Breath, Runny Nose and 
+          Pulmonary Fibrosis. This Natural Formulation is Especially 
+          Capable of Boosting the immunity system to help prevent corona virus. 
+          This herbal medicine is suitable for children, older people and pregnant women alike.
         </p>
+
+
+        <p
+          style={{
+            
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
+        >
+          EPIREPIES”, The drug manufactured against the COVID 19 virus, 
+          was launched few months ago with MP Sisira Jayakody, the State 
+          Minister of Indigenous Medicine, Rural and Ayurveda Hospital 
+          Development and Community Health in Sri Lanka.
+        </p>
+
+
         
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Liver Disease Types
-        </h2>
-
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver diseases are categorized as follows,
-        </p>
-
-        <ul
-          style={{
-            fontWeight: 400,
-            
-          }}        
-        >
-          <li>Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C</li>
-          <li>Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis</li>
-          <li>Liver cancer</li>
-          <li>Inherited diseases, such as hemochromatosis and Wilson disease</li>
-          
-        </ul>
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Symptoms
-        </h2>
-        <p
-          style={{
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          Liver disease symptoms vary, depending on the underlying cause. 
-          However, there are some general symptoms that may indicate some kind of liver disease.
-        </p>
-        <ul
-          style={{
-            fontWeight: 400,
-            
-          }}        
-        >
-          <li>Yellow skin and eyes, known as jaundice</li>
-          <li>Dark urine</li>
-          <li>Pale, bloody, or black stool</li>
-          <li>Swollen ankles, legs, or abdomen</li>
-          <li>Nausea</li>
-          <li>Vomiting</li>
-          <li>Decreased appetite</li>
-          <li>Ongoing fatigue</li>
-          <li>Itchy skin</li>
-          <li>Easy bruising</li>
-          
-        </ul>
 
         {/* Plant Image */}
         <img
