@@ -1,13 +1,12 @@
 import React from 'react'
-import Footer from "../components/footer";
-import Header from "../components/header";
+
 import landing from "../assets/lankapura.jpg";
 import plantImage from "../assets/plantcrop.png";
 
 export default function lungdiseases() {
   return (
     <div>
-      <Header />
+
       {/* Inline CSS for animation */}
       <style>
         {`

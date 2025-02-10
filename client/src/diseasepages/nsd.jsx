@@ -1,13 +1,12 @@
 import React from 'react'
-import Footer from "../components/footer";
-import Header from "../components/header";
+
 import landing from "../assets/lankapura.jpg";
 import plantImage from "../assets/plantcrop.png";
 
 export default function nsd() {
   return (
     <div>
-      <Header />
+    
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -273,8 +272,7 @@ export default function nsd() {
           className="right-image"
         />
       </section>
-
-      {/* <Footer /> */}      
+   
     </div>
   )
 }

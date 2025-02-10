@@ -1,6 +1,5 @@
 import React from 'react'
-import Footer from "../components/footer";
-import Header from "../components/header";
+
 import landing from "../assets/aboutus.jpg";
 
 
@@ -135,7 +134,7 @@ const Aboutus = () => {
   ];
   return (
     <div> 
-      <Header />
+    
       {/* <main
         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
         style={{ backgroundImage: `url(${landing})` }}
