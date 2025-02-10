@@ -1,0 +1,18 @@
+/* Animated arrow container for centering */
+.animated-arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add spacing below the heading */
+  }
+  
+  /* Animated arrow style */
+  .animated-arrow {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    transform: rotate(-45deg); /* Initial position pointing downwards */
+    animation: arrowBounce 2s infinite;
+  }
