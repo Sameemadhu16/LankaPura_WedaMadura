@@ -27,15 +27,14 @@ import Lungdiseases from './diseasepages/lungdiseases.jsx'
 import Catarrh from './diseasepages/catarrh.jsx'
 import Arthritis from './diseasepages/arthritis.jsx'
 
-
-import Header from './components/header.jsx'
-import Footer from './components/footer.jsx'
+import Header from './components/Home_Compo/header.jsx'
+import Footer from './components/Home_Compo/footer.jsx'
 
 function App()
 {
   return (
     <Router>
-      {/* <Header /> */}
+      <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
@@ -64,7 +63,6 @@ function App()
           <Route path="/catarrh" element={<Catarrh />} />
           <Route path="/arthritis" element={<Arthritis />} />
         </Routes>
-      
       <Footer />
     </Router>
   )
