@@ -181,10 +181,11 @@ import { Link } from "react-router-dom";
 // bg-gradient-to-r from-[rgba(108,32,32,0.94)]  to-[rgba(255,64,64,0.91)]
 // bg-gradient-to-r from-[rgba(194,65,12,0.7)] via-[rgba(194,65,12,0.7)]  to-[rgba(134,104,30,0.8)]
 // bg-[rgba(134,104,30,0.8)] bg-opacity-20
+// bg-[rgba(134,104,30,0.8)]
 
 const Card = ({ title, description, image, link }) => {
   return (
-    <div className="bg-[rgba(134,104,30,0.8)]
+    <div className="bg-[rgba(219,185,98,0.8)]
 
 
 
