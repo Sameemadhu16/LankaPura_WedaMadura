@@ -136,7 +136,7 @@ const Aboutus = () => {
   return (
     <div> 
       <Header />
-      <main
+      {/* <main
         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
         style={{ backgroundImage: `url(${landing})` }}
       >
@@ -152,7 +152,25 @@ const Aboutus = () => {
         </h1>
 
 
-      </main>
+      </main> */}
+      <main
+  className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white relative"
+  style={{
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 100)), url(${landing})`,
+  }}
+>
+  <h1
+    className="text-6xl text-slate-100"
+    style={{
+      fontFamily: "'Playfair Display SC', serif", // Apply font style
+      fontWeight: 5, // Make the font bold
+      marginTop: "30rem", // Add space at the top
+    }}
+  >
+    About Lankapura
+  </h1>
+</main>
+
       <section
         className="py-12 px-6"
         style={{

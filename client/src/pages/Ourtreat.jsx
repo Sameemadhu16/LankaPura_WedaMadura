@@ -1031,16 +1031,17 @@ const Ourtreat = () => {
         style={{ backgroundImage: `url(${landing})` }}
       >
         <h1
-            className="text-4xl font-bold mb-4 animated-title"
+            className="text-8xl font-bold mb-4 animated-title"
             style={{
                 fontFamily: "'Playfair Display SC', serif", // Apply font style
                 fontWeight: 700, // Make the font bold
+                marginTop: "20rem", // Add space at the top
             }}
         >
-          Tailored Treatments to Help You Heal and Thrive
+          Tailored Treatments to You Heal and Thrive
         </h1>
 
-        <p className="text-lg mb-8 max-w-2xl text-center">
+        <p className="text-lg mb-8 max-w-2xl text-center ">
           Experience the perfect blend of care and expertise with our personalized treatments designed just for you.
         </p>
         {/* <button className="explore-button">
