@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from '../assets/image-2.jpg';
+import Image from '../assets/Home_Assets/disease images/Nervous System Diseases.jpg';
 
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
@@ -108,13 +108,11 @@ const AppointmentForm = () => {
   };
 
   return (
-    <div className="flex flex-row h-screen gap-5 w-5/6 mx-auto bg-yellow-50 shadow-xl rounded-[24px] mt-10">
-      <div className="w-1/2 bg-brown-900 h-full hidden rounded-l-[24px] overflow-hidden md:flex">
-        <div className="sticky w-full top-0">
-          <img src={Image} alt="" className="w-full h-full object-cover" />
-        </div>
+    <div className="flex flex-col h-full gap-5 w-full mx-auto bg-yellow-50 shadow-xl rounded-[24px] ">
+      <div className="w-full h-full rounded-t-[24px] overflow-hidden">
+        <img src={Image} alt="" className="w-full h-full object-cover" />
       </div>
-      <div className="w-full md:w-1/2 h-screen overflow-y-auto p-6 scroll-hidden" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+      <div className="w-2/3 h-2/3 overflow-y-auto p-6 scroll-hidden mx-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
         <style>
           {`
             .scroll-hidden::-webkit-scrollbar {
@@ -194,7 +192,7 @@ const AppointmentForm = () => {
             name="disease"
             value={formData.disease}
             onChange={handleInputChange}
-            className="w-1/2 p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+            className="w-full md:w-1/2 p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
             required
           >
             <option value="" disabled>
