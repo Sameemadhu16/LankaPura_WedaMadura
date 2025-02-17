@@ -1,25 +1,36 @@
 import React from 'react';
-import Footer from '../components/footerb';
-import Header from '../components/headerb';
-import landing from '../assets/landing_banner.jpg';
+
+
+import Aboutthedoctor from '../components/Home_Compo/Aboutthedoctor';
+import Whoweare from '../components/Home_Compo/Whoweare';
+import Landingview from '../components/Home_Compo/Landingview';
+import Treatment from '../components/Home_Compo/Treatment';
+import Othertreatment from '../components/Home_Compo/Othertreatment';
+import Whypeople from '../components/Home_Compo/Whypeople';
+import Treatmenthours from '../components/Home_Compo/Treatmenthours';
+
 
 const Home = () => {
   return (
     <div>
-      <Header />
-      <main
-        className="flex flex-col items-center justify-center h-screen text-white bg-center bg-cover"
-        style={{ backgroundImage: `url(${landing})` }}
-      >
-        {/* Main content goes here */}
-        <h1 className="mb-4 text-4xl font-bold">Welcome to the Home Page</h1>
-        <div className="mb-2 text-lg">dvknfdlvkjd</div>
-        <div className="text-lg">sdafsdfsdf</div>
+      <main>
+        {/* LAnding view */}
+        <Landingview/>
+        {/*About the Doctor*/}
+        <Aboutthedoctor/>
+        {/*Who we are*/}
+        <Whoweare/>
+        {/*Treatment*/}
+        <Treatment/>
+        {/* Other traeatment */}
+        <Othertreatment/>
+        {/* Why people choose us  */}
+        <Whypeople/>
+        {/* Treatment hours */}
+        <Treatmenthours/>
       </main>
-      <Footer />
     </div>
   );
 };
 
 export default Home;
-
