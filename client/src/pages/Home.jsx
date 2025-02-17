@@ -1,3 +1,5 @@
+import React from 'react';
+
 
 import Aboutthedoctor from '../components/Home_Compo/Aboutthedoctor';
 import Whoweare from '../components/Home_Compo/Whoweare';
