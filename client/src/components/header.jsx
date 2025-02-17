@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../assets/Logo.png';
+import React, { useState, useEffect } from "react";
+import logo from "../assets/Logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,8 +10,8 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
@@ -21,10 +21,10 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full p-4 z-50 ${
-        isScrolled ? 'bg-blue-600 shadow-lg' : 'bg-transparent'
+        isScrolled ? "bg-gray-900/80 shadow-lg" : "bg-transparent"
       } transition-all duration-300`}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container flex items-center justify-between mx-auto">
         {/* Logo with Text */}
         <div className="flex items-center space-x-4">
           <a href="/">
@@ -35,34 +35,77 @@ const Header = () => {
             />
           </a>
 
-          <div className="hidden md:flex flex-col text-white">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+          <div className="flex-col hidden text-white md:flex">
+            <span className="text-2xl font-bold leading-tight md:text-3xl lg:text-4xl">
               LANKAPURA
             </span>
-            <span className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+            <span className="text-2xl font-bold leading-tight md:text-3xl lg:text-4xl">
               WEDAMADURA
             </span>
           </div>
         </div>
 
         {/* Menu Button for Larger Screens */}
-        <div className="hidden md:block relative">
+        <div className="relative hidden md:block">
           <button
             onClick={toggleMenu}
-            className="bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-lg"
+            className="px-6 py-2 text-white bg-blue-700 rounded-lg hover:bg-blue-800"
           >
             Menu
           </button>
           {isMenuOpen && (
-            <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg z-50">
-              <ul className="text-gray-700">
-                <li><a href="/" className="block px-4 py-2 hover:bg-blue-100">Home</a></li>
-                <li><a href="/ourtreat" className="block px-4 py-2 hover:bg-blue-100">Our Treatment</a></li>
-                <li><a href="/products" className="block px-4 py-2 hover:bg-blue-100">Product</a></li>
-                <li><a href="/appointment" className="block px-4 py-2 hover:bg-blue-100">Appointment</a></li>
-                <li><a href="/blog" className="block px-4 py-2 hover:bg-blue-100">Blog</a></li>
-                <li><a href="/aboutus" className="block px-4 py-2 hover:bg-blue-100">About Us</a></li>
-                <li><a href="/contactus" className="block px-4 py-2 hover:bg-blue-100">Contact Us</a></li>
+            <div className="absolute right-0 z-50 w-48 mt-2 bg-white rounded-lg shadow-lg">
+              <ul className="text-white">
+                <li>
+                  <a href="/" className="block px-4 py-2 hover:bg-blue-100">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/ourtreat"
+                    className="block px-4 py-2 hover:bg-blue-100"
+                  >
+                    Our Treatment
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/products"
+                    className="block px-4 py-2 hover:bg-blue-100"
+                  >
+                    Product
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/appointment"
+                    className="block px-4 py-2 hover:bg-blue-100"
+                  >
+                    Appointment
+                  </a>
+                </li>
+                <li>
+                  <a href="/blog" className="block px-4 py-2 hover:bg-blue-100">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/aboutus"
+                    className="block px-4 py-2 hover:bg-blue-100"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contactus"
+                    className="block px-4 py-2 hover:bg-blue-100"
+                  >
+                    Contact Us
+                  </a>
+                </li>
               </ul>
             </div>
           )}
@@ -70,7 +113,10 @@ const Header = () => {
 
         {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white text-3xl focus:outline-none">
+          <button
+            onClick={toggleMenu}
+            className="text-3xl text-white focus:outline-none"
+          >
             ☰
           </button>
         </div>
@@ -78,17 +124,63 @@ const Header = () => {
         {/* Navigation Links */}
         <nav
           className={`absolute md:relative top-16 left-0 md:top-0 md:flex md:items-center md:space-x-6 bg-blue-600 md:bg-transparent w-full md:w-auto ${
-            isMenuOpen ? 'block' : 'hidden'
+            isMenuOpen ? "block" : "hidden"
           }`}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-6 text-white md:text-inherit text-center md:text-left">
-            <li><a href="/" className="hover:text-blue-300 block py-2 md:py-0">Home</a></li>
-            <li><a href="/ourtreat" className="hover:text-blue-300 block py-2 md:py-0">Our Treatment</a></li>
-            <li><a href="/products" className="hover:text-blue-300 block py-2 md:py-0">Product</a></li>
-            <li><a href="/appointment" className="hover:text-blue-300 block py-2 md:py-0">Appointment</a></li>
-            <li><a href="/blog" className="hover:text-blue-300 block py-2 md:py-0">Blog</a></li>
-            <li><a href="/aboutus" className="hover:text-blue-300 block py-2 md:py-0">About Us</a></li>
-            <li><a href="/contactus" className="hover:text-blue-300 block py-2 md:py-0">Contact Us</a></li>
+          <ul className="flex flex-col text-center text-white md:flex-row md:space-x-6 md:text-inherit md:text-left">
+            <li>
+              <a href="/" className="block py-2 hover:text-blue-300 md:py-0">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/ourtreat"
+                className="block py-2 hover:text-blue-300 md:py-0"
+              >
+                Our Treatment
+              </a>
+            </li>
+            <li>
+              <a
+                href="/products"
+                className="block py-2 hover:text-blue-300 md:py-0"
+              >
+                Product
+              </a>
+            </li>
+            <li>
+              <a
+                href="/appointment"
+                className="block py-2 hover:text-blue-300 md:py-0"
+              >
+                Appointment
+              </a>
+            </li>
+            <li>
+              <a
+                href="/blog"
+                className="block py-2 hover:text-blue-300 md:py-0"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a
+                href="/aboutus"
+                className="block py-2 hover:text-blue-300 md:py-0"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contactus"
+                className="block py-2 hover:text-blue-300 md:py-0"
+              >
+                Contact Us
+              </a>
+            </li>
           </ul>
         </nav>
       </div>

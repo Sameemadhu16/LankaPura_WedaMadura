@@ -1,96 +1,61 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-// const Card = ({ title, description, image, link }) => {
-//   return (
-//     <Link to={link}>
-//       <div className="flip-box">
-//         <div
-//           className="front"
-//           style={{ backgroundImage: `url(${image})` }}
-//         >
-//           <div className="content text-center">
-//             <h2>{title}</h2>
-//           </div>
-//         </div>
-//         <div className="back">
-//           <div className="content">
-//             <h2>{title}</h2>
-//             <p>{description}</p>
-//             <Link to={link}>
-//               <button className="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-800 mt-4">
-//                 Learn More
-//               </button>
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-//     </Link>
-//   );
-// };
+const Cards = () => {
+  const [articles, setArticles] = useState([]);
+  const navigate = useNavigate();
 
-// export default Card;
+  useEffect(() => {
+    fetch("http://localhost:5000/articles/")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Fetched articles:", data.articles);
+        setArticles(data.articles);
+      })
+      .catch((error) => console.error("Error fetching articles:", error));
+  }, []);
 
-
-
-
-
-
-import React from "react";
-import { Link } from "react-router-dom";
-
-const Card = ({ title, description, image, link }) => {
   return (
-    <Link to={link}>
-      <div className="flip-box">
-        <div
-          className="front"
-          style={{ backgroundImage: `url(${image})` }}
-        >
-          <div className="content text-center">
-            <h2>{title}</h2>
-          </div>
-        </div>
-        <div className="back">
-          <div className="content">
-            <h2>{title}</h2>
-            <p>{description}</p>
-            <Link to={link}>
+    <div className="container p-6 mx-auto">
+      <h1 className="mb-8 text-4xl font-bold text-center text-gray-800">Latest Articles</h1>
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+        {articles.map((article) => (
+          <div
+            key={article._id}
+            className="overflow-hidden transition-shadow bg-white border border-gray-200 shadow-lg cursor-pointer rounded-xl hover:shadow-2xl"
+            onClick={() => navigate(`/article/${article._id}`)}
+          >
+            <div className="relative">
+              {article.image && (
+                <img
+                  src={`http://localhost:5000/${article.image.replace("\\", "/")}`}
+                  alt={article.topic}
+                  className="object-cover w-full h-52"
+                />
+              )}
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
+                <h2 className="text-xl font-semibold text-white">{article.topic}</h2>
+              </div>
+            </div>
+            <div className="p-5">
+              <p className="mt-3 text-sm leading-relaxed text-gray-600">
+                {article.description.split(".")[0]}...
+              </p>
               <button
-                style={{
-                  backgroundImage: "linear-gradient(to right, #00C853, #1B5E20)", // Bright green to dark green
-                  color: "white",
-                  padding: "0.5rem 1rem", // Reduced padding
-                  borderRadius: "1rem",
-                  fontWeight: "600",
-                  fontSize: "0.875rem", // Slightly smaller font size
-                  transition: "all 0.3s ease",
-                  marginTop: "0.5rem", // Slightly below the content
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Stronger shadow for emphasis
-                  border: "none", // Removes border for a clean look
-                  cursor: "pointer",
-                }}
-                onMouseOver={(e) => {
-                  e.target.style.backgroundImage =
-                    "linear-gradient(to right, #1B5E20, #00C853)"; // Reverse gradient on hover
-                }}
-                onMouseOut={(e) => {
-                  e.target.style.backgroundImage =
-                    "linear-gradient(to right, #00C853, #1B5E20)"; // Original gradient
+                className="w-full px-5 py-2 mt-4 text-white transition-all bg-blue-600 rounded-lg shadow-md hover:bg-blue-700"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate(`/article/${article._id}`);
                 }}
               >
-                Learn More
+                Read More
               </button>
-            </Link>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    </Link>
+    </div>
   );
 };
 
-export default Card;
-
-
-
-
+export default Cards;

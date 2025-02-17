@@ -1,29 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from "../assets/Logo.png";
 
-const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full p-4 z-50 ${
-        isScrolled ? "bg-gray-900/80 shadow-lg" : "bg-transparent"
-      } transition-all duration-300`}
-    >
+    <header className="fixed top-0 left-0 z-50 w-full p-4 transition-all duration-300 bg-gray-500 shadow-lg">
       <div className="container flex items-center justify-between mx-auto">
         {/* Logo with Text */}
         <div className="flex items-center space-x-4">
@@ -55,8 +41,7 @@ const Header = () => {
           </button>
           {isMenuOpen && (
             <div className="absolute right-0 z-50 w-48 mt-2 bg-white rounded-lg shadow-lg">
-              <ul className="text-white">
-
+              <ul className="text-gray-900">
                 <li>
                   <a href="/" className="block px-4 py-2 hover:bg-blue-100">
                     Home
@@ -124,7 +109,7 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav
-          className={`absolute md:relative top-16 left-0 md:top-0 md:flex md:items-center md:space-x-6 bg-blue-600 md:bg-transparent w-full md:w-auto ${
+          className={`absolute md:relative top-16 left-0 md:top-0 md:flex md:items-center md:space-x-6 bg-gray-900 md:bg-transparent w-full md:w-auto ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
@@ -189,4 +174,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header2;
