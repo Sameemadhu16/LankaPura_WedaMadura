@@ -1,12 +1,12 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png";
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function migraine() {
+export default function infertility() {
   return (
     <div>
-      
+     
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function migraine() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 25%; /* Adjust size to cover the right side */
+            width: 35%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,17 +136,24 @@ export default function migraine() {
               fontSize: "3rem",
             }}
           >
-            Migraine
+            Infertility
+
           </h1>
         </div>
 
+        {/* Curved Image on the Right */}
+        {/* <img
+          src={kidneyImage} // Replace with the image path
+          alt="Curved Right Image"
+          className="curved-image"
+        /> */}
       </main>
 
       <section
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "860px", // Set the height to 500px
+          height: "1150px", // Set the height to 500px
         }}
       >
         <h2
@@ -159,7 +166,8 @@ export default function migraine() {
             fontSize: "3rem",
           }}
         >
-          Migraine
+          Infertility
+
         </h2>
         <p
           style={{
@@ -169,14 +177,13 @@ export default function migraine() {
             fontSize: "1.2rem",
           }}
         >
-          A migraine can cause severe throbbing pain or a pulsing sensation, usually on
-           one side of the head. It’s often accompanied by nausea, vomiting, and extreme 
-           sensitivity to light and sound. Migraine attacks can last for hours to days, 
-           and the pain can be so severe that it interferes with your daily activities. 
-           For some people, a warning symptom known as an aura occurs before or with the 
-           headache. An aura can include visual disturbances, such as flashes of light 
-           or blind spots, or other disturbances, such as tingling on one side of the 
-           face or in an arm or leg and difficulty speaking.
+          Infertility is defined as trying to get pregnant (with frequent intercourse) 
+          for at least a year with no success. Female infertility, male infertility 
+          or a combination of the two affects millions of couples. An estimated 10 to 18 
+          percent of couples have trouble getting pregnant or having a successful delivery. 
+          Infertility results from female factors about one-third of the time and male 
+          factors about one-third of the time. The cause is either unknown or a combination
+          of male and female factors in the remaining cases.
         </p>
 
         <h2
@@ -194,13 +201,9 @@ export default function migraine() {
             fontWeight: 400,
           }}
         >
-          <li>A severe headache</li>
-          <li>Constipation</li>
-          <li>Mood changes, from depression to euphoria</li>
-          <li>Food cravings</li>
-          <li>Neck stiffness</li>
-          <li>Increased thirst and urination</li>
-          <li>Frequent yawning</li>
+          <li>Main symptom is not getting pregnant.</li>
+          <li>A menstrual cycle that’s too long (35 days or more), too short (less than 21 days)</li>
+          <li>A man with infertility may have some signs of hormonal problems, such as changes in hair growth or sexual function.</li>
           
         </ul>
 
@@ -212,19 +215,58 @@ export default function migraine() {
             fontSize: "2rem",
           }}
         >
-          4 Stages of a migraine
+          When you need {" "}
+          <span style={{ color: "#006400" }}>treatments</span>?
+        </h2>
+
+
+        <p
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          You probably don’t need to go for treatments or advice about infertility unless 
+          you have been trying regularly to get pregnant for at least one year.
+          A woman should go for treatments or advice if,
+        </p>
+
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
+          <li>Age 35 or older and have been trying to conceive for six months or longer</li>
+          <li>Over age 40</li>
+          <li>Have irregular or absent periods</li>
+          <li>Have very painful periods</li>
+          <li>Have known fertility problems</li>
+          <li>Have been diagnosed with endometriosis or pelvic inflammatory disease</li>
+          <li>Have had multiple miscarriages</li>
+          <li>Have undergone treatment for cancer</li>
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          A man should go for treatments or advice if,
         </h2>
 
         <ul
           style={{
             fontWeight: 400,
-          }}        
+          }}
         >
-          <li>Prodromal stage – Change in mood/energy levels/behavior and appetite</li>
-          <li>Aura – Usually visual problems</li>
-          <li>Headache stage – Pulsation pain on usually one side of the head</li>
-          <li>Resolution stage – Above symptoms gradually fade away but may feel tires for few days afterwards</li>
-          
+          <li>A low sperm counts or other problems with sperm</li>
+          <li>A history of testicular, prostate or sexual problems</li>
+          <li>Undergone treatment for cancer</li>
+          <li>Small testicles or swelling in the scrotum</li>
+          <li>Others in your family with infertility problems</li>
+
         </ul>
 
         {/* Plant Image */}

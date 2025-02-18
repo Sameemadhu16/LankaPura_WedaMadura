@@ -1,12 +1,12 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png";
 
-export default function covid19() {
+export default function nsd() {
   return (
     <div>
-
+    
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function covid19() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 20%; /* Adjust size to cover the right side */
+            width: 35%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,23 +136,18 @@ export default function covid19() {
               fontSize: "3rem",
             }}
           >
-            Covid 19
+            Nervous System Diseases
           </h1>
         </div>
 
-        {/* Curved Image on the Right */}
-        {/* <img
-          src={kidneyImage} // Replace with the image path
-          alt="Curved Right Image"
-          className="curved-image"
-        /> */}
+       
       </main>
 
       <section
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "500px", // Set the height to 500px
+          height: "1250px", // Set the height to 500px
         }}
       >
         <h2
@@ -165,7 +160,7 @@ export default function covid19() {
             fontSize: "3rem",
           }}
         >
-          Covid 19
+          Nervous System Diseases
         </h2>
 
 
@@ -173,48 +168,102 @@ export default function covid19() {
           style={{
             fontFamily: "'Playfair Display SC', serif",
             fontWeight: 500,
-            marginTop: "50px", // Additional margin for the second line
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
           }}
         >
-          What is this {" "}
-          <span style={{ color: "#006400" }}>EPIREPIES</span>?
+          Principal organs of the nervous system
         </h2>
 
         <p
           style={{
-            
             fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
+          }}        
         >
-          Epirepies is a Natural Herbal Medicine, Containing the Extracts 
-          of Timeless Medicinal Herbs. It Aids the Body in Curing Ailments 
-          such as Phlegm, Dry Cough, Shortness of Breath, Runny Nose and 
-          Pulmonary Fibrosis. This Natural Formulation is Especially 
-          Capable of Boosting the immunity system to help prevent corona virus. 
-          This herbal medicine is suitable for children, older people and pregnant women alike.
+          –Eyes –Ears –Sensory organs of taste – Sensory organs of smell
+        </p>
+
+        <p
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          –Sensory receptors in skin, joints, muscles and other parts of the body
         </p>
 
 
         <p
           style={{
-            
             fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
+          }}        
         >
-          EPIREPIES”, The drug manufactured against the COVID 19 virus, 
-          was launched few months ago with MP Sisira Jayakody, the State 
-          Minister of Indigenous Medicine, Rural and Ayurveda Hospital 
-          Development and Community Health in Sri Lanka.
+          Nervous system disease or disorders that affect the functioning 
+          of the human nervous system. Everything that human’s sense, consider, 
+          and effect and all the unlearned reflexes of the body depend on 
+          the functioning of the nervous system. The skeleton and muscles 
+          support and transport the body, and the digestive system, heart, 
+          and lungs provide nutrients; but the nervous system contains the 
+          epitome of the human—the mind—and commands all perception, thought, 
+          and action. Disturbance or malfunction of the functions of the nervous 
+          system causes changes felt throughout the body.
         </p>
 
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Symptoms
+        </h2>
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
+          <li>Persistent or sudden onset of a headache</li>
+          <li>A headache that changes or is different</li>
+          <li>Loss of feeling or tingling</li>
+          <li>Weakness or loss of muscle strength</li>
+          <li>Loss of sight or double vision</li>
+          <li>Memory loss</li>
+          <li>Impaired mental ability</li>
+          <li>Lack of coordination</li>
+          <li>Muscle rigidity</li>
+          <li>Tremors and seizures</li>
+          <li>Back pain which radiates to the feet, toes, or other parts of the body</li>
+          <li>Muscle wasting and slurred speech</li>
+          <li>New language impairment (expression or comprehension)</li>
+         
+        </ul>
 
-        
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Your nervous system can be  {" "}
+          <span style={{ color: "#006400" }}>damaged</span>{" "}by the followings
+        </h2>
+
+        <ul
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          <li>Injury</li>
+          <li>Infections</li>
+          <li>Degeneration</li>
+          <li>Tumors</li>
+          <li>Blood flow disruption</li>
+          <li>Autoimmune disorders</li>
+          
+        </ul>
 
         {/* Plant Image */}
         <img
@@ -223,8 +272,7 @@ export default function covid19() {
           className="right-image"
         />
       </section>
-
-      {/* <Footer /> */}
+   
     </div>
   )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function alltypeofcancers() {
+export default function diabetic() {
   return (
     <div>
-
+     
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function alltypeofcancers() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 40%; /* Adjust size to cover the right side */
+            width: 35%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,23 +136,18 @@ export default function alltypeofcancers() {
               fontSize: "3rem",
             }}
           >
-            All type of cancers
+            Diabetic
           </h1>
         </div>
 
-        {/* Curved Image on the Right */}
-        {/* <img
-          src={kidneyImage} // Replace with the image path
-          alt="Curved Right Image"
-          className="curved-image"
-        /> */}
+
       </main>
 
       <section
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1900px", // Set the height to 500px
+          height: "1250px", // Set the height to 500px
         }}
       >
         <h2
@@ -165,7 +160,7 @@ export default function alltypeofcancers() {
             fontSize: "3rem",
           }}
         >
-          All type of cancers
+          Diabetic
         </h2>
         <p
           style={{
@@ -175,12 +170,12 @@ export default function alltypeofcancers() {
             fontSize: "1.2rem",
           }}
         >
-          Cancer is an umbrella term for a large group of diseases caused 
-          when abnormal cells divide rapidly and uncontrollably, and spread to other 
-          tissue and organs destroying them. This can create in anywhere of the 
-          human body and spread throughout the body. Cancer is the second-leading
-          cause of death in the world. But survival rates are improving for many types
-          of cancer, thanks to improvements in cancer screening and cancer treatment.
+          Diabetes mellitus, commonly known as diabetes, is a metabolic disease that 
+          causes high blood sugar. The hormone insulin moves sugar from the blood 
+          into your cells to be stored or used for energy. With diabetes, your body 
+          either doesn’t make enough insulin or can’t effectively use the insulin it 
+          does make. Untreated high blood sugar from diabetes can damage your nerves, 
+          eyes, kidneys, and other organs.
         </p>
 
         <h2
@@ -193,69 +188,87 @@ export default function alltypeofcancers() {
         >
           Symptoms
         </h2>
-
-        <p
-          style={{
-            fontWeight: 400,
-          }}        
-        >
-          Signs and symptoms caused by cancer may vary according to which part of the body 
-          is affected. Some general signs and symptoms associated with, but not specific to 
-          cancer are there. These symptoms may also often cause by illness, injury, benign tumors, 
-          or other problems. If you have symptoms that do not get better after a few weeks, 
-          see your doctor so that problems can be diagnosed and treated as early as possible 
-          for a speedy recovery. Often, cancer does not cause pain, so do not wait to feel pain 
-          before going for a test.
-          Some of the symptoms that cancer may cause include:
-        </p>
-
         <ul
           style={{
             fontWeight: 400,
           }}
         >
-          <li>Breast changes</li>
-          <li>Lump or firm feeling in your breast or under your arm</li>
-          <li>Nipple changes or discharge</li>
-          <li>Skin that is itchy, red, scaly, dimpled, or puckered</li>
-          <li>Bladder changes</li>
-          <li>Trouble urinating</li>
-          <li>Pain when urinating</li>
-          <li>Blood in the urine</li>
-          <li>Bleeding or bruising, for no known reason</li>
-          <li>Bowel changes</li>
-          <li>Blood in the stools</li>
-          <li>Changes in bowel habits</li>
-          <li>Cough or hoarseness that does not go away</li>
-          <li>Eating problems</li>
-          <li>Pain after eating (heartburn or indigestion that doesn’t go away)</li>
-          <li>Trouble swallowing</li>
-          <li>Belly pain</li>
-          <li>Nausea and vomiting</li>
-          <li>Appetite changes</li>
-          <li>Fatigue that is severe and lasts</li>
-          <li>Fever or night sweats for no known reason</li>
-          <li>Mouth changes</li>
-          <li>A white or red patch on the tongue or in your mouth</li>
-          <li>Bleeding, pain, or numbness in the lip or mouth</li>
-          <li>Neurological problems</li>
-          <li>Headaches</li>
-          <li>Seizures</li>
-          <li>Vision changes</li>
-          <li>Hearing changes</li>
-          <li>Drooping of the face</li>
-          <li>Skin changes</li>
-          <li>A flesh-colored lump that bleeds or turns scaly</li>
-          <li>A new mole or a change in an existing mole</li>
-          <li>A sore that does not heal</li>
-          <li>Jaundice (yellowing of the skin and whites of the eyes)</li>
-          <li>Swelling or lumps anywhere such as in the neck, underarm, stomach, and groin Weight gain or weight loss for no known reason</li>
-          <li>Blood in the stools</li>
-          <li>Changes in bowel habits</li>
-          <li>Cough or hoarseness that does not go away</li>
-          <li>Eating problems</li>
+          <li>Increased hunger</li>
+          <li>Increased thirst</li>
+          <li>Weight loss</li>
+          <li>Frequent urination</li>
+          <li>Blurry vision</li>
+          <li>Irritability</li>
+          <li>Extreme fatigue</li>
+          <li>Sores that don’t heal</li>
+          <li>Frequent infections, such as gums or skin infections and vaginal infections</li>
+          
         </ul>
 
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          When you need {" "}
+          <span style={{ color: "#006400" }}>medical advice</span>
+        </h2>
+
+        <ul
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          <li>If you suspect, you or your child may have diabetes.</li>
+          <li>If you have already been diagnosed with diabetes.</li>
+        </ul>
+          <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Risk Factors
+        </h2>
+        <ul
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          <li>Family history – If a parent or sibling have diabetes</li>
+          <li>Environmental factors such as exposure to some viral illness</li>
+          <li>Geography- Some countries such as Finland and Sweden have higher risk of diabetes</li>
+          <li>Over weight</li>
+          <li>Inactivity</li>
+          <li>High blood pressure</li>
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Prevention
+        </h2>
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
+          <li>Consume healthy food</li>
+          <li>Engage in more physical activities</li>
+          <li>Avoid your body getting overweight</li>
+          
+        </ul>
 
         {/* Plant Image */}
         <img
@@ -265,7 +278,7 @@ export default function alltypeofcancers() {
         />
       </section>
 
-      {/* <Footer /> */}
+      {/* <Footer /> */}      
     </div>
   )
 }

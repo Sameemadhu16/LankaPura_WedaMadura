@@ -1,12 +1,12 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png";
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function lunginfection() {
+export default function leptospirosis() {
   return (
     <div>
-     
+      
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function lunginfection() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 20%; /* Adjust size to cover the right side */
+            width: 30%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,9 +136,10 @@ export default function lunginfection() {
               fontSize: "3rem",
             }}
           >
-            Lung Infection
+            Leptospirosis
           </h1>
         </div>
+
 
       </main>
 
@@ -146,7 +147,7 @@ export default function lunginfection() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "720px", // Set the height to 500px
+          height: "950px", // Set the height to 500px
         }}
       >
         <h2
@@ -159,7 +160,7 @@ export default function lunginfection() {
             fontSize: "3rem",
           }}
         >
-          Lung Infection
+          Leptospirosis
         </h2>
         <p
           style={{
@@ -169,15 +170,13 @@ export default function lunginfection() {
             fontSize: "1.2rem",
           }}
         >
-          Pneumonia is an infection of the lungs that may be caused by bacteria, 
-          viruses, or fungi. The infection causes the lungs’ air sacs (alveoli) 
-          to become inflamed and fill up with fluid or pus. That can make it hard 
-          for the oxygen you breathe in to get into your bloodstream. The symptoms 
-          of pneumonia can range from mild to severe, and include cough, fever, 
-          chills, and trouble breathing. Many factors affect how serious a case of 
-          pneumonia is, such as the type of germ causing the lung infection, the 
-          person’s age, and their overall health. The people most at risk are infants 
-          and young children, adults 65 or older, and people who have other health problems.
+          Leptospirosis is a relatively rare bacterial infection that affects 
+          people and animals. It can pass from animals to humans when an unhealed 
+          break in the skin comes in contact with water or soil where animal urine 
+          is present. It can progress to conditions such as Weil’s disease or 
+          meningitis, which can be fatal. The condition does not usually pass from 
+          one person to another.
+          
         </p>
 
         <h2
@@ -190,21 +189,59 @@ export default function lunginfection() {
         >
           Symptoms
         </h2>
+        <p
+          style={{
+            
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
+        >
+          The signs and symptoms of leptospirosis usually appear suddenly, 
+          about 5 to 14 days after infection. However, the incubation 
+          period can range from 2 to 30 days, according to the CDC.
+          
+        </p>
         <ul
           style={{
             fontWeight: 400,
           }}
         >
-          <li>Cough, which may produce greenish, yellow or even bloody mucus</li>
-          <li>Fever, sweating and shaking chills</li>
-          <li>Shortness of breath</li>
-          <li>Rapid, shallow breathing</li>
-          <li>Sharp or stabbing chest pain that gets worse when you breathe deeply or cough</li>
-          <li>Loss of appetite, low energy, and fatigue</li>
-          <li>Nausea and vomiting, especially in small children</li>
-          <li>Confusion, especially in older people</li>   
+          <li>A fever that may spike to 104F</li>
+          <li>Coughing</li>
+          <li>Diarrhea, vomiting or both</li>
+          <li>Headache</li>
+          <li>Muscle pain, particularly lower back and calves</li>
+          <li>Skin rash</li>
+          <li>Red and irritated eyes</li>
+          <li>Jaundice</li>       
         </ul>
-        
+
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          How we can prevent from  {" "}
+          <span style={{ color: "#006400" }}>Leptospirosis</span>
+        </h2>
+
+        <ul
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          <li>Avoid contaminated water</li>
+          <li>Keep away from infected animals, especially wild rats</li>
+          <li>Be aware of the surrounding you live and especially when you travel</li>
+          <li>Always keep cleanliness (Use disinfectant / sanitize hands)</li>
+        </ul>
+
+
         {/* Plant Image */}
         <img
           src={plantImage}
@@ -213,7 +250,7 @@ export default function lunginfection() {
         />
       </section>
 
-      {/* <Footer /> */}
+      {/* <Footer /> */}  
     </div>
   )
 }

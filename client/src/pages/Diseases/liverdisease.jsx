@@ -1,9 +1,9 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function itp() {
+export default function liverdisease() {
   return (
     <div>
      
@@ -30,7 +30,7 @@ export default function itp() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 25%; /* Adjust size to cover the right side */
+            width: 35%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,7 +136,7 @@ export default function itp() {
               fontSize: "3rem",
             }}
           >
-            I.T.P
+            Liver Disease
           </h1>
         </div>
 
@@ -152,7 +152,7 @@ export default function itp() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "850px", // Set the height to 500px
+          height: "1000px", // Set the height to 500px
         }}
       >
         <h2
@@ -165,27 +165,56 @@ export default function itp() {
             fontSize: "3rem",
           }}
         >
-          I.T.P
+          Liver Disease
         </h2>
         <p
           style={{
-            
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
             fontSize: "1.2rem",
           }}
         >
-          I.T.P is an immune disorder in which the blood doesn’t clot normally. 
-          This is a blood disorder characterized by a decrease in the number of 
-          platelets in the blood. This condition is now more commonly referred 
-          to as immune thrombocytopenia (ITP). ITP can cause excessive bruising 
-          and bleeding. An unusually low level of platelets, or thrombocytes, 
-          in the blood results in ITP. Platelets are produced in the bone marrow. 
-          They help stop bleeding by clumping together to form a clot that seals 
-          cut or small tears in blood vessel walls and tissues. If your blood 
-          doesn’t have enough platelets, it’s slow to clot. Internal bleeding 
-          or bleeding on or under the skin can result.
+          Your liver is the largest organ inside your body which performs hundreds 
+          of tasks related to metabolism, energy storage, and detoxification of waste. 
+          It helps your body digest food, store energy, and remove poisons and store the energy until you need it.
+          Liver disease is a general term that refers to any condition affecting your liver. These conditions
+          may develop for different reasons, but they can all damage your liver and impact its function.
         </p>
+        
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Liver Disease Types
+        </h2>
+
+        <p
+          style={{
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
+        >
+          Liver diseases are categorized as follows,
+        </p>
+
+        <ul
+          style={{
+            fontWeight: 400,
+            
+          }}        
+        >
+          <li>Diseases caused by viruses, such as hepatitis A, hepatitis B, and hepatitis C</li>
+          <li>Diseases caused by drugs, poisons, or too much alcohol. Examples include fatty liver disease and cirrhosis</li>
+          <li>Liver cancer</li>
+          <li>Inherited diseases, such as hemochromatosis and Wilson disease</li>
+          
+        </ul>
 
         <h2
           style={{
@@ -197,38 +226,34 @@ export default function itp() {
         >
           Symptoms
         </h2>
-        <ul
-          style={{
-            fontWeight: 400,
-          }}
-        >
-          <li>Bruising easily</li>
-          <li>Pinpoint-sized Petechiae, often on the lower legs</li>
-          <li>Spontaneous nosebleeds</li>
-          <li>Bleeding from the gums (for example, during dental work)</li>
-          <li>Blood in the urine</li>
-          <li>Blood in the stool</li>
-          <li>Internal bleeding</li>
-          <li>Abnormally heavy or long menstruation</li>
-          <li>Prolonged bleeding from cuts</li>
-          <li>Profuse bleeding during surgery</li>
-         
-        </ul>
-
         <p
           style={{
             fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
+        >
+          Liver disease symptoms vary, depending on the underlying cause. 
+          However, there are some general symptoms that may indicate some kind of liver disease.
+        </p>
+        <ul
+          style={{
+            fontWeight: 400,
+            
           }}        
         >
-          Normally, a person who appears to have been cured of ITP 
-          will experience a relapse, perhaps months or even years 
-          after the initial episode. If this happens the person will 
-          need repeat treatment. In most cases, the relapse seems to 
-          be triggered by a viral infection.
-
-        </p>
-
-        
+          <li>Yellow skin and eyes, known as jaundice</li>
+          <li>Dark urine</li>
+          <li>Pale, bloody, or black stool</li>
+          <li>Swollen ankles, legs, or abdomen</li>
+          <li>Nausea</li>
+          <li>Vomiting</li>
+          <li>Decreased appetite</li>
+          <li>Ongoing fatigue</li>
+          <li>Itchy skin</li>
+          <li>Easy bruising</li>
+          
+        </ul>
 
         {/* Plant Image */}
         <img
@@ -239,7 +264,6 @@ export default function itp() {
       </section>
 
       {/* <Footer /> */}
-
     </div>
   )
 }

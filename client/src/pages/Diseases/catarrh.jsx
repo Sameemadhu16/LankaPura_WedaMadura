@@ -1,12 +1,12 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png";
 
-export default function diabetic() {
+export default function catarrh() {
   return (
     <div>
-     
+
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function diabetic() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 35%; /* Adjust size to cover the right side */
+            width: 30%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,10 +136,9 @@ export default function diabetic() {
               fontSize: "3rem",
             }}
           >
-            Diabetic
+            Catarrh
           </h1>
         </div>
-
 
       </main>
 
@@ -147,7 +146,7 @@ export default function diabetic() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1250px", // Set the height to 500px
+          height: "1000px", // Set the height to 500px
         }}
       >
         <h2
@@ -160,7 +159,7 @@ export default function diabetic() {
             fontSize: "3rem",
           }}
         >
-          Diabetic
+          Catarrh
         </h2>
         <p
           style={{
@@ -170,13 +169,15 @@ export default function diabetic() {
             fontSize: "1.2rem",
           }}
         >
-          Diabetes mellitus, commonly known as diabetes, is a metabolic disease that 
-          causes high blood sugar. The hormone insulin moves sugar from the blood 
-          into your cells to be stored or used for energy. With diabetes, your body 
-          either doesn’t make enough insulin or can’t effectively use the insulin it 
-          does make. Untreated high blood sugar from diabetes can damage your nerves, 
-          eyes, kidneys, and other organs.
+          The term catarrh, or postnasal drip, describes a buildup of mucus in 
+          the back of the nose, throat, or sinuses. Mucus is a slippery, fluid 
+          substance that the mucus glands in the nose and throat produce. It helps 
+          moisten the nasal passages while trapping any debris, viruses, or bacteria 
+          a person inhale. This helps prevent pathogens from getting into the body, 
+          where they could cause an infection.
         </p>
+
+        
 
         <h2
           style={{
@@ -193,60 +194,19 @@ export default function diabetic() {
             fontWeight: 400,
           }}
         >
-          <li>Increased hunger</li>
-          <li>Increased thirst</li>
-          <li>Weight loss</li>
-          <li>Frequent urination</li>
-          <li>Blurry vision</li>
-          <li>Irritability</li>
-          <li>Extreme fatigue</li>
-          <li>Sores that don’t heal</li>
-          <li>Frequent infections, such as gums or skin infections and vaginal infections</li>
-          
-        </ul>
-
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          When you need {" "}
-          <span style={{ color: "#006400" }}>medical advice</span>
-        </h2>
-
-        <ul
-          style={{
-            fontWeight: 400,
-          }}        
-        >
-          <li>If you suspect, you or your child may have diabetes.</li>
-          <li>If you have already been diagnosed with diabetes.</li>
-        </ul>
-          <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Risk Factors
-        </h2>
-        <ul
-          style={{
-            fontWeight: 400,
-          }}        
-        >
-          <li>Family history – If a parent or sibling have diabetes</li>
-          <li>Environmental factors such as exposure to some viral illness</li>
-          <li>Geography- Some countries such as Finland and Sweden have higher risk of diabetes</li>
-          <li>Over weight</li>
-          <li>Inactivity</li>
-          <li>High blood pressure</li>
+          <li>Rasping or gurgling when talking</li>
+          <li>Tickling feeling of mucus draining into the throat</li>
+          <li>Feeling as though there is a lump in the throat</li>
+          <li>Having to clear the throat frequently</li>
+          <li>Coughing</li>
+          <li>Having to swallow frequently</li>
+          <li>Difficulty swallowing</li>
+          <li>A sore throat</li>
+          <li>A blocked or stuffy nose</li>
+          <li>A headache</li>
+          <li>Facial pain</li>
+          <li>A loss of taste or smell</li>
+          <li>Difficulty of sleeping</li>
         </ul>
 
         <h2
@@ -257,18 +217,26 @@ export default function diabetic() {
             fontSize: "2rem",
           }}
         >
-          Prevention
+          Can we prevent {" "}
+          <span style={{ color: "#006400" }}>Catarrh</span>?
         </h2>
-        <ul
+
+        <p
           style={{
+            
             fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
           }}
         >
-          <li>Consume healthy food</li>
-          <li>Engage in more physical activities</li>
-          <li>Avoid your body getting overweight</li>
-          
-        </ul>
+          It is recommended that you avoid things which can trigger catarrh 
+          (such as smoky places or allergens) and take sips of cold water when 
+          you feel the need to clear your throat. It is important to note that 
+          constantly clearing your throat may make things worse. Catarrh can 
+          also be caused by warm and dry atmospheres like air conditioning or 
+          car heating. So, if you can avoid these environments, combined with 
+          staying well hydrated should help.
+        </p>
 
         {/* Plant Image */}
         <img
@@ -278,7 +246,7 @@ export default function diabetic() {
         />
       </section>
 
-      {/* <Footer /> */}      
+      {/* <Footer /> */}
     </div>
   )
 }

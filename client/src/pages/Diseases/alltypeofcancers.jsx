@@ -1,12 +1,12 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; 
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function sciatica() {
+export default function alltypeofcancers() {
   return (
     <div>
-     
+
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function sciatica() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 35%; /* Adjust size to cover the right side */
+            width: 40%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,7 +136,7 @@ export default function sciatica() {
               fontSize: "3rem",
             }}
           >
-            Sciatica
+            All type of cancers
           </h1>
         </div>
 
@@ -152,7 +152,7 @@ export default function sciatica() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1300px", // Set the height to 500px
+          height: "1900px", // Set the height to 500px
         }}
       >
         <h2
@@ -165,7 +165,7 @@ export default function sciatica() {
             fontSize: "3rem",
           }}
         >
-          Sciatica
+          All type of cancers
         </h2>
         <p
           style={{
@@ -175,12 +175,12 @@ export default function sciatica() {
             fontSize: "1.2rem",
           }}
         >
-          Sciatica refers to pain that radiates along the path of the sciatic 
-          nerve, which branches from your lower back through your hips and 
-          buttocks and down each leg. Typically, sciatica affects only one 
-          side of your body. The most common cause is a herniated or slipped 
-          disk that causes pressure on the nerve root. This causes inflammation, 
-          pain and often some numbness in the affected leg.
+          Cancer is an umbrella term for a large group of diseases caused 
+          when abnormal cells divide rapidly and uncontrollably, and spread to other 
+          tissue and organs destroying them. This can create in anywhere of the 
+          human body and spread throughout the body. Cancer is the second-leading
+          cause of death in the world. But survival rates are improving for many types
+          of cancer, thanks to improvements in cancer screening and cancer treatment.
         </p>
 
         <h2
@@ -193,102 +193,69 @@ export default function sciatica() {
         >
           Symptoms
         </h2>
-        <ul
-          style={{
-            fontWeight: 400,
-          }}
-        >
-          <li>Lower back pain</li>
-          <li>Pain in the rear or leg that is worse when sitting</li>
-          <li>Hip pain</li>
-          <li>Burning or tingling down the leg</li>
-          <li>Weakness, numbness, or a hard time moving the leg or foot</li>
-          <li>A constant pain on one side of the rear</li>
-          <li>A shooting pain that makes it hard to stand up</li>
-          
-        </ul>
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-         
-          <span style={{ color: "#006400" }}>Sciatica</span>{" "} pain feel like
-        </h2>
 
         <p
           style={{
             fontWeight: 400,
           }}        
         >
-          People describe sciatica pain in different ways, 
-          it depends on its cause. Some people describe the 
-          pain as sharp, shooting or jolts of pain. While 
-          some describe this pain as “burning,” “electric” or “stabbing.”
-        </p>
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Are you at a risk of{" "}
-          <span style={{ color: "#006400" }}>Sciatica</span>?
-        </h2>
-
-        <p
-          style={{
-            fontWeight: 400,
-          }}        
-        >
-          If you have following factors, you have a greater risk,
+          Signs and symptoms caused by cancer may vary according to which part of the body 
+          is affected. Some general signs and symptoms associated with, but not specific to 
+          cancer are there. These symptoms may also often cause by illness, injury, benign tumors, 
+          or other problems. If you have symptoms that do not get better after a few weeks, 
+          see your doctor so that problems can be diagnosed and treated as early as possible 
+          for a speedy recovery. Often, cancer does not cause pain, so do not wait to feel pain 
+          before going for a test.
+          Some of the symptoms that cancer may cause include:
         </p>
 
         <ul
           style={{
             fontWeight: 400,
-          }}        
-        >
-          <li>Have or previously had an injury to your lower back or spine</li>
-          <li>When a person gets old</li>
-          <li>Overweight</li>
-          <li>Lack a strong core</li>
-          <li>Doing jobs that require heavy lifting</li>
-          <li>Incorrect posture</li>
-          <li>Have diabetes or Osteoarthritis</li>
-          <li>Inactive lifestyle</li>
-          <li>Smoking</li>
-        </ul>
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
           }}
         >
-          Is the {" "}
-          <span style={{ color: "#006400" }}>increase of weight of a pregnant person</span>{" "}also a reason?
-        </h2>
+          <li>Breast changes</li>
+          <li>Lump or firm feeling in your breast or under your arm</li>
+          <li>Nipple changes or discharge</li>
+          <li>Skin that is itchy, red, scaly, dimpled, or puckered</li>
+          <li>Bladder changes</li>
+          <li>Trouble urinating</li>
+          <li>Pain when urinating</li>
+          <li>Blood in the urine</li>
+          <li>Bleeding or bruising, for no known reason</li>
+          <li>Bowel changes</li>
+          <li>Blood in the stools</li>
+          <li>Changes in bowel habits</li>
+          <li>Cough or hoarseness that does not go away</li>
+          <li>Eating problems</li>
+          <li>Pain after eating (heartburn or indigestion that doesn’t go away)</li>
+          <li>Trouble swallowing</li>
+          <li>Belly pain</li>
+          <li>Nausea and vomiting</li>
+          <li>Appetite changes</li>
+          <li>Fatigue that is severe and lasts</li>
+          <li>Fever or night sweats for no known reason</li>
+          <li>Mouth changes</li>
+          <li>A white or red patch on the tongue or in your mouth</li>
+          <li>Bleeding, pain, or numbness in the lip or mouth</li>
+          <li>Neurological problems</li>
+          <li>Headaches</li>
+          <li>Seizures</li>
+          <li>Vision changes</li>
+          <li>Hearing changes</li>
+          <li>Drooping of the face</li>
+          <li>Skin changes</li>
+          <li>A flesh-colored lump that bleeds or turns scaly</li>
+          <li>A new mole or a change in an existing mole</li>
+          <li>A sore that does not heal</li>
+          <li>Jaundice (yellowing of the skin and whites of the eyes)</li>
+          <li>Swelling or lumps anywhere such as in the neck, underarm, stomach, and groin Weight gain or weight loss for no known reason</li>
+          <li>Blood in the stools</li>
+          <li>Changes in bowel habits</li>
+          <li>Cough or hoarseness that does not go away</li>
+          <li>Eating problems</li>
+        </ul>
 
-        <p
-          style={{
-            fontWeight: 400,
-          }}        
-        >
-          It’s true that sciatica is common in pregnancy. 
-          But increased weight is not the main reason why 
-          pregnant women get sciatica. It happens because 
-          certain hormones of pregnancy cause a loosening of their ligaments.
-        </p>
 
         {/* Plant Image */}
         <img

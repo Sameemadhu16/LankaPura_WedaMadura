@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png";
 
-export default function kidneydisease() {
+export default function lungdiseases() {
   return (
     <div>
-    
+
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function kidneydisease() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 35%; /* Adjust size to cover the right side */
+            width: 30%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,23 +136,17 @@ export default function kidneydisease() {
               fontSize: "3rem",
             }}
           >
-            Kidney Disease
+            Lung diseases
           </h1>
         </div>
 
-        {/* Curved Image on the Right */}
-        {/* <img
-          src={kidneyImage} // Replace with the image path
-          alt="Curved Right Image"
-          className="curved-image"
-        /> */}
       </main>
 
       <section
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1300px", // Set the height to 500px
+          height: "950px", // Set the height to 500px
         }}
       >
         <h2
@@ -165,7 +159,7 @@ export default function kidneydisease() {
             fontSize: "3rem",
           }}
         >
-          Kidney Disease (C.K.D)
+          Lung diseases
         </h2>
         <p
           style={{
@@ -175,56 +169,23 @@ export default function kidneydisease() {
             fontSize: "1.2rem",
           }}
         >
-          The kidneys are a pair of fist-sized organs located at the bottom of
-          the rib cage. There is one kidney on each side of the spine. Kidneys
-          are essential to having a healthy body. They are mainly responsible for
-          filtering waste products, excess water, and other impurities out of
-          the blood. These toxins are stored in the bladder and then removed during
-          urination. The kidneys also regulate pH, salt, and potassium levels in
-          the body. They produce hormones that regulate blood pressure and control
-          the production of red blood cells. The kidneys even activate a form of
-          vitamin D that helps the body absorb calcium.
+          Lung disease refers to several types of diseases or disorders that 
+          prevent the lungs from functioning properly. Lung disease can affect 
+          respiratory function, or the ability to breathe, and pulmonary function, 
+          which is how well lungs work.
         </p>
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Symptoms
-        </h2>
-        <ul
-          style={{
-            fontWeight: 400,
-          }}
-        >
-          <li>Fatigue</li>
-          <li>Difficulty concentrating</li>
-          <li>Trouble sleeping</li>
-          <li>Poor appetite</li>
-          <li>Muscle cramping</li>
-          <li>Swollen feet/ankles</li>
-          <li>Puffiness around the eyes in the morning</li>
-          <li>Dry, scaly skin</li>
-          <li>Frequent urination, especially late at night</li>
-          <li>Nausea</li>
-          <li>Vomiting</li>
-          <li>Loss of appetite</li>
-          <li>Changes in urine output</li>
-          <li>Fluid retention</li>
-        </ul>
 
         <p
           style={{
+            
             fontWeight: 400,
-          }}        
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
         >
-          But it’s better if you can ask your doctor about getting a blood test
-          for kidney problems. Kidney problems generally don’t cause symptoms
-          until they’re more advanced. So, don’t wait until the last moment.
+          There are many different lung diseases, some of which are caused by 
+          bacterial, viral, or fungal infections. Other lung diseases are associated 
+          with environmental factors, including asthma, mesothelioma, and lung cancer.
         </p>
 
         <h2
@@ -235,8 +196,33 @@ export default function kidneydisease() {
             fontSize: "2rem",
           }}
         >
-          How Can We Prevent{" "}
-          <span style={{ color: "#006400" }}>Kidney Disease</span>?
+          The most common lung diseases
+        </h2>
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
+          <li>Asthma</li>
+          <li>Collapse of part or all of the lung</li>
+          <li>Swelling and inflammation in the main passages (bronchial tubes) that carry air to the lungs (bronchitis)</li>
+          <li>COPD (chronic obstructive pulmonary disease)</li>
+          <li>Lung Cancer</li>
+          <li>Lung infection (pneumonia)</li>
+          <li>Abnormal buildup of fluid in the lungs</li>
+          <li>Blocked lung artery</li>
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          How can we prevent{" "}
+          <span style={{ color: "#006400" }}>lung diseases</span>?
         </h2>
 
         <ul
@@ -244,15 +230,11 @@ export default function kidneydisease() {
             fontWeight: 400,
           }}        
         >
-          <li>Drink plenty of water</li>
-          <li>If you have diabetes, control your blood sugar</li>
-          <li>Control blood pressure</li>
-          <li>Reduce consumption of salt</li>
-          <li>Quit smoking</li>
-          <li>Be careful when taking too much medication (such as aspirin)</li>
-          <li>Limit taking foods containing excessive sodium, animal protein (such
-            as beef and chicken), citric acid (found in lemon, oranges, etc.), and
-            oxalates (found in beets, spinach, chocolate, etc.)</li>
+          <li>Avoid smoking</li>
+          <li>Avoid exposure to indoor pollutants</li>
+          <li>Minimize exposure to air pollution</li>
+          <li>Exercise</li>
+          <li>Go for regular check ups</li>
         </ul>
 
         {/* Plant Image */}
@@ -265,5 +247,5 @@ export default function kidneydisease() {
 
       {/* <Footer /> */}
     </div>
-  );
+  )
 }
