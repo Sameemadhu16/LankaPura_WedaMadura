@@ -21,9 +21,7 @@ import lungdiseasesImage from "../assets/Lung diseases.webp";
 import catarrhImage from "../assets/Catarrh.webp";
 import arthritisImage from "../assets/Arthritis.jpg";
 
-
-import Card from "../components/Card"; // Import Card component
-import "./Aboutus.css"; // Ensure this CSS file exists and includes styles
+import "../css/Aboutus.css"; // Ensure this CSS file exists and includes styles
 
 const Aboutus = () => {
   const cards = [

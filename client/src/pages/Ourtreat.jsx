@@ -21,8 +21,8 @@ import catarrhImage from "../assets/Catarrh.webp";
 import arthritisImage from "../assets/Arthritis.jpg";
 
 
-import Card from "../components/Card"; // Import Card component
-import "./Ourtreat.css"; // Ensure this CSS file exists and includes styles
+import Card from "../components/Ourtreat_Compo/Card"; // Import Card component
+import "../css/Ourtreat.css"; // Ensure this CSS file exists and includes styles
 
 const Ourtreat = () => {
   const cards = [
