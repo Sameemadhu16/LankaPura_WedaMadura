@@ -3,6 +3,8 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import appointmentRoutes from './routes/appointment.route.js';
+import productRoutes from './routes/productRoutes.js';  
+
 
 dotenv.config();
 
@@ -25,3 +27,4 @@ app.listen(process.env.PORT,() =>{
 });
 
 app.use('/api/appointments', appointmentRoutes);
+app.use('/api/products', productRoutes);
