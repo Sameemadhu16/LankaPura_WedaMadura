@@ -115,9 +115,9 @@ export default function migraine() {
         <div className="landing-content fade-in">
           {/* First Line */}
           <h1
-            className="text-4xl font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+              
               fontWeight: 500,
               marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
@@ -128,9 +128,9 @@ export default function migraine() {
 
           {/* Second Line with Padding */}
           <h1
-            className="text-4xl font-bold"
+            className="text-4xl font-[playfair] font-bold"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+             
               fontWeight: 500,
               marginLeft: "200px", // Additional margin for the second line
               fontSize: "3rem",
@@ -145,15 +145,15 @@ export default function migraine() {
       <section
         className="py-12 px-6 content-section"
         style={{
-          backgroundColor: "#FEF7FF", // Light wheat background
+          
           height: "860px", // Set the height to 500px
         }}
       >
         <h2
-          className="text-4xl font-bold"
+          className="text-4xl font-[playfair] font-bold"
           style={{
             color: "#5A3D00",
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 600,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "3rem",
@@ -162,6 +162,7 @@ export default function migraine() {
           Migraine
         </h2>
         <p
+          className="font-[Raleway]"
           style={{
             
             fontWeight: 400,
@@ -180,6 +181,7 @@ export default function migraine() {
         </p>
 
         <h2
+          className="font-[playfair]"
           style={{
             fontFamily: "'Playfair Display SC', serif",
             fontWeight: 500,
@@ -190,6 +192,7 @@ export default function migraine() {
           Symptoms
         </h2>
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}
@@ -205,6 +208,7 @@ export default function migraine() {
         </ul>
 
         <h2
+          className="font-[playfair]"
           style={{
             fontFamily: "'Playfair Display SC', serif",
             fontWeight: 500,
@@ -216,6 +220,7 @@ export default function migraine() {
         </h2>
 
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}        

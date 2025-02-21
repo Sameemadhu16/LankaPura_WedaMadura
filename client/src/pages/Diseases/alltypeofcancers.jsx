@@ -30,7 +30,7 @@ export default function alltypeofcancers() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 40%; /* Adjust size to cover the right side */
+            width: 45%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -115,9 +115,9 @@ export default function alltypeofcancers() {
         <div className="landing-content fade-in">
           {/* First Line */}
           <h1
-            className="text-4xl font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+             
               fontWeight: 500,
               marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
@@ -128,9 +128,9 @@ export default function alltypeofcancers() {
 
           {/* Second Line with Padding */}
           <h1
-            className="text-4xl font-bold"
+            className="text-4xl font-[playfair] font-bold"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+             
               fontWeight: 500,
               marginLeft: "200px", // Additional margin for the second line
               fontSize: "3rem",
@@ -151,15 +151,15 @@ export default function alltypeofcancers() {
       <section
         className="py-12 px-6 content-section"
         style={{
-          backgroundColor: "#FEF7FF", // Light wheat background
+          
           height: "1900px", // Set the height to 500px
         }}
       >
         <h2
-          className="text-4xl font-bold"
+          className="text-4xl font-[playfair] font-bold"
           style={{
             color: "#5A3D00",
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 600,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "3rem",
@@ -168,6 +168,7 @@ export default function alltypeofcancers() {
           All type of cancers
         </h2>
         <p
+          className="font-[Raleway]"
           style={{
             
             fontWeight: 400,
@@ -184,8 +185,9 @@ export default function alltypeofcancers() {
         </p>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+           
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -195,6 +197,7 @@ export default function alltypeofcancers() {
         </h2>
 
         <p
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}        
@@ -210,6 +213,7 @@ export default function alltypeofcancers() {
         </p>
 
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}

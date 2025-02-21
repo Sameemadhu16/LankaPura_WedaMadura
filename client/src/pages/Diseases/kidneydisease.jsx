@@ -115,9 +115,9 @@ export default function kidneydisease() {
         <div className="landing-content fade-in">
           {/* First Line */}
           <h1
-            className="text-4xl font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+              
               fontWeight: 500,
               marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
@@ -128,9 +128,9 @@ export default function kidneydisease() {
 
           {/* Second Line with Padding */}
           <h1
-            className="text-4xl font-bold"
+            className="text-4xl font-[playfair] font-bold"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+              
               fontWeight: 500,
               marginLeft: "200px", // Additional margin for the second line
               fontSize: "3rem",
@@ -151,15 +151,15 @@ export default function kidneydisease() {
       <section
         className="py-12 px-6 content-section"
         style={{
-          backgroundColor: "#FEF7FF", // Light wheat background
+          
           height: "1300px", // Set the height to 500px
         }}
       >
         <h2
-          className="text-4xl font-bold"
+          className="text-4xl font-[playfair] font-bold"
           style={{
             color: "#5A3D00",
-            fontFamily: "'Playfair Display SC', serif",
+           
             fontWeight: 600,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "3rem",
@@ -168,6 +168,7 @@ export default function kidneydisease() {
           Kidney Disease (C.K.D)
         </h2>
         <p
+          className="font-[Raleway]"
           style={{
             
             fontWeight: 400,
@@ -187,8 +188,9 @@ export default function kidneydisease() {
         </p>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -197,6 +199,7 @@ export default function kidneydisease() {
           Symptoms
         </h2>
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}
@@ -218,6 +221,7 @@ export default function kidneydisease() {
         </ul>
 
         <p
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}        
@@ -228,8 +232,9 @@ export default function kidneydisease() {
         </p>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -240,6 +245,7 @@ export default function kidneydisease() {
         </h2>
 
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}        

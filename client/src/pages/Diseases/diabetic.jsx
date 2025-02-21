@@ -115,9 +115,9 @@ export default function diabetic() {
         <div className="landing-content fade-in">
           {/* First Line */}
           <h1
-            className="text-4xl font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+              
               fontWeight: 500,
               marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
@@ -128,9 +128,9 @@ export default function diabetic() {
 
           {/* Second Line with Padding */}
           <h1
-            className="text-4xl font-bold"
+            className="text-4xl font-[playfair] font-bold"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+             
               fontWeight: 500,
               marginLeft: "200px", // Additional margin for the second line
               fontSize: "3rem",
@@ -146,15 +146,15 @@ export default function diabetic() {
       <section
         className="py-12 px-6 content-section"
         style={{
-          backgroundColor: "#FEF7FF", // Light wheat background
+         
           height: "1250px", // Set the height to 500px
         }}
       >
         <h2
-          className="text-4xl font-bold"
+          className="text-4xl font-[playfair] font-bold"
           style={{
             color: "#5A3D00",
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 600,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "3rem",
@@ -163,6 +163,7 @@ export default function diabetic() {
           Diabetic
         </h2>
         <p
+          className="font-[Raleway]"
           style={{
             
             fontWeight: 400,
@@ -179,8 +180,9 @@ export default function diabetic() {
         </p>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -189,6 +191,7 @@ export default function diabetic() {
           Symptoms
         </h2>
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}
@@ -207,18 +210,20 @@ export default function diabetic() {
 
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
           }}
         >
           When you need {" "}
-          <span style={{ color: "#006400" }}>medical advice</span>
+          <span style={{ color: "#006400" }}>medical advice</span>?
         </h2>
 
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}        
@@ -227,8 +232,9 @@ export default function diabetic() {
           <li>If you have already been diagnosed with diabetes.</li>
         </ul>
           <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+           
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -237,6 +243,7 @@ export default function diabetic() {
           Risk Factors
         </h2>
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}        
@@ -250,8 +257,9 @@ export default function diabetic() {
         </ul>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -260,6 +268,7 @@ export default function diabetic() {
           Prevention
         </h2>
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}

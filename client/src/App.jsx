@@ -30,11 +30,17 @@ import Arthritis from './pages/Diseases/arthritis.jsx'
 import Header from './components/Home_Compo/header.jsx'
 import Footer from './components/Home_Compo/footer.jsx'
 
+
+
+
+
 function App()
 {
   return (
     <Router>
+      
       <Header/>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
@@ -44,7 +50,7 @@ function App()
           <Route path="/ourtreat" element={<Ourtreat />} />
           <Route path="/products" element={<Products />} />
 
-
+          
           <Route path="/kidneydisease" element={<KidneyDisease />} />
           <Route path="/liverdisease" element={<LiverDisease />} />
           <Route path="/alltypeofcancers" element={<AllTypeOfCancers />} />

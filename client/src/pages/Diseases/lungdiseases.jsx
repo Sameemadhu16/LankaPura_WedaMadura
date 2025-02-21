@@ -115,9 +115,9 @@ export default function lungdiseases() {
         <div className="landing-content fade-in">
           {/* First Line */}
           <h1
-            className="text-4xl font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+             
               fontWeight: 500,
               marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
@@ -128,9 +128,9 @@ export default function lungdiseases() {
 
           {/* Second Line with Padding */}
           <h1
-            className="text-4xl font-bold"
+            className="text-4xl font-[playfair] font-bold"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+              
               fontWeight: 500,
               marginLeft: "200px", // Additional margin for the second line
               fontSize: "3rem",
@@ -145,15 +145,15 @@ export default function lungdiseases() {
       <section
         className="py-12 px-6 content-section"
         style={{
-          backgroundColor: "#FEF7FF", // Light wheat background
+         
           height: "950px", // Set the height to 500px
         }}
       >
         <h2
-          className="text-4xl font-bold"
+          className="text-4xl font-[playfair] font-bold"
           style={{
             color: "#5A3D00",
-            fontFamily: "'Playfair Display SC', serif",
+           
             fontWeight: 600,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "3rem",
@@ -162,6 +162,7 @@ export default function lungdiseases() {
           Lung diseases
         </h2>
         <p
+          className="font-[Raleway]"
           style={{
             
             fontWeight: 400,
@@ -176,6 +177,7 @@ export default function lungdiseases() {
         </p>
 
         <p
+          className="font-[Raleway]"
           style={{
             
             fontWeight: 400,
@@ -189,6 +191,7 @@ export default function lungdiseases() {
         </p>
 
         <h2
+          className="font-[playfair]"
           style={{
             fontFamily: "'Playfair Display SC', serif",
             fontWeight: 500,
@@ -199,6 +202,7 @@ export default function lungdiseases() {
           The most common lung diseases
         </h2>
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}
@@ -214,6 +218,7 @@ export default function lungdiseases() {
         </ul>
 
         <h2
+          className="font-[playfair]"
           style={{
             fontFamily: "'Playfair Display SC', serif",
             fontWeight: 500,
@@ -226,6 +231,7 @@ export default function lungdiseases() {
         </h2>
 
         <ul
+          className="font-[Raleway]"
           style={{
             fontWeight: 400,
           }}        
