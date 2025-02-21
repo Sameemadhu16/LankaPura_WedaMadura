@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import proback from '../../assets/Produt_Assets/proback.jpeg';
+import proback from '../../assets/Produt_Assets/proback.jpg';
 import p from '../../assets/Home_Assets/products/products/1.png'; 
 import { FaStar } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
@@ -29,12 +29,13 @@ const ProductDescription = () => {
     <div className='flex flex-col items-center justify-center'>
       {/* Banner Section */}
       <div 
-        className='w-full h-[720px] flex flex-col justify-center items-center bg-cover bg-center relative font-[playfair]'
+        className='w-full h-96 flex flex-col justify-center items-center bg-cover bg-center relative font-[playfair]'
         style={{ backgroundImage: `url(${proback})` }}
       >
         <div className='absolute inset-0 bg-black/50'></div>
-        <h1 className='text-8xl font-playfair font-bold text-white absolute left-6 z-10 ml-4'>Ancient Herbs</h1>
-        <h1 className='text-8xl font-playfair font-bold text-[#348101] absolute left-6 bottom-[230px] z-10 ml-32'>Modern Care</h1>
+        <h1 className='text-7xl font-playfair font-bold text-white absolute bottom-[115px] left-6 z-10 ml-6'>Ancient Herbs</h1>
+        <h1 className='text-7xl font-playfair font-bold text-[#348101] absolute left-6 bottom-[58px] z-10 ml-40'>Modern Care</h1>
+        {/* <h1 className='font-[Raleway] text-3xl text-[#EEE183] absolute bottom-32 left-9'>Crafting Nature’s Purity into Every Product for Ultimate Wellness!</h1> */}
       </div>
 
       {/* Product Section */}

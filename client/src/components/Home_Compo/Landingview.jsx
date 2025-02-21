@@ -13,16 +13,12 @@ const Landingview = () => {
   const images = [landing, landingii, landingiii];
 
   useEffect(() => {
-    // Trigger animation after the component mounts
     setAnimate(true);
-
-    // Switch between images every 5 seconds
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
-
-    // Clean up the interval on component unmount
     return () => clearInterval(interval);
+    
   }, [images.length]);
 
   const handlePlayClick = () => {
@@ -31,7 +27,7 @@ const Landingview = () => {
 
   return (
     <div
-    className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white transition-all duration-1000"
+    className="h-[780px] bg-cover bg-center flex flex-col items-center justify-center text-white transition-all duration-1000"
     style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
   >
     {/* Heading with animation */}

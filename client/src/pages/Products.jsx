@@ -37,11 +37,11 @@ const Products = () => {
       {/* Product Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 mt-7">
         {products.map(product => (
-          <div key={product._id} className="p-4 shadow-2xl rounded-lg border border-gray-200"> {/* Updated to product._id */}
+          <div key={product._id} className="p-4 shadow-2xl rounded-lg border border-gray-200 relative"> 
             <img 
               src={product.image} 
               alt={product.name} 
-              className="w-[200px] h-48 object-cover rounded-lg" 
+              className="w-[400px] h-[400px] object-cover rounded-lg items-center justify-center" 
             />
             <div className="p-4">
               <h2 className="text-xl font-bold font-[Raleway]">{product.name}</h2>

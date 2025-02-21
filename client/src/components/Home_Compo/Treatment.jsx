@@ -78,7 +78,7 @@ const Treatment = () => {
 
       {/* Animated Images with Scroll Effect */}
       <motion.div
-        className="absolute flex justify-center"
+        className="absolute flex justify-center p-5"
         style={{ top: '16%', left: '3%' }}
         initial={{ opacity: 0, x: '-30%' }} // Start off-screen from the left
         animate={{
