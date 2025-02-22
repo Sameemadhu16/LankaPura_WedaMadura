@@ -45,7 +45,13 @@ const Aboutthedoctor = () => {
             </div> 
             {/* Read More Button */}
             <div className="w-full flex justify-center mt-6">
-                <button className="px-4 py-2 text-black rounded-lg shadow-md border border-black hover:bg-[#348101] hover:text-white hover:border-transparent ">
+                {/* <button className="px-4 py-2 text-black rounded-lg shadow-md border border-black hover:bg-[#348101] hover:text-white hover:border-transparent ">
+                Read More {'>>>'}
+                </button> */}
+                <button
+                onClick={() => (window.location.href = "/abd")}
+                className="px-4 py-2 text-black rounded-lg shadow-md border border-black hover:bg-[#348101] hover:text-white hover:border-transparent"
+                >
                 Read More {'>>>'}
                 </button>
             </div>

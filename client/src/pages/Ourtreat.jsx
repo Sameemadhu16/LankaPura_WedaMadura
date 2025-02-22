@@ -31,7 +31,18 @@ import "../css/Ourtreat.css"; // Ensure this CSS file exists and includes styles
 const Ourtreat = () => {
   const cards = [
     
-    
+    {
+      title: "Covid 19",
+      description: "Herbal treatments for COVID-19 have been a topic of interest and discussion throughout the pandemic, with researchers,...",
+      image: covid19Image,
+      link: "/covid19",
+    },
+    {
+      title: "Dengue",
+      description: "Dengue is the most common and high-risk mosquito-borne viral infection. The virus which causes dengue is …. ",
+      image: dengueImage,
+      link: "/dengue",
+    },
     {
       title: "Kidney disease (C.K.D)",
       description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney on each side...",
@@ -55,13 +66,7 @@ const Ourtreat = () => {
       description: "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar...",
       image: diabeticImage,
       link: "/diabetic",
-    },
-    {
-      title: "Dengue",
-      description: "Dengue is the most common and high-risk mosquito-borne viral infection. The virus which causes dengue is …. ",
-      image: dengueImage,
-      link: "/dengue",
-    },
+    },    
     {
       title: "Leptospirosis",
       description: "Leptospirosis is a relatively rare bacterial infection that affects people and animals. It can pass from animals to...",
@@ -86,12 +91,7 @@ const Ourtreat = () => {
       image: infertilityImage,
       link: "/infertility",
     },
-    {
-      title: "Covid 19",
-      description: "Herbal treatments for COVID-19 have been a topic of interest and discussion throughout the pandemic, with researchers,...",
-      image: covid19Image,
-      link: "/covid19",
-    },
+    
     {
       title: "Sciatica",
       description: "Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back…",
@@ -141,7 +141,10 @@ const Ourtreat = () => {
 
       <main
         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
-        style={{ backgroundImage: `url(${landing})` }}
+        // style={{ backgroundImage: `url(${landing})` }}
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 80%), url(${landing})`
+        }}
       >
         
 
@@ -178,7 +181,7 @@ const Ourtreat = () => {
       >
         <div className="max-w-6xl mx-auto text-center">
           <p
-            className="text-lg mb-6 text-center font-[playfair]"
+            className="text-lg mb-6 text-center  font-[playfair]"
             style={{
               color: "#006400",
               // fontFamily: "'Playfair Display SC', serif",

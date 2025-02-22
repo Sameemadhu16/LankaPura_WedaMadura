@@ -30,6 +30,7 @@ import Arthritis from './pages/Diseases/arthritis.jsx'
 import Header from './components/Home_Compo/header.jsx'
 import Footer from './components/Home_Compo/footer.jsx'
 
+import Abd from './pages/Aboutthedoctor.jsx'
 
 
 
@@ -68,6 +69,8 @@ function App()
           <Route path="/lungdiseases" element={<Lungdiseases />} />
           <Route path="/catarrh" element={<Catarrh />} />
           <Route path="/arthritis" element={<Arthritis />} />
+
+          <Route path="/abd" element={<Abd />} />
         </Routes>
       <Footer />
     </Router>

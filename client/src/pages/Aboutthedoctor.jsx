@@ -1,17 +1,13 @@
 import React from 'react'
 
-import landing from "../assets/aboutus.jpg";
+import landing from "../assets/treatment.png";
 import plantImage from "./../assets/wedamedura-ayurveda.jpg";
-import aboutthedoctorImage from "../assets/Home_Assets/About_the_doctor.png";
 
 
-import "../css/Aboutus.css"; // Ensure this CSS file exists and includes styles
-
-const Aboutus = () => {
- 
+export default function Aboutthedoctor() {
   return (
-    <div> 
-      <style>
+    <div>
+        <style>
         {`
           .right-image {
             position: absolute;
@@ -28,25 +24,9 @@ const Aboutus = () => {
 }
         `}
 
-{`
-          .left-image {
-            position: absolute;
-            margin-top: 1400px; /* Adjust as needed */
-            margin-left: 170px; /* Adjust as needed */
-            width: 40%; /* Adjust size to cover the right side */
-            height: 105.3%;
-            object-fit: cover;
-            z-index: 10;
-            left: 0;
-            top: 0; /* Adjust as needed */
-            max-width: 100%; /* Ensures responsiveness */
-            height: 50%;
-}
-        `}
-      </style>
 
-    
-      <main
+      </style>
+        <main
         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white relative"
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 100)), url(${landing})`,
@@ -56,7 +36,7 @@ const Aboutus = () => {
           className="mb-4 font-[playfair] text-center font-medium text-7xl animate-fade-in"
           style={{ marginTop: '390px' }}
         >
-          About Lankapura Weda Madura
+          Dr.Tharanga Kumari Wickramasooriya
         </h1>
 
           <h1 className="text-center font-[Raleway] text-2xl text-[#EEE183]"
@@ -65,25 +45,17 @@ const Aboutus = () => {
             
           }}
           >
-          "The People's Wellness Hub, 
+          - A Legacy in Herbal Healing - 
           </h1>
           
-          <h1
-          className="text-center font-[Raleway] text-2xl text-[#EEE183]"
-          style={{
-            marginLeft: "100px", // Additional margin for the second line
-            
-          }}>
-          where healing hands unite."
-          </h1> 
+          
 
       </main>
-
       <section
         className="py-12 px-6"
         style={{
           backgroundColor: "#FEF7FF", 
-          height: "1100px",// Light wheat background  #FEF7FF
+          height: "800px",// Light wheat background  #FEF7FF
         }}
       >
         <h1
@@ -148,46 +120,12 @@ const Aboutus = () => {
           className="right-image"
         />
 
-        <h2
-          className="text-4xl font-[playfair] font-bold"
-          style={{
-            color: "#5A3D00",
-            marginTop: "130px",
-            fontWeight: 400,
-            marginLeft: "730px", // Additional margin for the second line
-            fontSize: "3rem",
-          }}
-        >
-          About the Doctor
-        </h2>
         
-        <div className="max-w-6xl mx-auto text-right">
-          <p
-            className="font-[Raleway] font-normal w-1/2 text-justify leading-relaxed ml-auto mt-10"
-          >
-            Dr. Tharanga Kumari Wickramasooriya is the proud torchbearer of a 700-year-old
-            legacy of healing, blending traditional wisdom with modern medical expertise.
-            Inspired by her father, a respected doctor, and her grandfather, a renowned
-            hereditary healer, she grew up surrounded by dedication and care. Their passion
-            ignited her sense of responsibility to continue this extraordinary family tradition,
-            combining precision, compassion, and timeless knowledge in her practice.
-            <a href="/abd" className="text-green-700 cursor-pointer hover:underline hover:text-green-900"> Read more...</a>
-          </p>
-        </div>
-
         
-
-
-        <img
-          src={aboutthedoctorImage}
-          alt="Plant"
-          className="left-image"
-        />
+        
       </section>
       {/* <Footer /> */}
-
+        
     </div>
   )
 }
-
-export default Aboutus
