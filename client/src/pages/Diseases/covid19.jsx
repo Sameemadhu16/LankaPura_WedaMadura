@@ -3,6 +3,8 @@ import React from 'react'
 import landing from "../../assets/lankapura.jpg";
 import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
+import Highlight from "../../components/Ourtreat_Compo/Covidcardanimate"
+
 export default function covid19() {
   return (
     <div>
@@ -152,7 +154,7 @@ export default function covid19() {
         className="py-12 px-6 content-section"
         style={{
           
-          height: "500px", // Set the height to 500px
+          height: "1000px", // Set the height to 500px
         }}
       >
         <h2
@@ -225,6 +227,12 @@ export default function covid19() {
           alt="Plant"
           className="right-image"
         />
+
+        {/* <Highlight /> */}
+
+        <Highlight />
+
+
       </section>
 
       {/* <Footer /> */}

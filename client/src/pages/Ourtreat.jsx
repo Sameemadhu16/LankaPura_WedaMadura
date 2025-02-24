@@ -148,9 +148,9 @@ const Ourtreat = () => {
       >
         
 
-      <div className="mb-4 font-[playfair] text-center font-medium text-7xl" style={{ marginTop: '350px' }}>  
+      <div className="mb-4 text-center font-medium " style={{ marginTop: '350px' }}>  
         <h1
-          className="title"
+          className="title font-[playfair] text-7xl"
           initial={{ opacity: 0, y: 30 }} // Start slightly lower
           animate={{ opacity: 1, y: 0 }} // Move to final position
           transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1] }} // Smooth cubic bezier easing
@@ -160,10 +160,10 @@ const Ourtreat = () => {
         </h1>
       </div>
 
-        <h1 className="text-center font-[Raleway] text-2xl text-white" style={{ marginTop: '20px' }}>
+        <h1 className="text-center font-[Raleway] text-2xl text-[#EEE183]" style={{ marginTop: '20px' }}>
         “Experience the perfect blend of care and expertise with 
         </h1>
-        <h1 className="text-center font-[Raleway] text-2xl text-white">
+        <h1 className="text-center font-[Raleway] text-2xl text-[#EEE183]">
         our personalized treatments designed just for you...”
         </h1>
 

@@ -7,6 +7,52 @@
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 3s ease-in-out; /* Adjust duration (3s) as needed */
+
+
+
+/* .arrow {
+  margin-top: 50px;
+  margin-left: 300px;
+  font-size: 70px;
+  font-weight: 400; 
+  animation: bounce 2s ease-in-out infinite; 
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px); 
+  }
+  50% {
+    transform: translateY(-4px); 
+  }
+  70% {
+    transform: translateY(-8px); 
+  }
+} */
+
+
+.arrow {
+  margin-top: 50px;
+  margin-left: 300px;
+  font-size: 70px; 
+  font-weight: 400; 
+  animation: bounce 2s ease-in-out infinite; 
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-12px); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  70% {
+    transform: translateY(-12px); 
+  }
 }

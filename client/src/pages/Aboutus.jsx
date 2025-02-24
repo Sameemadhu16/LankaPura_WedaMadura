@@ -2,10 +2,14 @@ import React from 'react'
 
 import landing from "../assets/aboutus.jpg";
 import plantImage from "./../assets/wedamedura-ayurveda.jpg";
-import aboutthedoctorImage from "../assets/Home_Assets/About_the_doctor.png";
+import aboutthedoctorImage from "../assets/DOCTOR.jpg";
 
 
 import "../css/Aboutus.css"; // Ensure this CSS file exists and includes styles
+
+
+
+
 
 const Aboutus = () => {
  
@@ -32,15 +36,16 @@ const Aboutus = () => {
           .left-image {
             position: absolute;
             margin-top: 1400px; /* Adjust as needed */
-            margin-left: 170px; /* Adjust as needed */
+            margin-left: 280px; /* Adjust as needed */
             width: 40%; /* Adjust size to cover the right side */
-            height: 105.3%;
-            object-fit: cover;
+            height: auto;
+            object-fit: contain;
             z-index: 10;
             left: 0;
             top: 0; /* Adjust as needed */
-            max-width: 100%; /* Ensures responsiveness */
-            height: 50%;
+            max-width: 20%; /* Ensures responsiveness */
+            // max-height: 80%; 
+            
 }
         `}
       </style>
@@ -80,7 +85,7 @@ const Aboutus = () => {
       </main>
 
       <section
-        className="py-12 px-6"
+        className="py-12 px-6 "
         style={{
           backgroundColor: "#FEF7FF", 
           height: "1100px",// Light wheat background  #FEF7FF
@@ -94,21 +99,21 @@ const Aboutus = () => {
           >
             We have found many successful medicines for many diseases, raying only on Herbs.
           </h1>
-        <h2
-          className="text-4xl font-[playfair] font-bold"
-          style={{
-            color: "#5A3D00",
-            marginTop: "50px",
-            fontWeight: 400,
-            marginLeft: "150px", // Additional margin for the second line
-            fontSize: "3rem",
-          }}
-        >
-          Our Story
-        </h2>
-        <div className="max-w-6xl mx-auto text-center">
+        
+        <div className="max-w-6xl mx-auto text-left">
           
-          
+          <h2
+            className="text-4xl font-[playfair] font-bold w-1/2 "
+            style={{
+              color: "#5A3D00",
+              marginTop: "50px",
+              fontWeight: 400,
+              marginLeft: "0px", // Additional margin for the second line
+              fontSize: "3rem",
+            }}
+          >
+            Our Story
+          </h2>
 
           <p
           className="font-[Raleway] font-normal w-1/2 text-justify leading-relaxed ml-0 mt-10"  
@@ -139,30 +144,39 @@ const Aboutus = () => {
           needs. promoting overall well-being and healing
           </p>
 
-          
-        </div>
-
-        <img
+          <img
           src={plantImage}
           alt="Plant"
           className="right-image"
-        />
+          />
+          
+        </div>
 
+        
+
+        
+        
+        <div className="max-w-6xl mx-auto text-center">
         <h2
-          className="text-4xl font-[playfair] font-bold"
+          className="text-4xl font-[playfair] font-bold text-left"
           style={{
             color: "#5A3D00",
-            marginTop: "130px",
+            marginTop: "70px",
             fontWeight: 400,
-            marginLeft: "730px", // Additional margin for the second line
+            marginLeft: "610px", // Additional margin for the second line
             fontSize: "3rem",
           }}
         >
-          About the Doctor
+          Discover The Legacy of Dr.Tharanga Kumari
+          
         </h2>
+
         
-        <div className="max-w-6xl mx-auto text-right">
-          <p
+
+        <div className="arrow">&#8595;</div>
+
+
+          {/* <p
             className="font-[Raleway] font-normal w-1/2 text-justify leading-relaxed ml-auto mt-10"
           >
             Dr. Tharanga Kumari Wickramasooriya is the proud torchbearer of a 700-year-old
@@ -172,22 +186,42 @@ const Aboutus = () => {
             ignited her sense of responsibility to continue this extraordinary family tradition,
             combining precision, compassion, and timeless knowledge in her practice.
             <a href="/abd" className="text-green-700 cursor-pointer hover:underline hover:text-green-900"> Read more...</a>
-          </p>
+          </p> */}
+
+                
+
+                <button
+                onClick={() => (window.location.href = "/abd")}
+                className="px-2 py-1 text-black rounded-lg shadow-md border border-black hover:bg-[#348101] hover:text-white hover:border-transparent "
+                style={{marginLeft: "300px" , marginTop: "10px"}}
+                >
+                Click here
+                </button>
+
+          <img
+          src={aboutthedoctorImage}
+          alt="Plant"
+          className="left-image"
+          />
         </div>
 
         
 
 
-        <img
+        {/* <img
           src={aboutthedoctorImage}
           alt="Plant"
           className="left-image"
-        />
+        /> */}
       </section>
-      {/* <Footer /> */}
+
 
     </div>
   )
 }
 
 export default Aboutus
+
+
+
+

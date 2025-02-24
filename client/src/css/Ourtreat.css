@@ -31,8 +31,6 @@
 }
 
 
-
-
 .title {
   opacity: 0; 
   transform: translateY(20px); 
@@ -52,12 +50,6 @@
     transform: translateY(0);
   }
 }
-
-
-
-
-
-
 
 /* Flip-box container (wraps cards) */
 .flip-boxes {
