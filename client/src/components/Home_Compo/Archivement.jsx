@@ -21,37 +21,37 @@ export default function Archivement() {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col md:flex-row items-center justify-center p-4 md:p-8">
       {/* Title with Waving Animation */}
       <motion.div
-        className="text-center mr-20"
+        className="text-center md:mr-20 mb-6 md:mb-0"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         <motion.h1
-          className="text-6xl font-[playfair] font-bold text-black"
+          className="text-4xl md:text-6xl font-[playfair] font-bold text-black"
           animate={{ rotate: [0, 3, -3, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         >
           OUR
         </motion.h1>
         <motion.h1
-          className="text-[#348101] text-6xl font-[playfair] font-bold"
+          className="text-[#348101] text-4xl md:text-6xl font-[playfair] font-bold"
           animate={{ rotate: [0, 3, -3, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", delay: 0.1 }}
         >
           CERTIFICATIONS
         </motion.h1>
         <motion.h1
-          className="text-6xl font-[playfair] font-bold text-black"
+          className="text-4xl md:text-6xl font-[playfair] font-bold text-black"
           animate={{ rotate: [0, 3, -3, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", delay: 0.2 }}
         >
           AND
         </motion.h1>
         <motion.h1
-          className="text-[#348101] text-6xl font-[playfair] font-bold"
+          className="text-[#348101] text-4xl md:text-6xl font-[playfair] font-bold"
           animate={{ rotate: [0, 3, -3, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut", delay: 0.3 }}
         >
@@ -60,13 +60,13 @@ export default function Archivement() {
       </motion.div>
 
       {/* Image Container with Smooth Transitions */}
-      <div className="relative flex items-center justify-center w-[500px] h-[600px] mt-8 ml-20">
+      <div className="relative flex items-center justify-center w-full md:w-[500px] h-auto md:h-[600px]">
         {/* Left Button */}
         <button
           onClick={prevImage}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full shadow-lg"
+          className="absolute left-2 md:left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 md:p-3 rounded-full shadow-lg"
         >
-          <AiOutlineCaretLeft size={30} />
+          <AiOutlineCaretLeft size={24} md:size={30} />
         </button>
 
         {/* Animated Image */}
@@ -74,7 +74,7 @@ export default function Archivement() {
           key={currentIndex}
           src={images[currentIndex]}
           alt="Gallery"
-          className="rounded-lg w-[450px] h-[550px]"
+          className="rounded-lg w-[90%] md:w-[450px] h-auto md:h-[550px] object-contain"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
@@ -84,9 +84,9 @@ export default function Archivement() {
         {/* Right Button */}
         <button
           onClick={nextImage}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full shadow-lg"
+          className="absolute right-2 md:right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 md:p-3 rounded-full shadow-lg"
         >
-          <AiOutlineCaretRight size={30} />
+          <AiOutlineCaretRight size={24} md:size={30} />
         </button>
       </div>
     </div>

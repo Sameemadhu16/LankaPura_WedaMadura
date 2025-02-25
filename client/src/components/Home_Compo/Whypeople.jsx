@@ -1,46 +1,53 @@
-import React from 'react'
-import WPCU from '../../assets/Home_Assets/WPCU.webp'
-import Roundanimation from './Roundanimation'
-import Whypp2 from './Whypp2'
-import Archivement from './Archivement'
-import Ourlocation from './Ourlocation'
-
+import React from "react";
+import WPCU from "../../assets/Home_Assets/WPCU.webp";
+import Roundanimation from "./Roundanimation";
+import Whypp2 from "./Whypp2";
+import Archivement from "./Archivement";
+import Ourlocation from "./Ourlocation";
 
 const Whypeople = () => {
-    const back = {
-        backgroundImage: `url(${WPCU})`,
-        backgroundSize: 'cover',  // This makes sure the image covers the entire div
-        backgroundPosition: 'center', // Centers the background image
-        height: '3050px', // Adjust the height as per your requirement
-        
-      }
-    
-  return (
-    <div style={back}>
-        <div className='flex justify-center'>
-            <h1 className='text-center items-center justify-center'>
-                <h1 className=" text-center font-[Raleway] mt-20 text-2xl tracking-[.4em]">Lankapura - Where Nature Meets Pure Wellness</h1>
-                <span className="text-6xl font-[playfair] font-bold text-black">OUR </span>
-                <span className="text-[#348101] text-6xl font-[playfair] font-bold">PRODUCTS</span>
-            </h1>
-        </div>
-        <div className='flex justify-center items-center'>
-            <Roundanimation/>
-        </div>
-        <div>
-            {/* Why people choose us2  */}
-            <Whypp2/>
-        </div>
-        <div>
-            {/* Archivement */}
-            <Archivement/>
-        </div>
-        <div>
-            {/* Our location */}
-            <Ourlocation/>  
-        </div>    
-    </div>
-  )
-}
+  const back = {
+    backgroundImage: `url(${WPCU})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "auto", // Adjusted to auto for better responsiveness
+    minHeight: "3050px", // Ensures minimum height
+  };
 
-export default Whypeople
+  return (
+    <div style={back} className="flex flex-col items-center">
+      {/* Heading */}
+      <div className="text-center mt-20 px-4">
+        <h1 className="font-[Raleway] text-lg md:text-2xl tracking-[.4em]">
+          Lankapura - Where Nature Meets Pure Wellness
+        </h1>
+        <div className="flex justify-center flex-wrap">
+          <span className="text-4xl md:text-6xl font-[playfair] font-bold text-black">
+            OUR{" "}
+          </span>
+          <span className="text-4xl md:text-6xl font-[playfair] font-bold text-[#348101] ml-2 md:ml-4">
+            PRODUCTS
+          </span>
+        </div>
+      </div>
+
+      {/* Round Animation */}
+      <div className="flex justify-center w-full px-2 mt-5">
+        <Roundanimation />
+      </div>
+
+      {/* Sections */}
+      <div className="w-full">
+        <Whypp2 />
+      </div>
+      <div className="w-full">
+        <Archivement />
+      </div>
+      <div className="w-full">
+        <Ourlocation />
+      </div>
+    </div>
+  );
+};
+
+export default Whypeople;

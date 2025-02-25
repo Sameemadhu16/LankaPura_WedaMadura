@@ -5,20 +5,14 @@ import logo from "../../assets/Home_Assets/Logo.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0); // Track last scroll position
-  const [headerVisible, setHeaderVisible] = useState(true); // Track header visibility
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [headerVisible, setHeaderVisible] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      if (window.scrollY > lastScrollY) {
-        // Scrolling down
-        setHeaderVisible(false);
-      } else {
-        // Scrolling up
-        setHeaderVisible(true);
-      }
+      setHeaderVisible(window.scrollY < lastScrollY);
       setLastScrollY(window.scrollY);
     };
 
@@ -26,9 +20,9 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const closeMenu = () => setIsMenuOpen(false);
 
   const linkClass = (isActive) =>
     `relative group font-[Raleway] text-sm ${
@@ -47,9 +41,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full p-3 z-50 ${
+      className={`fixed top-0 left-0 w-full p-3 z-50 transition-all duration-300 ${
         isScrolled ? "bg-[#331806e4] shadow-lg" : "bg-transparent"
-      } transition-all duration-300 ${headerVisible ? "opacity-100" : "opacity-0"}`}
+      } ${headerVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo Section */}
@@ -58,21 +52,21 @@ const Header = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-[50px] md:h-[60px] lg:h-[70px] w-auto mb-3"
+              className="h-[50px] md:h-[60px] lg:h-[70px] w-auto"
             />
           </a>
           <div className="flex flex-col text-white ml-2">
-            <span className="text-lg md:text-xl lg:text-xl font-normal leading-tight font-[Raleway]">
+            <span className="text-lg md:text-xl lg:text-xl font-normal font-[Raleway]">
               LANKAPURA
             </span>
-            <span className="text-lg md:text-xl lg:text-xl font-normal leading-tight font-[Raleway]">
+            <span className="text-lg md:text-xl lg:text-xl font-normal font-[Raleway]">
               WEDAMADURA
             </span>
           </div>
         </div>
 
-        {/* Navigation Links */}
-        <nav className="hidden md:flex items-center justify-center space-x-8 text-white">
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map(({ path, name }, index) => (
             <NavLink
               key={index}
@@ -99,22 +93,31 @@ const Header = () => {
       </div>
 
       {/* Mobile Dropdown Menu */}
-      {isMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-blue-600 shadow-lg z-50 md:hidden">
-          <ul className="flex flex-col items-center space-y-4 text-white py-4">
-            {navLinks.map(({ path, name }, index) => (
-              <li key={index}>
-                <NavLink
-                  to={path}
-                  className={({ isActive }) => linkClass(isActive)}
-                >
-                  {name}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <div
+        className={`absolute top-0 left-0 w-full bg-[#331806] shadow-lg transition-transform duration-300 md:hidden ${
+          isMenuOpen ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
+        <button
+          onClick={closeMenu}
+          className="absolute top-4 right-6 text-white text-2xl"
+        >
+          ✕
+        </button>
+        <ul className="flex flex-col items-center space-y-4 text-white py-10">
+          {navLinks.map(({ path, name }, index) => (
+            <li key={index}>
+              <NavLink
+                to={path}
+                className={({ isActive }) => linkClass(isActive)}
+                onClick={closeMenu}
+              >
+                {name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 };
