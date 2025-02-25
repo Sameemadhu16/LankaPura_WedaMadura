@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import appointmentRoutes from './routes/appointment.route.js';
+import contactusRoutes from './routes/contactus.route.js';
 
 dotenv.config();
 
@@ -20,8 +21,11 @@ const app = express();
 app.use(cors());//enable CORS(Cross Origin Resource Sharing)
 app.use(express.json());
 
+app.use('/api/appointments', appointmentRoutes);
+app.use('/api/contactus', contactusRoutes);
+
+
 app.listen(process.env.PORT,() =>{
     console.log(`Server running on port ${process.env.PORT}`);
 });
 
-app.use('/api/appointments', appointmentRoutes);

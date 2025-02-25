@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from '../assets/Home_Assets/sam/3.png';
+import Image from '../assets/Home_Assets/disease images/Nervous System Diseases.jpg';
 
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
@@ -9,11 +9,6 @@ const AppointmentForm = () => {
     date: "",
     timeSlot: "",
     disease: "",
-  });
-
-  const [errors, setErrors] = useState({
-    age : "",
-    date : "",
   });
 
   const allTimeSlots = [
@@ -64,26 +59,10 @@ const AppointmentForm = () => {
   const availableTimeSlots = getAvailableTimeSlots();
 
   const handleInputChange = (e) => {
-    const { name, value} = e.target;
-
-    if(name === "age" && value < 0){
-      setErrors({...errors, age: "Age cannot be negative number!"});
-      setFormData({...formData, [name]: ""});
-    } else if (name === "date" ){
-      const selectedDate = new Date(value);
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      if(selectedDate < today){
-        setErrors({...errors, date: "You cannot pick a previous date!"});
-        setFormData({...formData, [name]: ""});
-      } else {
-        setErrors({...errors, date: ""});
-        setFormData({...formData, [name]: value});
-      }
-    } else {
-      setErrors({...errors, age: ""});
-      setFormData({...formData, [name]: value});
-    }
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleSlotSelect = (slot) => {
@@ -126,11 +105,11 @@ const AppointmentForm = () => {
   };
 
   return (
-    <div className="flex flex-col h-full gap-5 w-full mx-auto bg-yellow-50 shadow-xl rounded-[24px] mt-8 sm:mt-0">
-      <div className="relative w-full h-full overflow-hidden">
+    <div className="flex flex-col h-full gap-5 w-full mx-auto bg-yellow-50 shadow-xl rounded-[24px] mt-8 sm:mt-0 ">
+      <div className="relative w-full h-full  overflow-hidden">
         <img src={Image} alt="" className="w-full h-full object-cover" />
-        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start sm:p-6">
-          <div className="w-full sm:w-1/2 h-full sm:h-5/6 mt-20 overflow-y-auto p-8 scroll-hidden bg-black bg-opacity-75 rounded-[24px]" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center sm:p-6">
+          <div className="w-full h-full sm:w-2/3 sm:h-5/6 mt-20  overflow-y-auto p-8 scroll-hidden mx-auto bg-black bg-opacity-75 rounded-[24px]" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
             <style>
               {`
                 .scroll-hidden::-webkit-scrollbar {
@@ -178,7 +157,6 @@ const AppointmentForm = () => {
                     className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
                     placeholder="Enter your age"
                     required
-                    min="0"
                   />
                 </div>
 

@@ -1,9 +1,19 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "../assets/Home_Assets/sam/1.png";
 import RightImage from "../assets/Home_Assets/sam/5.png";
 
 const Contactus = () => {
   const treatmentHoursRef = useRef(null);
+
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    contactNumber: "",
+    country: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,6 +38,59 @@ const Contactus = () => {
     };
   }, []);
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.fullname) newErrors.fullname = "Full name is required";
+    if (!formData.email) newErrors.email = "Email is required";
+    if (!formData.contactNumber) newErrors.contactNumber = "Contact number is required";
+    if (!formData.message) newErrors.message = "Message is required";
+    return newErrors;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const newErrors = validateForm();
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    try {
+      const response = await fetch('http://localhost:3000/api/contactus/createContact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      console.log("ContactUs data:", data);
+      alert("Create contact successfully!");
+      setFormData({
+        fullname: "",
+        email: "",
+        contactNumber: "",
+        country: "",
+        message: "",
+      });
+      setErrors({});
+    } catch (error) {
+      console.error("There was an error in contact!", error);
+      alert("There was an error in contact!");
+    }
+  };
+
   return (
     <div>
       <div
@@ -42,20 +105,63 @@ const Contactus = () => {
           <h2 className="text-white text-2xl font-bold mb-2">Say Hello To Us, Get In Touch</h2>
           <p className="text-white text-sm mb-4">Reach out to us and we will respond as soon as we can.</p>
 
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <input type="text" placeholder="Full name" className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder" />
-              <input type="email" placeholder="Email" className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder" />
+              <input
+                type="text"
+                name="fullname"
+                value={formData.fullname}
+                onChange={handleInputChange}
+                placeholder="Full name"
+                className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder"
+                required
+              />
+              {errors.fullname && <p className="text-red-500 text-sm">{errors.fullname}</p>}
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Email"
+                className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder"
+                required
+              />
+              {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <input type="text" placeholder="Contact number" className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder" />
-              <input type="text" placeholder="Country" className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder" />
+              <input
+                type="text"
+                name="contactNumber"
+                value={formData.contactNumber}
+                onChange={handleInputChange}
+                placeholder="Contact number"
+                className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder"
+                required
+              />
+              {errors.contactNumber && <p className="text-red-500 text-sm">{errors.contactNumber}</p>}
+              <input
+                type="text"
+                name="country"
+                value={formData.country}
+                onChange={handleInputChange}
+                placeholder="Country"
+                className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder"
+              />
             </div>
 
-            <textarea placeholder="Message" rows="4" className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder"></textarea>
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleInputChange}
+              placeholder="Message"
+              rows="4"
+              className="p-3 bg-white bg-opacity-50 text-black rounded-md w-full outline-none custom-placeholder"
+              required
+            ></textarea>
+            {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
 
-            <button className="w-full bg-yellow-600 text-white py-3 rounded-md text-lg font-semibold hover:bg-yellow-700 transition duration-300">
+            <button type='submit' className="w-full bg-yellow-600 text-white py-3 rounded-md text-lg font-semibold hover:bg-yellow-700 transition duration-300">
               Send
             </button>
           </form>
