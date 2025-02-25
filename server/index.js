@@ -3,7 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import appointmentRoutes from './routes/appointment.route.js';
-import ourtreatmentRoutes from './routes/ourtreatment.route.js'; // Ensure this path is correct
+import contactusRoutes from './routes/contactus.route.js';
 
 dotenv.config();
 
@@ -21,8 +21,10 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/appointments', appointmentRoutes);
-app.use('/api/ourtreatments', ourtreatmentRoutes);
+app.use('/api/contactus', contactusRoutes);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
+
+app.listen(process.env.PORT,() =>{
+    console.log(`Server running on port ${process.env.PORT}`);
 });
+
