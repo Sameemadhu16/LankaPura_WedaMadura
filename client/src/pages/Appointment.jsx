@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from '../assets/Home_Assets/disease images/Nervous System Diseases.jpg';
+import Image from '../assets/Home_Assets/sam/3.png';
 
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
@@ -71,7 +71,6 @@ const AppointmentForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log("Form Data:", formData); // Debug log
     if (!formData.timeSlot) {
       alert("Please select a time slot!");
       return;
@@ -85,7 +84,6 @@ const AppointmentForm = () => {
         body: JSON.stringify(formData),
       });
       const data = await response.json();
-      // console.log("Response Data:", data); // Debug log
       if (response.ok) {
         console.log("Appointment Data:", data);
         alert("Appointment booked successfully!");
@@ -98,7 +96,6 @@ const AppointmentForm = () => {
           disease: "",
         });
       } else {
-        // console.error("Error Response:", data); // Debug log
         alert("There was an error booking the appointment!");
       }
     } catch (error) {
@@ -108,127 +105,129 @@ const AppointmentForm = () => {
   };
 
   return (
-    <div className="flex flex-col h-full gap-5 w-full mx-auto bg-yellow-50 shadow-xl rounded-[24px] ">
-      <div className="w-full h-full rounded-t-[24px] overflow-hidden">
-        <img src={Image} alt="" className="w-full h-full object-cover" />
-      </div>
-      <div className="w-2/3 h-2/3 overflow-y-auto p-6 scroll-hidden mx-auto" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-        <style>
-          {`
-            .scroll-hidden::-webkit-scrollbar {
-              display: none;
-            }
-          `}
-        </style>
-        <h2 className="text-[32px] font-bold text-black text-center mb-6">Book Your Appointment</h2>
-        <div className="mb-6 p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700">
-          <h3 className="font-bold text-lg mb-2">Appointment Booking Guidelines</h3>
-          <p className="mb-2">
-            <strong>For Dengue and Corona Patients:</strong><br />
-            Time slots are available <strong>every day</strong> from <strong>9:00 AM to 5:00 PM</strong>.
-          </p>
-          <p className="mb-2">
-            <strong>For Other Diseases:</strong><br />
-            Time slots are available only on:<br />
-            - <strong>Saturday and Sunday:</strong> From <strong>9:00 AM to 5:00 PM</strong>.<br />
-            - <strong>Monday:</strong> From <strong>9:30 AM to 4:00 PM</strong>.
-          </p>
-          <p>No slots are available on other weekdays.</p>
-          <p className="mt-2"><em>Please select the appropriate date and disease to view the available time slots.</em></p>
-        </div>
-
-        <form onSubmit={handleSubmit}>
-          <div className="flex flex-wrap -mx-2">
-            <div className="w-full md:w-1/2 px-2">
-              <label className="block mb-2 text-brown-700">Name</label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                className="w-full p-3 border-[1px] border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
-                placeholder="Enter your name"
-                required
-              />
-
-              <label className="block mb-2 text-brown-700">Age</label>
-              <input
-                type="number"
-                name="age"
-                value={formData.age}
-                onChange={handleInputChange}
-                className="w-full p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
-                placeholder="Enter your age"
-                required
-              />
+    <div className="flex flex-col h-full gap-5 w-full mx-auto bg-yellow-50 shadow-xl rounded-[24px] mt-8 sm:mt-0 ">
+      <div className="relative w-full h-full  overflow-hidden">
+        <img src={Image} alt="" className="w-full h-full " />
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center sm:p-6">
+          <div className="w-full h-full sm:w-2/3 sm:h-5/6 mt-20  overflow-y-auto p-8 scroll-hidden mx-auto bg-black bg-opacity-75 rounded-[24px]" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            <style>
+              {`
+                .scroll-hidden::-webkit-scrollbar {
+                  display: none;
+                }
+              `}
+            </style>
+            <h2 className="text-[24px] sm:text-[32px] font-bold text-white text-center mb-6">Book Your Appointment</h2>
+            <div className="mb-6 p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700">
+              <h3 className="font-bold text-lg mb-2">Appointment Booking Guidelines</h3>
+              <p className="mb-2">
+                <strong>For Dengue and Corona Patients:</strong><br />
+                Time slots are available <strong>every day</strong> from <strong>9:00 AM to 5:00 PM</strong>.
+              </p>
+              <p className="mb-2">
+                <strong>For Other Diseases:</strong><br />
+                Time slots are available only on:<br />
+                - <strong>Saturday and Sunday:</strong> From <strong>9:00 AM to 5:00 PM</strong>.<br />
+                - <strong>Monday:</strong> From <strong>9:30 AM to 4:00 PM</strong>.
+              </p>
+              <p>No slots are available on other weekdays.</p>
+              <p className="mt-2"><em>Please select the appropriate date and disease to view the available time slots.</em></p>
             </div>
 
-            <div className="w-full md:w-1/2 px-2">
-              <label className="block mb-2 text-brown-700">Village</label>
-              <input
-                type="text"
-                name="village"
-                value={formData.village}
+            <form onSubmit={handleSubmit}>
+              <div className="flex flex-wrap -mx-2">
+                <div className="w-full sm:w-1/2 px-2">
+                  <label className="block mb-2 text-white">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full p-3 border-[1px] border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+                    placeholder="Enter your name"
+                    required
+                  />
+
+                  <label className="block mb-2 text-white">Age</label>
+                  <input
+                    type="number"
+                    name="age"
+                    value={formData.age}
+                    onChange={handleInputChange}
+                    className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+                    placeholder="Enter your age"
+                    required
+                  />
+                </div>
+
+                <div className="w-full sm:w-1/2 px-2">
+                  <label className="block mb-2 text-white">Village</label>
+                  <input
+                    type="text"
+                    name="village"
+                    value={formData.village}
+                    onChange={handleInputChange}
+                    className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+                    placeholder="Enter your village"
+                    required
+                  />
+
+                  <label className="block mb-2 text-white">Select Date</label>
+                  <input
+                    type="date"
+                    name="date"
+                    value={formData.date}
+                    onChange={handleInputChange}
+                    className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
+                    required
+                  />
+                </div>
+              </div>
+
+              <label className="block mb-2 text-white">Disease Type</label>
+              <select
+                name="disease"
+                value={formData.disease}
                 onChange={handleInputChange}
-                className="w-full p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
-                placeholder="Enter your village"
+                className="w-full sm:w-1/2 p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
                 required
-              />
-
-              <label className="block mb-2 text-brown-700">Select Date</label>
-              <input
-                type="date"
-                name="date"
-                value={formData.date}
-                onChange={handleInputChange}
-                className="w-full p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
-                required
-              />
-            </div>
-          </div>
-
-          <label className="block mb-2 text-brown-700">Disease Type</label>
-          <select
-            name="disease"
-            value={formData.disease}
-            onChange={handleInputChange}
-            className="w-full md:w-1/2 p-3 border border-brown-300 rounded-md mb-4 focus:outline-none focus:ring-[1px] focus:ring-yellow-500"
-            required
-          >
-            <option value="" disabled>
-              Select your disease type
-            </option>
-            <option value="dengue">Dengue</option>
-            <option value="corona">Corona</option>
-            <option value="other">Other Diseases</option>
-          </select>
-
-          <label className="block mb-2 text-brown-700">Available Time Slots</label>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            {availableTimeSlots.map((slot, index) => (
-              <button
-                key={index}
-                type="button"
-                className={`p-3 rounded-md border ${formData.timeSlot === slot
-                  ? "bg-yellow-400 border-yellow-500"
-                  : "bg-yellow-200 hover:bg-yellow-300"
-                  }`}
-                onClick={() => handleSlotSelect(slot)}
               >
-                {slot}
-              </button>
-            ))}
-          </div>
+                <option value="" disabled>
+                  Select your disease type
+                </option>
+                <option value="dengue">Dengue</option>
+                <option value="corona">Corona</option>
+                <option value="other">Other Diseases</option>
+              </select>
 
-          <div className="flex justify-center mt-6">
-            <button
-              type="submit"
-              className="w-full font-semibold bg-yellow-500 text-white p-3 rounded-md  hover:bg-yellow-600"
-            >
-              Book Appointment
-            </button>
+              <label className="block mb-2 text-white">Available Time Slots</label>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                {availableTimeSlots.map((slot, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    className={`p-3 rounded-md border ${formData.timeSlot === slot
+                      ? "bg-yellow-400 border-yellow-500"
+                      : "bg-yellow-200 hover:bg-yellow-300"
+                      }`}
+                    onClick={() => handleSlotSelect(slot)}
+                  >
+                    {slot}
+                  </button>
+                ))}
+              </div>
+
+              <div className="flex justify-center mt-6">
+                <button
+                  type="submit"
+                  className="w-full font-semibold bg-yellow-500 text-white p-3 rounded-md  hover:bg-yellow-600"
+                >
+                  Book Appointment
+                </button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );
