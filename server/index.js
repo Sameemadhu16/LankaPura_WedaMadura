@@ -8,17 +8,16 @@ import contactusRoutes from './routes/contactus.route.js';
 dotenv.config();
 
 mongoose
-    .connect(
-        process.env.MONGODB_URI,)
-    .then(() => {
-      console.log('Connected to MongoDB');
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  .connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('Connected to MongoDB');
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
 const app = express();
-app.use(cors());//enable CORS(Cross Origin Resource Sharing)
+app.use(cors());
 app.use(express.json());
 
 app.use('/api/appointments', appointmentRoutes);

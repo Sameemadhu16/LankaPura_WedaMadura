@@ -49,7 +49,7 @@ const AppointmentForm = () => {
       if (dayOfWeek === 0 || dayOfWeek === 6) {
         return allTimeSlots.slice(0, 16);
       } else if (dayOfWeek === 1) {
-        return allTimeSlots.slice(0, -4);
+        return allTimeSlots.slice(0, 14);
       } else {
         return [];
       }
@@ -76,7 +76,7 @@ const AppointmentForm = () => {
       return;
     }
     try {
-      const response = await fetch('http://localhost:3000/api/appointments/createAppointment', {
+      const response = await fetch('http://localhost:5000/api/appointments/createAppointment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
