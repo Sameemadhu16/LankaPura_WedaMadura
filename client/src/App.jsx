@@ -29,6 +29,7 @@ import Arthritis from './pages/Diseases/arthritis.jsx'
 
 import Header from './components/Home_Compo/header.jsx'
 import Footer from './components/Home_Compo/footer.jsx'
+import Prd from './pages/Produt_pages/Productdescription.jsx'
 
 function App()
 {
@@ -43,6 +44,7 @@ function App()
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/ourtreat" element={<Ourtreat />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/productdes/:id" element={<Prd/>}/>
 
 
           <Route path="/kidneydisease" element={<KidneyDisease />} />
