@@ -7,7 +7,7 @@ import Contactus from './pages/Contactus.jsx';
 import Appointment from './pages/Appointment.jsx';
 import Ourtreat from './pages/Ourtreat.jsx';
 import Products from './pages/Products.jsx';
-import ArticleDetail from './components/ArticleDetail.jsx';
+import ArticleDetail from './components/Blog_Compo/ArticleDetail.jsx';
 
 
 import KidneyDisease from './diseasepages/kidneydisease.jsx'
@@ -44,7 +44,7 @@ function App()
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/ourtreat" element={<Ourtreat />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/article/:id" element={<ArticleDetail />} />
+          <Route path="/article2/:id" element={<ArticleDetail />} />
 
 
           <Route path="/kidneydisease" element={<KidneyDisease />} />
