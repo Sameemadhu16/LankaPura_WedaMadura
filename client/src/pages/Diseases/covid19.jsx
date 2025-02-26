@@ -1,9 +1,9 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png";
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function arthritis() {
+export default function covid19() {
   return (
     <div>
 
@@ -30,7 +30,7 @@ export default function arthritis() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 25%; /* Adjust size to cover the right side */
+            width: 20%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,17 +136,23 @@ export default function arthritis() {
               fontSize: "3rem",
             }}
           >
-            Arthritis
+            Covid 19
           </h1>
         </div>
 
+        {/* Curved Image on the Right */}
+        {/* <img
+          src={kidneyImage} // Replace with the image path
+          alt="Curved Right Image"
+          className="curved-image"
+        /> */}
       </main>
 
       <section
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "800px", // Set the height to 500px
+          height: "500px", // Set the height to 500px
         }}
       >
         <h2
@@ -159,8 +165,23 @@ export default function arthritis() {
             fontSize: "3rem",
           }}
         >
-          Arthritis
+          Covid 19
         </h2>
+
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginTop: "50px", // Additional margin for the second line
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          What is this {" "}
+          <span style={{ color: "#006400" }}>EPIREPIES</span>?
+        </h2>
+
         <p
           style={{
             
@@ -169,75 +190,31 @@ export default function arthritis() {
             fontSize: "1.2rem",
           }}
         >
-          Arthritis is the swelling and tenderness of one or more of your joints. 
-          The main symptoms of arthritis are joint pain and stiffness, which typically 
-          worsen with age. The most common types of arthritis are osteoarthritis and 
-          rheumatoid arthritis. Osteoarthritis causes cartilage — the hard, slippery 
-          tissue that covers the ends of bones where they form a joint — to break down. 
-          Rheumatoid arthritis is a disease in which the immune system attacks the joints, 
-          beginning with the lining of joints.
+          Epirepies is a Natural Herbal Medicine, Containing the Extracts 
+          of Timeless Medicinal Herbs. It Aids the Body in Curing Ailments 
+          such as Phlegm, Dry Cough, Shortness of Breath, Runny Nose and 
+          Pulmonary Fibrosis. This Natural Formulation is Especially 
+          Capable of Boosting the immunity system to help prevent corona virus. 
+          This herbal medicine is suitable for children, older people and pregnant women alike.
         </p>
+
+
+        <p
+          style={{
+            
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
+        >
+          EPIREPIES”, The drug manufactured against the COVID 19 virus, 
+          was launched few months ago with MP Sisira Jayakody, the State 
+          Minister of Indigenous Medicine, Rural and Ayurveda Hospital 
+          Development and Community Health in Sri Lanka.
+        </p>
+
+
         
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Symptoms
-        </h2>
-
-        <p
-          style={{
-            
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          The most common signs and symptoms of arthritis involve the joints. 
-          Depending on the type of arthritis you have, your signs and symptoms may include:
-        </p>
-
-        <ul
-          style={{
-            fontWeight: 400,
-          }}
-        >
-          <li>Pain in joints</li>
-          <li>Stiffness</li>
-          <li>Swelling</li>
-          <li>Redness</li>
-          <li>Decreased range of motion</li>          
-        </ul>
-
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Exercising to manage symptoms
-        </h2>
-
-        <p
-          style={{
-            
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          If you have arthritis, you might not always feel like exercising. 
-          And you might be worried that exercising will make your pain or your 
-          condition worse that it was. No you’re wrong. Now it has found that 
-          exercise can make better the symptoms like pain in joints and swelling 
-          better. But it’s very important that you do the best type of exercise.
-        </p>
 
         {/* Plant Image */}
         <img

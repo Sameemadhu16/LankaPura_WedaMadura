@@ -1,12 +1,12 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png"; // Replace with your actual image for the right side
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png"; 
 
-export default function dengue() {
+export default function sciatica() {
   return (
     <div>
-   
+     
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function dengue() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 20%; /* Adjust size to cover the right side */
+            width: 35%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,7 +136,7 @@ export default function dengue() {
               fontSize: "3rem",
             }}
           >
-            Dengue
+            Sciatica
           </h1>
         </div>
 
@@ -152,7 +152,7 @@ export default function dengue() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "700px", // Set the height to 500px
+          height: "1300px", // Set the height to 500px
         }}
       >
         <h2
@@ -165,67 +165,129 @@ export default function dengue() {
             fontSize: "3rem",
           }}
         >
-          Dengue
+          Sciatica
         </h2>
-
+        <p
+          style={{
+            
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
+        >
+          Sciatica refers to pain that radiates along the path of the sciatic 
+          nerve, which branches from your lower back through your hips and 
+          buttocks and down each leg. Typically, sciatica affects only one 
+          side of your body. The most common cause is a herniated or slipped 
+          disk that causes pressure on the nerve root. This causes inflammation, 
+          pain and often some numbness in the affected leg.
+        </p>
 
         <h2
           style={{
             fontFamily: "'Playfair Display SC', serif",
             fontWeight: 500,
-            marginTop: "50px", // Additional margin for the second line
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
           }}
         >
-          What is{" "}
-          <span style={{ color: "#006400" }}>Dengue</span>?
+          Symptoms
+        </h2>
+        <ul
+          style={{
+            fontWeight: 400,
+          }}
+        >
+          <li>Lower back pain</li>
+          <li>Pain in the rear or leg that is worse when sitting</li>
+          <li>Hip pain</li>
+          <li>Burning or tingling down the leg</li>
+          <li>Weakness, numbness, or a hard time moving the leg or foot</li>
+          <li>A constant pain on one side of the rear</li>
+          <li>A shooting pain that makes it hard to stand up</li>
+          
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+         
+          <span style={{ color: "#006400" }}>Sciatica</span>{" "} pain feel like
         </h2>
 
         <p
           style={{
-            
             fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
+          }}        
         >
-          Dengue is a viral infection caused by the dengue virus (DENV), which is transmitted to humans through the bites of infected female Aedes mosquitoes, primarily Aedes aegypti. This disease is common in tropical and subtropical regions, including Southeast Asia, South America, and Africa.
+          People describe sciatica pain in different ways, 
+          it depends on its cause. Some people describe the 
+          pain as sharp, shooting or jolts of pain. While 
+          some describe this pain as “burning,” “electric” or “stabbing.”
         </p>
 
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Are you at a risk of{" "}
+          <span style={{ color: "#006400" }}>Sciatica</span>?
+        </h2>
 
         <p
           style={{
-            
             fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
+          }}        
         >
-          Dengue typically manifests as a sudden onset of high fever, severe headache, pain behind the eyes, joint and muscle pain, fatigue, nausea, vomiting, skin rash, and mild bleeding (like nosebleeds or gum bleeding). These symptoms usually appear 4-10 days after being bitten by an infected mosquito and can last up to a week.
+          If you have following factors, you have a greater risk,
         </p>
 
+        <ul
+          style={{
+            fontWeight: 400,
+          }}        
+        >
+          <li>Have or previously had an injury to your lower back or spine</li>
+          <li>When a person gets old</li>
+          <li>Overweight</li>
+          <li>Lack a strong core</li>
+          <li>Doing jobs that require heavy lifting</li>
+          <li>Incorrect posture</li>
+          <li>Have diabetes or Osteoarthritis</li>
+          <li>Inactive lifestyle</li>
+          <li>Smoking</li>
+        </ul>
+
+        <h2
+          style={{
+            fontFamily: "'Playfair Display SC', serif",
+            fontWeight: 500,
+            marginLeft: "1px", // Additional margin for the second line
+            fontSize: "2rem",
+          }}
+        >
+          Is the {" "}
+          <span style={{ color: "#006400" }}>increase of weight of a pregnant person</span>{" "}also a reason?
+        </h2>
 
         <p
           style={{
-            
             fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
+          }}        
         >
-          In some cases, dengue can progress to severe forms, such as dengue hemorrhagic fever (DHF) or dengue shock syndrome (DSS), which involve severe bleeding, organ damage, and dangerously low blood pressure. These complications can be life-threatening without immediate medical attention.
-        </p>
-
-        <p
-          style={{
-            
-            fontWeight: 400,
-            marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
-          }}
-        >
-          There is no specific antiviral treatment for dengue. Management focuses on supportive care, such as hydration and pain relief, with severe cases requiring hospitalization. Preventing dengue involves controlling mosquito populations, using insect repellents, wearing protective clothing, and eliminating stagnant water where mosquitoes breed. Vaccines like Dengvaxia are available in some regions, but they are not suitable for everyone. Early detection and prevention are key to reducing dengue’s impact.
+          It’s true that sciatica is common in pregnancy. 
+          But increased weight is not the main reason why 
+          pregnant women get sciatica. It happens because 
+          certain hormones of pregnancy cause a loosening of their ligaments.
         </p>
 
         {/* Plant Image */}

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png";
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png";
 
-export default function catarrh() {
+export default function arthritis() {
   return (
     <div>
 
@@ -30,7 +30,7 @@ export default function catarrh() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 30%; /* Adjust size to cover the right side */
+            width: 25%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,7 +136,7 @@ export default function catarrh() {
               fontSize: "3rem",
             }}
           >
-            Catarrh
+            Arthritis
           </h1>
         </div>
 
@@ -146,7 +146,7 @@ export default function catarrh() {
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1000px", // Set the height to 500px
+          height: "800px", // Set the height to 500px
         }}
       >
         <h2
@@ -159,7 +159,7 @@ export default function catarrh() {
             fontSize: "3rem",
           }}
         >
-          Catarrh
+          Arthritis
         </h2>
         <p
           style={{
@@ -169,16 +169,15 @@ export default function catarrh() {
             fontSize: "1.2rem",
           }}
         >
-          The term catarrh, or postnasal drip, describes a buildup of mucus in 
-          the back of the nose, throat, or sinuses. Mucus is a slippery, fluid 
-          substance that the mucus glands in the nose and throat produce. It helps 
-          moisten the nasal passages while trapping any debris, viruses, or bacteria 
-          a person inhale. This helps prevent pathogens from getting into the body, 
-          where they could cause an infection.
+          Arthritis is the swelling and tenderness of one or more of your joints. 
+          The main symptoms of arthritis are joint pain and stiffness, which typically 
+          worsen with age. The most common types of arthritis are osteoarthritis and 
+          rheumatoid arthritis. Osteoarthritis causes cartilage — the hard, slippery 
+          tissue that covers the ends of bones where they form a joint — to break down. 
+          Rheumatoid arthritis is a disease in which the immune system attacks the joints, 
+          beginning with the lining of joints.
         </p>
-
         
-
         <h2
           style={{
             fontFamily: "'Playfair Display SC', serif",
@@ -189,24 +188,29 @@ export default function catarrh() {
         >
           Symptoms
         </h2>
+
+        <p
+          style={{
+            
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
+          }}
+        >
+          The most common signs and symptoms of arthritis involve the joints. 
+          Depending on the type of arthritis you have, your signs and symptoms may include:
+        </p>
+
         <ul
           style={{
             fontWeight: 400,
           }}
         >
-          <li>Rasping or gurgling when talking</li>
-          <li>Tickling feeling of mucus draining into the throat</li>
-          <li>Feeling as though there is a lump in the throat</li>
-          <li>Having to clear the throat frequently</li>
-          <li>Coughing</li>
-          <li>Having to swallow frequently</li>
-          <li>Difficulty swallowing</li>
-          <li>A sore throat</li>
-          <li>A blocked or stuffy nose</li>
-          <li>A headache</li>
-          <li>Facial pain</li>
-          <li>A loss of taste or smell</li>
-          <li>Difficulty of sleeping</li>
+          <li>Pain in joints</li>
+          <li>Stiffness</li>
+          <li>Swelling</li>
+          <li>Redness</li>
+          <li>Decreased range of motion</li>          
         </ul>
 
         <h2
@@ -217,8 +221,7 @@ export default function catarrh() {
             fontSize: "2rem",
           }}
         >
-          Can we prevent {" "}
-          <span style={{ color: "#006400" }}>Catarrh</span>?
+          Exercising to manage symptoms
         </h2>
 
         <p
@@ -229,13 +232,11 @@ export default function catarrh() {
             fontSize: "1.2rem",
           }}
         >
-          It is recommended that you avoid things which can trigger catarrh 
-          (such as smoky places or allergens) and take sips of cold water when 
-          you feel the need to clear your throat. It is important to note that 
-          constantly clearing your throat may make things worse. Catarrh can 
-          also be caused by warm and dry atmospheres like air conditioning or 
-          car heating. So, if you can avoid these environments, combined with 
-          staying well hydrated should help.
+          If you have arthritis, you might not always feel like exercising. 
+          And you might be worried that exercising will make your pain or your 
+          condition worse that it was. No you’re wrong. Now it has found that 
+          exercise can make better the symptoms like pain in joints and swelling 
+          better. But it’s very important that you do the best type of exercise.
         </p>
 
         {/* Plant Image */}

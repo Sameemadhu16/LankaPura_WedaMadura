@@ -1,12 +1,12 @@
 import React from 'react'
 
-import landing from "../assets/lankapura.jpg";
-import plantImage from "../assets/plantcrop.png";
+import landing from "../../assets/lankapura.jpg";
+import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
-export default function nsd() {
+export default function itp() {
   return (
     <div>
-    
+     
       {/* Inline CSS for animation */}
       <style>
         {`
@@ -30,7 +30,7 @@ export default function nsd() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 35%; /* Adjust size to cover the right side */
+            width: 25%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -136,18 +136,23 @@ export default function nsd() {
               fontSize: "3rem",
             }}
           >
-            Nervous System Diseases
+            I.T.P
           </h1>
         </div>
 
-       
+        {/* Curved Image on the Right */}
+        {/* <img
+          src={kidneyImage} // Replace with the image path
+          alt="Curved Right Image"
+          className="curved-image"
+        /> */}
       </main>
 
       <section
         className="py-12 px-6 content-section"
         style={{
           backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1250px", // Set the height to 500px
+          height: "850px", // Set the height to 500px
         }}
       >
         <h2
@@ -160,52 +165,26 @@ export default function nsd() {
             fontSize: "3rem",
           }}
         >
-          Nervous System Diseases
+          I.T.P
         </h2>
-
-
-        <h2
+        <p
           style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
+            
+            fontWeight: 400,
+            marginTop: "20px", // Additional margin for the second line
+            fontSize: "1.2rem",
           }}
         >
-          Principal organs of the nervous system
-        </h2>
-
-        <p
-          style={{
-            fontWeight: 400,
-          }}        
-        >
-          –Eyes –Ears –Sensory organs of taste – Sensory organs of smell
-        </p>
-
-        <p
-          style={{
-            fontWeight: 400,
-          }}        
-        >
-          –Sensory receptors in skin, joints, muscles and other parts of the body
-        </p>
-
-
-        <p
-          style={{
-            fontWeight: 400,
-          }}        
-        >
-          Nervous system disease or disorders that affect the functioning 
-          of the human nervous system. Everything that human’s sense, consider, 
-          and effect and all the unlearned reflexes of the body depend on 
-          the functioning of the nervous system. The skeleton and muscles 
-          support and transport the body, and the digestive system, heart, 
-          and lungs provide nutrients; but the nervous system contains the 
-          epitome of the human—the mind—and commands all perception, thought, 
-          and action. Disturbance or malfunction of the functions of the nervous 
-          system causes changes felt throughout the body.
+          I.T.P is an immune disorder in which the blood doesn’t clot normally. 
+          This is a blood disorder characterized by a decrease in the number of 
+          platelets in the blood. This condition is now more commonly referred 
+          to as immune thrombocytopenia (ITP). ITP can cause excessive bruising 
+          and bleeding. An unusually low level of platelets, or thrombocytes, 
+          in the blood results in ITP. Platelets are produced in the bone marrow. 
+          They help stop bleeding by clumping together to form a clot that seals 
+          cut or small tears in blood vessel walls and tissues. If your blood 
+          doesn’t have enough platelets, it’s slow to clot. Internal bleeding 
+          or bleeding on or under the skin can result.
         </p>
 
         <h2
@@ -223,47 +202,33 @@ export default function nsd() {
             fontWeight: 400,
           }}
         >
-          <li>Persistent or sudden onset of a headache</li>
-          <li>A headache that changes or is different</li>
-          <li>Loss of feeling or tingling</li>
-          <li>Weakness or loss of muscle strength</li>
-          <li>Loss of sight or double vision</li>
-          <li>Memory loss</li>
-          <li>Impaired mental ability</li>
-          <li>Lack of coordination</li>
-          <li>Muscle rigidity</li>
-          <li>Tremors and seizures</li>
-          <li>Back pain which radiates to the feet, toes, or other parts of the body</li>
-          <li>Muscle wasting and slurred speech</li>
-          <li>New language impairment (expression or comprehension)</li>
+          <li>Bruising easily</li>
+          <li>Pinpoint-sized Petechiae, often on the lower legs</li>
+          <li>Spontaneous nosebleeds</li>
+          <li>Bleeding from the gums (for example, during dental work)</li>
+          <li>Blood in the urine</li>
+          <li>Blood in the stool</li>
+          <li>Internal bleeding</li>
+          <li>Abnormally heavy or long menstruation</li>
+          <li>Prolonged bleeding from cuts</li>
+          <li>Profuse bleeding during surgery</li>
          
         </ul>
 
-        <h2
-          style={{
-            fontFamily: "'Playfair Display SC', serif",
-            fontWeight: 500,
-            marginLeft: "1px", // Additional margin for the second line
-            fontSize: "2rem",
-          }}
-        >
-          Your nervous system can be  {" "}
-          <span style={{ color: "#006400" }}>damaged</span>{" "}by the followings
-        </h2>
-
-        <ul
+        <p
           style={{
             fontWeight: 400,
           }}        
         >
-          <li>Injury</li>
-          <li>Infections</li>
-          <li>Degeneration</li>
-          <li>Tumors</li>
-          <li>Blood flow disruption</li>
-          <li>Autoimmune disorders</li>
-          
-        </ul>
+          Normally, a person who appears to have been cured of ITP 
+          will experience a relapse, perhaps months or even years 
+          after the initial episode. If this happens the person will 
+          need repeat treatment. In most cases, the relapse seems to 
+          be triggered by a viral infection.
+
+        </p>
+
+        
 
         {/* Plant Image */}
         <img
@@ -272,7 +237,9 @@ export default function nsd() {
           className="right-image"
         />
       </section>
-   
+
+      {/* <Footer /> */}
+
     </div>
   )
 }
