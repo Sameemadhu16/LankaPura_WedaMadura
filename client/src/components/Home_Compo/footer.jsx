@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 import logo from "../../assets/Home_Assets/Logo.png";
 
@@ -29,9 +29,10 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="flex space-x-4 mt-4">
-            <FaFacebook className="text-xl cursor-pointer hover:text-gray-400" />
-            <FaInstagram className="text-xl cursor-pointer hover:text-gray-400" />
-            <FaTwitter className="text-xl cursor-pointer hover:text-gray-400" />
+            <a href="https://www.facebook.com/Dr.Tharanga.Kumari.Wickramasooriya/" target="_blank" rel="noopener noreferrer"><FaFacebook className="text-xl cursor-pointer hover:text-gray-400" /></a>
+            <a href="https://lk.linkedin.com/in/tharanga-kumari-wickramasooriya-61a9531ba" target="_blank" rel="noopener noreferrer"> <FaLinkedin className="text-xl cursor-pointer hover:text-gray-400" /></a>
+            <a href="https://x.com/drtharanga?lang=en"target="_blank" rel="noopener noreferrer"><FaTwitter className="text-xl cursor-pointer hover:text-gray-400" /></a>
+            
           </div>
         </div>
 

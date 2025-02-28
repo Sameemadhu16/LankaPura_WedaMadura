@@ -4,7 +4,7 @@ import DoctorImage from './Doctor';
 
 const Aboutthedoctor = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center w-full px-2 sm:px-6 md:px-7 lg:px-7 bg">
+    <div className="flex flex-wrap justify-center items-center w-full px-2 sm:px-5 md:px-6 lg:px-7 bg">
       {/* Doctor's Image */}
       <DoctorImage className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4" />
 
