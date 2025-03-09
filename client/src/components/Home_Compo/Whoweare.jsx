@@ -1,61 +1,41 @@
-import React from 'react';
-import WWA from '../../assets/Home_Assets/WWA.png';
-import INTRO from '../../assets/Home_Assets/INTRO.png';
+
+import React from "react";
+import WWA from "../../assets/Home_Assets/WWA.png";
+import logo from "../../assets/Home_Assets/Logoblack.png";
 
 const Whoweare = () => {
   return (
     <div
       className="flex justify-center items-center w-full relative"
       style={{
-        marginTop: '30px',
+        marginTop: "30px",
         backgroundImage: `url(${WWA})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '1000px',
-        '@media (max-width: 768px)': {
-          height: '400px',  
-        },
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "auto",
       }}
     >
-      <div 
-        className="absolute"
-        style={{
-          top: '60%', 
-          left: '60%', 
-          transform: 'translate(-135%, -65%)',
-        }}
-      >
-        <img src={INTRO} alt="intro" className="w-full h-auto rounded" />
-        <button
-          className="absolute lg:px-4 lg:py-2 lg:text-sm md:px-2 md:py-1 md:text-sm sm:px-2 sm:py-1 sm:text-sm border border-black text-black rounded-lg transition-all duration-200 hover:text-white hover:bg-[#8CC85F] hover:border-transparent"
-          style={{
-            top: '91%',
-            left: '50%',
-            transform: 'translateX(-50%)',
-          }}
-        >
-          Read More {'>>>'}
-        </button>
-      </div>
-      {/* Responsive Adjustments */}
-      <div 
-        className="absolute w-[90%] sm:w-[80%] md:w-[70%] lg:hidden"
-        style={{
-          top: '60%', 
-          left: '50%', 
-          transform: 'translate(-50%, -65%)',
-        }}
-      >
-        <img src={INTRO} alt="intro" className="w-full h-auto rounded" />
-        <button
-          className="absolute px-4 py-2 border border-black text-black rounded-lg transition-all duration-200 hover:text-white hover:bg-[#8CC85F] hover:border-transparent"
-          style={{
-            top: '91%',
-            left: '50%',
-            transform: 'translateX(-50%)',
-          }}
-        >
-          Read More {'>>>'}
+      {/* White document container */}
+      <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg max-w-2xl w-11/12 text-center relative ">
+        {/* Logo Section */}
+        <div className="flex justify-center">
+          <img src={logo} alt="Lankapura Logo" className="w-16 mb-2" />
+        </div>
+        <p className="text-lg text-black font-[Raleway]">since 2012</p>
+
+        {/* Title Section */}
+        <h2 className="text-3xl font-bold mt-4 mb-4 font-[playfair]">
+          WHO WE ARE <br /> LANKAPURA HERBAL MEDICINE
+        </h2>
+
+        {/* Description Section */}
+        <p className="text-gray-700 mt-4 text-lg leading-relaxed font-[Raleway]">
+        Dr. Tharanga Kumari Wickramasuriya is the last surviving member of a proud 700-year-old medical lineage. Inspired by her father, a medical doctor, and her grandfather, a hereditary internist, she developed a passion for healing from a young age. Known affectionately as the "Dengue Doctor," she made history by developing a 100% proven drug for dengue, curing over 100,000 patients, and earning a patent for her breakthrough. During the Covid-19 pandemic, she also created an effective treatment, saving countless local and international lives. Today, Dr. Tharanga continues her remarkable journey at Lankapura Medical Center, offering expert care for a wide range of physical ailments. Her dedication, innovation, and compassion have made her a true icon in modern medicine.
+        </p>
+
+        {/* Read More Button */}
+        <button className="mt-8 px-6 py-2 bg-black text-white rounded-lg hover:bg-[#348101] transition duration-300">
+          Read More &gt;&gt;&gt;
         </button>
       </div>
     </div>
