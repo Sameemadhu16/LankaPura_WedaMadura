@@ -40,7 +40,7 @@ const Whypeople = () => {
       <div className="w-full">
         <Whypp2 />
       </div>
-      <div className="w-full">
+      <div className="w-full ">
         <Archivement />
       </div>
       <div className="w-full">

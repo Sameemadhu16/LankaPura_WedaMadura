@@ -45,7 +45,7 @@ const Header = () => {
         isScrolled ? "bg-[#331806e4] shadow-lg" : "bg-transparent"
       } ${headerVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex items-center justify-between px-4">
         {/* Logo Section */}
         <div className="flex items-center">
           <a href="/">
@@ -65,8 +65,8 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        {/* Desktop & Tablet Navigation */}
+        <nav className="hidden lg:flex items-center space-x-8">
           {navLinks.map(({ path, name }, index) => (
             <NavLink
               key={index}
@@ -83,18 +83,18 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Hamburger Menu Button */}
+        {/* Hamburger Menu Button for Mobile & Tablet */}
         <button
           onClick={toggleMenu}
-          className="text-white text-2xl md:hidden focus:outline-none"
+          className="text-white text-2xl lg:hidden focus:outline-none"
         >
           ☰
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile & Tablet Dropdown Menu */}
       <div
-        className={`absolute top-0 left-0 w-full bg-[#331806] shadow-lg transition-transform duration-300 md:hidden ${
+        className={`absolute top-0 left-0 w-full bg-[#331806] shadow-lg transition-transform duration-300 lg:hidden ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
