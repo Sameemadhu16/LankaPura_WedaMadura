@@ -6,3 +6,5 @@ const router = express.Router();
 router.post('/createAppointment', createAppointment);
 
 export default router;
+
+

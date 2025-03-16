@@ -1,12 +1,13 @@
-import React from 'react'
-import Home from './pages/Home.jsx'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Aboutus from './pages/Aboutus.jsx'
-import Blog from './pages/Blog.jsx'
-import Contactus from './pages/Contactus.jsx'
-import Appointment from './pages/Appointment.jsx'
-import Ourtreat from './pages/Ourtreat.jsx'
-import Products from './pages/Products.jsx'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import Aboutus from './pages/Aboutus.jsx';
+import Blog from './pages/Blog.jsx';
+import Contactus from './pages/Contactus.jsx';
+import Appointment from './pages/Appointment.jsx';
+import Ourtreat from './pages/Ourtreat.jsx';
+import Products from './pages/Products.jsx';
+import ArticleDetail from './components/Blog_Compo/ArticleDetail.jsx';
 
 
 import KidneyDisease from './pages/Diseases/kidneydisease.jsx'
@@ -29,6 +30,7 @@ import Arthritis from './pages/Diseases/arthritis.jsx'
 
 import Header from './components/Home_Compo/header.jsx'
 import Footer from './components/Home_Compo/footer.jsx'
+import Prd from './pages/Produt_pages/Productdescription.jsx'
 
 import Abd from './pages/Aboutthedoctor.jsx'
 
@@ -50,6 +52,8 @@ function App()
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/ourtreat" element={<Ourtreat />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/article2/:id" element={<ArticleDetail />} />
+          <Route path="/productdes/:id" element={<Prd/>}/>
 
           
           <Route path="/kidneydisease" element={<KidneyDisease />} />
@@ -74,7 +78,7 @@ function App()
         </Routes>
       <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
