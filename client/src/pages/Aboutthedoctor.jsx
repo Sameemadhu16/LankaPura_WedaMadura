@@ -33,7 +33,7 @@ export default function Aboutthedoctor() {
         }}
       >
         <h1
-          className="mb-4 font-[playfair] text-center font-medium text-7xl animate-fade-in"
+          className="mb-4 font-[playfair] text-center font-medium text-7xl fade-in"
           style={{ marginTop: '390px' }}
         >
           Dr.Tharanga Kumari Wickramasooriya

@@ -30,7 +30,7 @@ export default function lungdiseases() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 30%; /* Adjust size to cover the right side */
+            width: 25%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -61,20 +61,15 @@ export default function lungdiseases() {
             position: relative;
             z-index: 10;
             flex-direction: column;
-            align-items: start;
-            padding-left: 40px;
+            align-items: start;          
             display: flex;
             justify-content: center;
-            height: 100%;
-          }
-
-          .landing-content h1 {
-            font-family: 'Playfair Display SC', serif;
-            font-weight: 700;
-            color: white; /* Change the text color to white */
+            margin-top: 204px;
+            
           }
 
           .content-section {
+            height: auto;
             padding: 80px;
             text-align: left;
             font-family: Arial, sans-serif;
@@ -104,6 +99,44 @@ export default function lungdiseases() {
       
             overflow: hidden; /* Hide the bottom part of the image */
           }
+
+.content-section ul {
+  font-size: 1.2rem; /* Larger font size for list items */
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .content-section {
+    height: auto; /* Adjust the height for tablets or smaller screens */
+    padding: 60px; /* Reduce padding for smaller devices */
+  }
+
+  .content-section ul {
+    font-size: 1rem; /* Adjust font size for list items */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .content-section {
+    height: auto; /* Adjust the height for mobile screens */
+    padding: 40px; /* Reduce padding for mobile devices */
+  }
+
+
+
+  .content-section ul {
+    font-size: 0.9rem; /* Adjust font size for mobile list items */
+  }
+
+  .content-section ul li {
+    font-size: 0.9rem; /* Adjust font size for list items */
+  }
+
+  .content-section p {
+    font-size: 0.9rem; /* Adjust font size for mobile paragraph */
+  }
+}
         `}
       </style>
 
@@ -111,28 +144,28 @@ export default function lungdiseases() {
         {/* Overlay Layer */}
         <div className="landing-overlay"></div>
 
-        {/* Content Layer */}
-        <div className="landing-content fade-in">
+        
+
+        <div className="landing-content fade-in text-center">
           {/* First Line */}
           <h1
-            className="text-4xl font-[playfair] font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2 mx-auto md:mx-0 md:ml-[190px] md:text-left"
             style={{
-             
+              
+              color: 'white',  
               fontWeight: 500,
-              marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
             }}
           >
             Ayurvedic Treatments for
           </h1>
 
-          {/* Second Line with Padding */}
+          {/* Second Line */}
           <h1
-            className="text-4xl font-[playfair] font-bold"
+            className="text-4xl font-[playfair] font-bold mb-2 mx-auto md:mx-0 md:ml-[240px] md:text-left"
             style={{
-              
               fontWeight: 500,
-              marginLeft: "200px", // Additional margin for the second line
+              color:'white',
               fontSize: "3rem",
             }}
           >
@@ -144,10 +177,7 @@ export default function lungdiseases() {
 
       <section
         className="py-12 px-6 content-section"
-        style={{
-         
-          height: "950px", // Set the height to 500px
-        }}
+        
       >
         <h2
           className="text-4xl font-[playfair] font-bold"
@@ -162,12 +192,12 @@ export default function lungdiseases() {
           Lung diseases
         </h2>
         <p
-          className="font-[Raleway]"
+          className="font-[Raleway] text-justify"
           style={{
             
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
+           
           }}
         >
           Lung disease refers to several types of diseases or disorders that 
@@ -177,12 +207,12 @@ export default function lungdiseases() {
         </p>
 
         <p
-          className="font-[Raleway]"
+          className="font-[Raleway] text-justify"
           style={{
             
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
+           
           }}
         >
           There are many different lung diseases, some of which are caused by 
@@ -202,7 +232,7 @@ export default function lungdiseases() {
           The most common lung diseases
         </h2>
         <ul
-          className="font-[Raleway]"
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
           }}
@@ -231,7 +261,7 @@ export default function lungdiseases() {
         </h2>
 
         <ul
-          className="font-[Raleway]"
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
           }}        

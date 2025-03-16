@@ -30,7 +30,7 @@ export default function alltypeofcancers() {
             position: absolute;
             top: 0;
             right: 0;
-            width: 45%; /* Adjust size to cover the right side */
+            width: 35%; /* Adjust size to cover the right side */
             height: 105.3%;
             object-fit: cover;
             z-index: 10;
@@ -75,6 +75,7 @@ export default function alltypeofcancers() {
           }
 
           .content-section {
+            height:auto;
             padding: 80px;
             text-align: left;
             font-family: Arial, sans-serif;
@@ -104,6 +105,44 @@ export default function alltypeofcancers() {
       
             overflow: hidden; /* Hide the bottom part of the image */
           }
+              /* Tablet and smaller screens */
+    @media (max-width: 768px) {
+      .content-section {
+        height: auto; /* Adjust the height for tablets or smaller screens */
+        padding: 60px; /* Reduce padding for smaller devices */
+      }
+
+      .content-section h2 {
+        font-size: 1.4rem; /* Adjust heading size */
+      }
+
+      .content-section ul {
+        font-size: 1rem; /* Adjust font size for list items */
+      }
+    }
+
+    /* Mobile screens */
+@media (max-width: 480px) {
+  .content-section {
+    height: auto; /* Adjust the height for mobile screens */
+    padding: 40px; /* Reduce padding for mobile devices */
+  }
+
+  .content-section h2 {
+    font-size: 1.0rem; /* Adjust heading size for mobile */
+  }
+
+  .content-section ul {
+    font-size: 0.8rem; /* Adjust font size for mobile list items */
+  }
+
+  .content-section ul li {
+    font-size: 0.8rem; /* Adjust font size for list items */
+  }
+
+  .content-section p {
+    font-size: 0.8rem; /* Adjust font size for mobile paragraph */
+  }
         `}
       </style>
 
@@ -111,28 +150,27 @@ export default function alltypeofcancers() {
         {/* Overlay Layer */}
         <div className="landing-overlay"></div>
 
-        {/* Content Layer */}
-        <div className="landing-content fade-in">
-          {/* First Line */}
+        
+        <div className="landing-content fade-in text-center">
+        
           <h1
-            className="text-4xl font-[playfair] font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2 mx-auto md:mx-0 md:ml-[190px] md:text-left"
             style={{
-             
+              
+              color: 'white',  
               fontWeight: 500,
-              marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
             }}
           >
             Ayurvedic Treatments for
           </h1>
 
-          {/* Second Line with Padding */}
+         
           <h1
-            className="text-4xl font-[playfair] font-bold"
+            className="text-4xl font-[playfair] font-bold mb-2 mx-auto md:mx-0 md:ml-[240px] md:text-left"
             style={{
-             
               fontWeight: 500,
-              marginLeft: "200px", // Additional margin for the second line
+              color:'white',
               fontSize: "3rem",
             }}
           >
@@ -150,10 +188,7 @@ export default function alltypeofcancers() {
 
       <section
         className="py-12 px-6 content-section"
-        style={{
-          
-          height: "1900px", // Set the height to 500px
-        }}
+        
       >
         <h2
           className="text-4xl font-[playfair] font-bold"
@@ -168,12 +203,12 @@ export default function alltypeofcancers() {
           All type of cancers
         </h2>
         <p
-          className="font-[Raleway]"
+          className="font-[Raleway] text-justify"
           style={{
             
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
+           
           }}
         >
           Cancer is an umbrella term for a large group of diseases caused 
@@ -197,7 +232,7 @@ export default function alltypeofcancers() {
         </h2>
 
         <p
-          className="font-[Raleway]"
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
           }}        
@@ -213,7 +248,7 @@ export default function alltypeofcancers() {
         </p>
 
         <ul
-          className="font-[Raleway]"
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
           }}

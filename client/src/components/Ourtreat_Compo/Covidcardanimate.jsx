@@ -12,10 +12,10 @@ import A4 from '../../assets/animatec4.jpg';
 
 const Covidcardanimate = () => {
   const treatCardsData = [
-    { id: 1, imageUrl: A1, title: "COVID 19" },
-    { id: 2, imageUrl: A2, title: "DENGUE" },
-    { id: 3, imageUrl: A3, title: "ALL TYPE OF CANCERS" },
-    { id: 4, imageUrl: A4, title: "ARTHRITIS" },
+    { id: 1, imageUrl: A1 },
+    { id: 2, imageUrl: A2 },
+    { id: 3, imageUrl: A3 },
+    { id: 4, imageUrl: A4 },
     
   ];
 
@@ -67,7 +67,7 @@ const Covidcardanimate = () => {
       <div
         className="h-1000 justify-center items-center"
         style={{
-            marginTop: "100px",
+            marginTop: "10px",
           display: "flex",
           transition: "transform 1s ease",
         }}
@@ -98,19 +98,19 @@ const Covidcardanimate = () => {
       </div>
 
       {/* Navigation Arrows */}
-      <button
+      {/* <button
         onClick={goPrev}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white border-none p-2 cursor-pointer rounded-full hover:bg-[#348101] text-7xl"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 text-black border-none p-2 cursor-pointer rounded-full hover:bg-[#348101] text-7xl"
       >
         <MdOutlineArrowBack />
       </button>
 
       <button
         onClick={goNext}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white border-none p-2 cursor-pointer hover:bg-[#348101] text-7xl rounded-full"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 text-black border-none p-2 cursor-pointer hover:bg-[#348101] text-7xl rounded-full"
       >
         <MdOutlineArrowForward />
-      </button>
+      </button> */}
     </div>
   );
 };
