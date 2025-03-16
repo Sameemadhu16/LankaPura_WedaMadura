@@ -54,23 +54,20 @@ const ArticleDetail = () => {
 
   return (
     <div className="min-h-screen">
-      {/* 🔥 First Section with Background Image */}
       <section
         className="relative pb-12"
         style={{
-          backgroundImage: `url(${bgTexture})`, // Use your new background image
+          backgroundImage: `url(${bgTexture})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: "450px", // Increase the height slightly
-          clipPath: "polygon(0 0, 100% 0, 100% 90%, 50% 105%, 0 90%)", // Adjusted for a lower border
-           
-
+          minHeight: "450px",
+          clipPath: "polygon(0 0, 100% 0, 100% 90%, 50% 105%, 0 90%)",
         }}
       >
         <div className="max-w-6xl px-4 pt-24 mx-auto">
-          <div className="grid items-center gap-12 md:grid-cols-2">
-            <div className="order-2 md:order-1">
-              <h1 className="mb-4 font-serif text-4xl text-gray-800 md:text-5xl">
+          <div className="grid items-center grid-cols-1 gap-12 md:grid-cols-2">
+            <div>
+              <h1 className="mb-4 font-serif text-3xl text-gray-800 sm:text-4xl md:text-5xl">
                 {article?.topic}
               </h1>
               <div className="flex items-center gap-4 mb-6 text-gray-600">
@@ -97,12 +94,15 @@ const ArticleDetail = () => {
                 </div>
               </div>
             </div>
-            <div className="order-1 md:order-2">
+            <div>
               {article.image && (
                 <img
                   src={article.image}
                   alt={article.topic}
-                  className="rounded-2xl shadow-lg w-full h-[400px] object-cover"
+                  className="object-cover w-full h-auto shadow-lg rounded-2xl"
+                  style={{
+                    filter: "blur(0px)",
+                  }}
                 />
               )}
             </div>
@@ -110,12 +110,11 @@ const ArticleDetail = () => {
         </div>
       </section>
 
-      {/* 🔥 Second Section (White Background) */}
       <section className="py-12 bg-white">
         <div className="max-w-3xl px-4 mx-auto">
           {article?.subtitles?.map((subtitle, index) => (
             <div key={index} className="mb-6">
-              <h2 className="font-serif text-2xl text-gray-800">
+              <h2 className="font-serif text-xl text-gray-800 sm:text-2xl">
                 {subtitle.title}
               </h2>
               <p className="mb-6 leading-relaxed text-gray-600">
@@ -127,7 +126,7 @@ const ArticleDetail = () => {
 
         <div className="max-w-4xl px-6 py-12 mx-auto text-center bg-[#e7e6e6] shadow-sm rounded-xl">
           <Heart className="w-12 h-12 mx-auto mb-4 text-rose-500" />
-          <h3 className="mb-3 font-serif text-2xl text-gray-800">
+          <h3 className="mb-3 font-serif text-xl text-gray-800 sm:text-2xl">
             Start Your Spiritual Channeling Today
           </h3>
           <p className="mb-6 text-gray-600">
