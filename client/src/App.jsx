@@ -32,11 +32,18 @@ import Header from './components/Home_Compo/header.jsx'
 import Footer from './components/Home_Compo/footer.jsx'
 import Prd from './pages/Produt_pages/Productdescription.jsx'
 
+import Abd from './pages/Aboutthedoctor.jsx'
+
+
+
+
 function App()
 {
   return (
     <Router>
+      
       <Header/>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
@@ -48,7 +55,7 @@ function App()
           <Route path="/article2/:id" element={<ArticleDetail />} />
           <Route path="/productdes/:id" element={<Prd/>}/>
 
-
+          
           <Route path="/kidneydisease" element={<KidneyDisease />} />
           <Route path="/liverdisease" element={<LiverDisease />} />
           <Route path="/alltypeofcancers" element={<AllTypeOfCancers />} />
@@ -66,6 +73,8 @@ function App()
           <Route path="/lungdiseases" element={<Lungdiseases />} />
           <Route path="/catarrh" element={<Catarrh />} />
           <Route path="/arthritis" element={<Arthritis />} />
+
+          <Route path="/abd" element={<Abd />} />
         </Routes>
       <Footer />
     </Router>

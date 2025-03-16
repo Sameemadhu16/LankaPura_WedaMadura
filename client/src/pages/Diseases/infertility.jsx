@@ -61,20 +61,15 @@ export default function infertility() {
             position: relative;
             z-index: 10;
             flex-direction: column;
-            align-items: start;
-            padding-left: 40px;
+            align-items: start;          
             display: flex;
             justify-content: center;
-            height: 100%;
-          }
-
-          .landing-content h1 {
-            font-family: 'Playfair Display SC', serif;
-            font-weight: 700;
-            color: white; /* Change the text color to white */
+            margin-top: 204px;
+            
           }
 
           .content-section {
+            height: auto;
             padding: 80px;
             text-align: left;
             font-family: Arial, sans-serif;
@@ -104,6 +99,48 @@ export default function infertility() {
       
             overflow: hidden; /* Hide the bottom part of the image */
           }
+
+
+.content-section ul {
+  font-size: 1.2rem; /* Larger font size for list items */
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .content-section {
+    height: auto; /* Adjust the height for tablets or smaller screens */
+    padding: 60px; /* Reduce padding for smaller devices */
+  }
+
+
+
+  .content-section ul {
+    font-size: 1rem; /* Adjust font size for list items */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .content-section {
+    height: auto; /* Adjust the height for mobile screens */
+    padding: 40px; /* Reduce padding for mobile devices */
+  }
+
+
+
+  .content-section ul {
+    font-size: 0.9rem; /* Adjust font size for mobile list items */
+  }
+
+  .content-section ul li {
+    font-size: 0.9rem; /* Adjust font size for list items */
+  }
+
+  .content-section p {
+    font-size: 0.9rem; /* Adjust font size for mobile paragraph */
+  }
+}
+
         `}
       </style>
 
@@ -111,33 +148,31 @@ export default function infertility() {
         {/* Overlay Layer */}
         <div className="landing-overlay"></div>
 
-        {/* Content Layer */}
-        <div className="landing-content fade-in">
-          {/* First Line */}
+        
+        <div className="landing-content fade-in text-center">
+        
           <h1
-            className="text-4xl font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2 mx-auto md:mx-0 md:ml-[190px] md:text-left"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+              
+              color: 'white',  
               fontWeight: 500,
-              marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
             }}
           >
             Ayurvedic Treatments for
           </h1>
 
-          {/* Second Line with Padding */}
+         
           <h1
-            className="text-4xl font-bold"
+            className="text-4xl font-[playfair] font-bold mb-2 mx-auto md:mx-0 md:ml-[240px] md:text-left"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
               fontWeight: 500,
-              marginLeft: "200px", // Additional margin for the second line
+              color:'white',
               fontSize: "3rem",
             }}
           >
             Infertility
-
           </h1>
         </div>
 
@@ -150,17 +185,14 @@ export default function infertility() {
       </main>
 
       <section
-        className="py-12 px-6 content-section"
-        style={{
-          backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1150px", // Set the height to 500px
-        }}
+        className="py-12 px-6 content-section "
       >
+  
         <h2
-          className="text-4xl font-bold"
+          className="text-4xl font-[playfair] font-bold"
           style={{
             color: "#5A3D00",
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 600,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "3rem",
@@ -170,11 +202,12 @@ export default function infertility() {
 
         </h2>
         <p
+          className="font-[Raleway] text-justify"
           style={{
             
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
+           
           }}
         >
           Infertility is defined as trying to get pregnant (with frequent intercourse) 
@@ -187,8 +220,9 @@ export default function infertility() {
         </p>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -197,6 +231,7 @@ export default function infertility() {
           Symptoms
         </h2>
         <ul
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
           }}
@@ -208,8 +243,9 @@ export default function infertility() {
         </ul>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+           
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -221,6 +257,7 @@ export default function infertility() {
 
 
         <p
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
           }}        
@@ -231,6 +268,7 @@ export default function infertility() {
         </p>
 
         <ul
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
           }}
@@ -246,8 +284,9 @@ export default function infertility() {
         </ul>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -257,6 +296,7 @@ export default function infertility() {
         </h2>
 
         <ul
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
           }}
