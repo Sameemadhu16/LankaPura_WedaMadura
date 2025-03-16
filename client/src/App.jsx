@@ -31,7 +31,6 @@ import Arthritis from './pages/Diseases/arthritis.jsx'
 import Header from './components/Home_Compo/header.jsx'
 import Footer from './components/Home_Compo/footer.jsx'
 import Prd from './pages/Produt_pages/Productdescription.jsx'
-
 import Abd from './pages/Aboutthedoctor.jsx'
 
 
