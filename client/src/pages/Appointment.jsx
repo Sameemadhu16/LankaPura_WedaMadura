@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Image from '../assets/Home_Assets/disease images/Nervous System Diseases.jpg';
-
+import Image from '../assets/Appointment_Assets/image.png';
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
     name: "",

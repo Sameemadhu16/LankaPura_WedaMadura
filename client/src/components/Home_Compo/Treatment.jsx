@@ -90,7 +90,7 @@ const Treatment = () => {
 
       <motion.div
         className="absolute hidden md:flex justify-center "
-        style={{ top: '58%', right: '8%' }}
+        style={{ top: '62%', right: '8%' }}
         initial={{ opacity: 0, x: '30%' }}
         animate={denInView ? { opacity: 1, x: 0 } : { opacity: 0, x: '30%' }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -98,7 +98,7 @@ const Treatment = () => {
         onViewportLeave={() => setDenInView(false)}
         transition={{ duration: 2, ease: 'easeOut' }}
       >
-        <img src={den} alt="Dengue Mosquito" className="w-[150px] md:w-[310px] h-auto" />
+        <img src={den} alt="Dengue Mosquito" className="w-[120px] md:w-[295px] h-auto" />
       </motion.div>
     </div>
   );
