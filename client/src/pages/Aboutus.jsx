@@ -1,222 +1,358 @@
-import React from 'react'
+// import React from 'react'
+// import landing from "../assets/aboutus.jpg";
+// import plantImage from "./../assets/wedamedura-ayurveda.jpg";
+// import aboutthedoctorImage from "../assets/DOCTOR.jpg";
+// import { BsChevronDoubleDown } from "react-icons/bs";
+// import "../css/Aboutus.css"; // Ensure this CSS file exists and includes styles
 
+
+
+
+
+// const Aboutus = () => {
+ 
+//   return (
+//     <div> 
+//       <style>
+//         {`
+//           .right-image {
+//             position: absolute;
+//             margin-top: 960px; /* Adjust as needed */
+//             margin-right: 110px; /* Adjust as needed */
+//             width: 40%; /* Adjust size to cover the right side */
+//             height: 105.3%;
+//             object-fit: cover;
+//             z-index: 10;
+//             right: 0;
+//             top: 0; /* Adjust as needed */
+//             max-width: 100%; /* Ensures responsiveness */
+//             height: 50%;
+// }
+//         `}
+
+// {`
+//           .left-image {
+//             position: absolute;
+//             margin-top: 1400px; /* Adjust as needed */
+//             margin-left: 280px; /* Adjust as needed */
+//             width: 40%; /* Adjust size to cover the right side */
+//             height: auto;
+//             object-fit: contain;
+//             z-index: 10;
+//             left: 0;
+//             top: 0; /* Adjust as needed */
+//             max-width: 20%; /* Ensures responsiveness */
+//             // max-height: 80%; 
+            
+// }
+//         `}
+//       </style>
+
+    
+//       <main
+//         className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white relative"
+//         style={{
+//           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 100)), url(${landing})`,
+        
+//         }}
+//       >
+//         <h1
+//           className="mb-4 font-[playfair] text-center font-medium text-7xl fade-in"
+//           style={{ marginTop: "390px" }}
+//         >
+//           About Lankapura Weda Madura
+//         </h1>
+
+
+//           <h1 className="text-center font-[Raleway] text-2xl text-[#EEE183]"
+//           style={{
+//             marginRight: "100px", // Additional margin for the second line
+            
+//           }}
+//           >
+//           "The People's Wellness Hub, 
+//           </h1>
+          
+//           <h1
+//           className="text-center font-[Raleway] text-2xl text-[#EEE183]"
+//           style={{
+//             marginLeft: "100px",
+            
+//           }}>
+//           where healing hands unite."
+//           </h1> 
+
+          
+
+          
+
+//       </main>
+
+//       <section
+//             className="py-12 px-6 "
+//             style={{
+//               backgroundColor: "#FEF7FF", 
+//               height: "1100px",
+//             }}
+//           >
+//           <h1
+//               className="font-[Raleway] text-center text-2xl mb-6"
+//               style={{ color: "black",
+//                 fontWeight: "100",
+//               }}
+//           >
+//             We have found many successful medicines for many diseases, raying only on Herbs.
+//           </h1>
+        
+//         <div className="max-w-6xl mx-auto text-left">
+          
+//           <h2
+//             className="text-4xl font-[playfair] font-bold w-1/2 "
+//             style={{
+//               color: "#5A3D00",
+//               marginTop: "50px",
+//               fontWeight: 400,
+//               marginLeft: "0px", 
+//               fontSize: "3rem",
+//             }}
+//           >
+//             Our Story
+//           </h2>
+
+//           <p
+//           className="font-[Raleway] font-normal w-1/2 text-justify leading-relaxed ml-0 mt-10"  
+                   
+//           >
+//           Dr. Tharanga Kumari Wickramasuriya, the last surviving member 
+//           of a 700-year-old lineage of medicine, is a beacon of hope in 
+//           the medical community. Known as the <span style={{ color: "#006400", fontWeight: "bold" }}>“Dengue Doctor,”</span>{" "}she has 
+//           developed a 100% successful drug for dengue fever, curing over 
+//           100.000 patients. Her innovative treatments have also addressed 
+//           <span style={{ color: "#006400", fontWeight: "bold" }}>{" "}COVID-19,</span> providing care to both local and international patients. 
+//           At Lankapura Medical Center, Dr. Wickramasooriya offers comprehensive 
+//           medical care for all physical ailments.
+
+          
+//           </p>
+
+//           <p
+//           className="font-[Raleway] font-normal w-1/2 text-justify leading-relaxed"  
+//           style={{marginTop: "30px"  }}         
+//           >
+          
+//           Why People Choose Us At Lankapura Medical Center, we prioritize quality 
+//           service in a serene and welcoming environment. Our commitment to excellence 
+//           is reflected in our ability to offer a wide range of personalized treatments, 
+//           harnessing the power of Sri Lankan indigenous medicine. Our holistic approach 
+//           ensures that each patient receives tailored care that addresses their unique 
+//           needs. promoting overall well-being and healing
+//           </p>
+
+//           <img
+//           src={plantImage}
+//           alt="Plant"
+//           className="right-image"
+//           />
+          
+//         </div>
+
+        
+
+        
+        
+//         <div className="max-w-6xl mx-auto text-center">
+//         <h2
+//           className="text-4xl font-[playfair] font-bold text-left"
+//           style={{
+//             color: "#5A3D00",
+//             marginTop: "70px",
+//             fontWeight: 400,
+//             marginLeft: "610px", // Additional margin for the second line
+//             fontSize: "3rem",
+//           }}
+//         >
+//           Discover The Legacy of 
+          
+//         </h2>
+
+//         <h2
+//           className="text-4xl font-[playfair] font-bold text-left"
+//           style={{
+//             color: "#5A3D00",
+           
+//             fontWeight: 400,
+//             marginLeft: "640px", 
+//             fontSize: "3rem",
+//           }}
+//         >
+//           Dr.Tharanga Kumari
+          
+//         </h2>
+
+        
+
+//         <div className=" flex justify-center" >
+
+//         <BsChevronDoubleDown className='text-9xl arrow' style={{marginLeft:'500px'}} />
+
+//         </div>
+
+
+          
+
+                
+
+//                 <button
+//                 onClick={() => (window.location.href = "/abd")}
+//                 className="px-10 py-1 text-black rounded-lg shadow-md border border-black hover:bg-[#348101] hover:text-white hover:border-transparent  "
+//                 style={{marginLeft: "510px" , marginTop: "10px", fontWeight: "bold"}}
+//                 >
+//                 Explore me
+//                 </button>
+
+//           <img
+//           src={aboutthedoctorImage}
+//           alt="Plant"
+//           className="left-image"
+//           />
+//         </div>
+
+        
+//       </section>
+
+
+
+
+//     </div>
+//   )
+// }
+
+// export default Aboutus
+
+
+
+import React from "react";
 import landing from "../assets/aboutus.jpg";
-
-
-import kidneyImage from "../assets/kidney disease.jpg";
-import cancerImage from "../assets/cancer.jpg";
-import liverImage from "../assets/liver disease.jpg";
-import diabeticImage from "../assets/diabetic.avif";
-import dengueImage from "../assets/dengue.jpg";
-import leptospirosisImage from "../assets/leptospirosis.jpg";
-import itpImage from "../assets/ITP.webp";
-import infertilityImage from "../assets/infertility.jpg";
-import covid19Image from "../assets/covid19.jpg";
-import stdImage from "../assets/STD.webp";
-import sciaticaImage from "../assets/sciatica.webp";
-import nsdImage from "../assets/Nervous System Diseases.jpg";
-import migraineImage from "../assets/Migraine.webp";
-import lunginfectionImage from "../assets/Lung Insfection.webp";
-import lungdiseasesImage from "../assets/Lung diseases.webp";
-import catarrhImage from "../assets/Catarrh.webp";
-import arthritisImage from "../assets/Arthritis.jpg";
-
+import plantImage from "./../assets/wedamedura-ayurveda.jpg";
+import aboutthedoctorImage from "../assets/DOCTOR.jpg";
+import { BsChevronDoubleDown } from "react-icons/bs";
+import LankapuraVideo from './../assets/lankapuravideo.mp4';
 import "../css/Aboutus.css"; // Ensure this CSS file exists and includes styles
 
+
 const Aboutus = () => {
-  const cards = [
-    
-    
-    // {
-    //   title: "Kidney disease (C.K.D)",
-    //   description: "The kidneys are a pair of fist-sized organs located at the bottom of the rib cage. There is one kidney on each side...",
-    //   image: kidneyImage,
-    //   link: "/kidneydisease",
-    // },
-    // {
-    //   title: "Liver Diseases",
-    //   description: "Your liver is the largest organ inside your body which performs hundreds of tasks related to metabolism...",
-    //   image: liverImage,
-    //   link: "/liverdisease",
-    // },
-    // {
-    //   title: "All Type of Cancers",
-    //   description: "Cancer is an umbrella term for a large group of diseases caused when abnormal cells divide rapidly...",
-    //   image: cancerImage,
-    //   link: "/alltypeofcancers",
-    // },
-    // {
-    //   title: "Diabetic",
-    //   description: "Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar...",
-    //   image: diabeticImage,
-    //   link: "/diabetic",
-    // },
-    // {
-    //   title: "Dengue",
-    //   description: "Dengue is the most common and high-risk mosquito-borne viral infection. The virus which causes dengue is …. ",
-    //   image: dengueImage,
-    //   link: "/dengue",
-    // },
-    // {
-    //   title: "Leptospirosis",
-    //   description: "Leptospirosis is a relatively rare bacterial infection that affects people and animals. It can pass from animals to...",
-    //   image: leptospirosisImage,
-    //   link: "/leptospirosis",
-    // },
-    // {
-    //   title: "Sexually transmitted diseases",
-    //   description: "Leptospirosis is a relatively rare bacterial infection that affects people and animals. It can pass from animals to...",
-    //   image: stdImage,
-    //   link: "/std",
-    // },
-    // {
-    //   title: "I.T.P",
-    //   description: "I.T.P is an immune disorder in which the blood doesn’t clot normally. This is a blood disorder characterized by a...",
-    //   image: itpImage,
-    //   link: "/itp",
-    // },
-    // {
-    //   title: "Infertility",
-    //   description: "Infertility is defined as trying to get pregnant (with frequent intercourse) for at least a year with no...",
-    //   image: infertilityImage,
-    //   link: "/infertility",
-    // },
-    // {
-    //   title: "Covid 19",
-    //   description: "Herbal treatments for COVID-19 have been a topic of interest and discussion throughout the...",
-    //   image: covid19Image,
-    //   link: "/covid19",
-    // },
-    // {
-    //   title: "Sciatica",
-    //   description: "Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back…",
-    //   image: sciaticaImage,
-    //   link: "/sciatica",
-    // },
-    // {
-    //   title: "Nervous System Diseases",
-    //   description: "Principal organs of the nervous system-Eyes –Ears –Sensory organs of taste – Sensory organs of smell…",
-    //   image: nsdImage,
-    //   link: "/nsd",
-    // },
-    // {
-    //   title: "Migraine",
-    //   description: "A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head. It’s often…",
-    //   image: migraineImage,
-    //   link: "/migraine",
-    // },
-    // {
-    //   title: "Lung Infection",
-    //   description: "Pneumonia is an infection of the lungs that may be caused by bacteria, viruses, or fungi. The infection causes the…",
-    //   image: lunginfectionImage,
-    //   link: "/lunginfection",
-    // },
-    // {
-    //   title: "Lung diseases",
-    //   description: "Lung disease refers to several types of diseases or disorders that prevent the lungs from functioning…",
-    //   image: lungdiseasesImage,
-    //   link: "/lungdiseases",
-    // },
-    // {
-    //   title: "Catarrh",
-    //   description: "The term catarrh, or postnasal drip, describes a buildup of mucus in the back of the nose, throat, or sinuses….",
-    //   image: catarrhImage,
-    //   link: "/catarrh",
-    // },
-    // {
-    //   title: "Arthritis",
-    //   description: "Arthritis is the swelling and tenderness of one or more of your joints. The main symptoms of arthritis are joint…",
-    //   image: arthritisImage,
-    //   link: "/arthritis",
-    // },
-  ];
   return (
-    <div> 
-    
-      {/* <main
-        className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white"
-        style={{ backgroundImage: `url(${landing})` }}
-      >
-        <h1
-            className="text-5xl text-slate-100"
-            style={{
-                fontFamily: "'Playfair Display SC', serif", // Apply font style
-                fontWeight: 50, // Make the font bold
-                marginTop: "30rem", // Add space at the top
-            }}
-        >
-          About Lankapura
-        </h1>
-
-
-      </main> */}
+    <div className="w-full">
+      {/* Hero Section */}
       <main
-  className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white relative"
-  style={{
-    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 100)), url(${landing})`,
-  }}
->
-  <h1
-    className="text-6xl text-slate-100"
-    style={{
-      fontFamily: "'Playfair Display SC', serif", // Apply font style
-      fontWeight: 5, // Make the font bold
-      marginTop: "30rem", // Add space at the top
-    }}
-  >
-    About Lankapura
-  </h1>
-</main>
-
-      <section
-        className="py-12 px-6"
+        className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-6"
         style={{
-          backgroundColor: "#FEF7FF", // Light wheat background  #FEF7FF
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1)), url(${landing})`,
         }}
       >
-        <div className="max-w-6xl mx-auto text-center">
-          <p
-            className="text-lg mb-6 text-center"
-            style={{
-              color: "#006400",
-              fontFamily: "'Playfair Display SC', serif",
-              fontSize: "1.3rem",
-              fontWeight: 540,
-              marginTop: "2rem",
-            }}
-          >
-            {"W e   c u r e   d i s e a s e s    w i t h   H e l a m e d i c i n e    i n    S r i L a n k a"
-              .split("")
-              .map((char, index) => (
-                <span key={index} style={{ marginRight: char === " " ? "0.3em" : "0.001em" }}>
-                  {char}
-                </span>
-              ))}
-          </p>
-          <p
-            className="text-lg mb-6"
-            style={{ color: "black" }}
-          >
-            Our team of experts focuses on providing holistic treatments to ensure your complete well-being. Discover the difference of truly personalized care.
-          </p>
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-[playfair] font-medium fade-in" style={{marginTop:'400px'}}>
+          About Lankapura Weda Madura
+        </h1>
+        <h1 className="text-center font-[Raleway] text-2xl text-[#EEE183]" style={{ marginTop: '20px' }}>
+        “Embracing Wellness Through the Wisdom of Ayurveda...”
+        </h1>
 
-          <div className="flip-boxes">
-            {cards.map((card, index) => (
-              <Card
-                key={index}
-                title={card.title}
-                description={card.description}
-                image={card.image}
-                link={card.link}
-              />
-            ))}
+        
+      </main>
+
+      {/* About Section */}
+      <section className="bg-[#FEF7FF] py-12 px-6">
+        <h1 className="text-center text-xl sm:text-2xl font-[Raleway] text-black font-light mb-6">
+          We have found many successful medicines for many diseases, relying only on Herbs.
+        </h1>
+
+        {/* Content Layout */}
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+          {/* Text Content */}
+          <div className="lg:w-1/2">
+            {/* <h2 className="text-3xl sm:text-4xl font-[playfair] font-bold text-[#5A3D00] mb-6">
+              Our Story
+            </h2> */}
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-[playfair] font-bold text-[#5A3D00] mb-6 text-center sm:text-left">
+              Our Story
+            </h2>
+
+            <p className="text-justify text-lg font-[Raleway] leading-relaxed">
+              Dr. Tharanga Kumari Wickramasuriya, the last surviving member of a 700-year-old lineage of medicine, 
+              is a beacon of hope in the medical community. Known as the{" "}
+              <span className="text-green-700 font-bold">“Dengue Doctor”</span>, she has developed a 100% successful 
+              drug for dengue fever, curing over 100,000 patients. Her innovative treatments have also addressed{" "}
+              <span className="text-green-700 font-bold">COVID-19</span>, providing care to both local and international patients.
+            </p>
+
+            <p className="text-justify text-lg font-[Raleway] leading-relaxed mt-6">
+              At Lankapura Medical Center, we prioritize quality service in a serene and welcoming environment. 
+              Our holistic approach ensures that each patient receives tailored care, promoting overall well-being and healing.
+            </p>
+          </div>
+
+          
+          <div className="video-container" >
+            <video controls >
+              <source src={LankapuraVideo} type="video/mp4"  />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
+
+        {/* Doctor Section */}
+        <div className="max-w-6xl mx-auto mt-16 text-center">
+          <h2 className="text-3xl sm:text-4xl font-[playfair] font-bold text-[#5A3D00]">
+            Discover The Legacy of <br /> Dr. Tharanga Kumari
+          </h2>
+
+          {/* Scroll Icon */}
+          <div className="flex justify-center mt-8">
+            <BsChevronDoubleDown className="text-5xl sm:text-7xl text-gray-700 animate-bounce" />
+          </div>
+
+          
+          {/* <button
+            onClick={() => (window.location.href = "/abd")}
+            className="mt-6 px-6 py-2 text-lg font-bold text-black border border-black rounded-lg shadow-md hover:bg-green-700 hover:text-white transition"
+          >
+            Explore me
+          </button>
+
+          
+          <div className="flex justify-center mt-10" >
+            <img src={aboutthedoctorImage} alt="Doctor" className="w-full sm:w-3/4 lg:w-1/2 rounded-lg shadow-lg"  />
+          </div> */}
+
+          <div className="relative flex justify-center mt-10">
+            {/* Wrapper for hover effect */}
+            <div className="relative group w-full sm:w-3/4 lg:w-1/2">
+              {/* Doctor Image with Shading on Hover */}
+              <img 
+                src={aboutthedoctorImage} 
+                alt="Doctor" 
+                className="w-full rounded-lg shadow-lg transition duration-300 group-hover:brightness-75 "
+
+              />
+
+              {/* Explore Me Button (Appears Only on Hover) */}
+              <button
+                onClick={() => (window.location.href = "/abd")}
+                className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-6 py-2 text-lg font-bold text-black border border-black rounded-lg shadow-md bg-white opacity-0 transition duration-300 group-hover:opacity-100 hover:bg-green-700 hover:text-white"
+               
+              >
+                Explore here
+              </button>
+            </div>
+          </div>
+
+
+
+        </div>
       </section>
-      {/* <Footer /> */}
-
     </div>
-  )
-}
+  );
+};
 
-export default Aboutus
+export default Aboutus;
+
