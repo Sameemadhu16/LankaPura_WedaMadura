@@ -5,6 +5,7 @@ import virus from '../../assets/Home_Assets/virus.png';
 import den from '../../assets/Home_Assets/Mosquito.png';
 
 const Treatment = () => {
+  
   const tap = {
     backgroundImage: `url(${background})`,
     backgroundSize: 'cover',
@@ -75,7 +76,7 @@ const Treatment = () => {
 
       {/* Animated Images (Hidden on Mobile) */}
       <motion.div
-        className="absolute hidden md:flex justify-center p-5"
+        className="absolute hidden md:flex justify-center "
         style={{ top: '16%', left: '3%' }}
         initial={{ opacity: 0, x: '-30%' }}
         animate={virusInView ? { opacity: 1, x: 0 } : { opacity: 0, x: '-30%' }}
@@ -88,8 +89,8 @@ const Treatment = () => {
       </motion.div>
 
       <motion.div
-        className="absolute hidden md:flex justify-center"
-        style={{ top: '58%', right: '8%' }}
+        className="absolute hidden md:flex justify-center "
+        style={{ top: '62%', right: '8%' }}
         initial={{ opacity: 0, x: '30%' }}
         animate={denInView ? { opacity: 1, x: 0 } : { opacity: 0, x: '30%' }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -97,7 +98,7 @@ const Treatment = () => {
         onViewportLeave={() => setDenInView(false)}
         transition={{ duration: 2, ease: 'easeOut' }}
       >
-        <img src={den} alt="Dengue Mosquito" className="w-[150px] md:w-[310px] h-auto" />
+        <img src={den} alt="Dengue Mosquito" className="w-[120px] md:w-[295px] h-auto" />
       </motion.div>
     </div>
   );

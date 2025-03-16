@@ -4,9 +4,9 @@ import DoctorImage from './Doctor';
 
 const Aboutthedoctor = () => {
   return (
-    <div className="flex flex-wrap justify-center items-center w-full px-2 sm:px-6 md:px-7 lg:px-7 bg">
+    <div className="flex flex-wrap justify-center items-center w-full px-2 sm:px-3 md:px-4 lg:px-4 bg">
       {/* Doctor's Image */}
-      <DoctorImage className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4" />
+      <DoctorImage className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 " />
 
       {/* About Content */}
       <div className="w-full items-center max-w-[600px] sm:w-3/4 md:w-1/2 lg:w-1/2 -ml-0 sm:-ml-10 md:-ml-20 lg:-ml-24 mt-8 sm:mt-0">
