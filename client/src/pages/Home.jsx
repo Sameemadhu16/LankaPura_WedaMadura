@@ -8,12 +8,14 @@ import Treatment from '../components/Home_Compo/Treatment';
 import Othertreatment from '../components/Home_Compo/Othertreatment';
 import Whypeople from '../components/Home_Compo/Whypeople';
 import Treatmenthours from '../components/Home_Compo/Treatmenthours';
+import WhatsAppButton from '../components/Home_Compo/Whatsapp';
 
 
 const Home = () => {
   return (
     <div>
       <main>
+        <WhatsAppButton />
         {/* LAnding view */}
         <Landingview/>
         {/*About the Doctor*/}

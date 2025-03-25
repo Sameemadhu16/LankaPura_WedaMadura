@@ -75,6 +75,7 @@ export default function liverdisease() {
           }
 
           .content-section {
+            height: auto;
             padding: 80px;
             text-align: left;
             font-family: Arial, sans-serif;
@@ -104,6 +105,45 @@ export default function liverdisease() {
       
             overflow: hidden; /* Hide the bottom part of the image */
           }
+
+              /* Tablet and smaller screens */
+    @media (max-width: 768px) {
+      .content-section {
+        height: auto; /* Adjust the height for tablets or smaller screens */
+        padding: 60px; /* Reduce padding for smaller devices */
+      }
+
+      .content-section h2 {
+        font-size: 1.4rem; /* Adjust heading size */
+      }
+
+      .content-section ul {
+        font-size: 1rem; /* Adjust font size for list items */
+      }
+    }
+
+    /* Mobile screens */
+@media (max-width: 480px) {
+  .content-section {
+    height: auto; /* Adjust the height for mobile screens */
+    padding: 40px; /* Reduce padding for mobile devices */
+  }
+
+  .content-section h2 {
+    font-size: 1.0rem; /* Adjust heading size for mobile */
+  }
+
+  .content-section ul {
+    font-size: 0.8rem; /* Adjust font size for mobile list items */
+  }
+
+  .content-section ul li {
+    font-size: 0.8rem; /* Adjust font size for list items */
+  }
+
+  .content-section p {
+    font-size: 0.8rem; /* Adjust font size for mobile paragraph */
+  }
         `}
       </style>
 
@@ -111,28 +151,29 @@ export default function liverdisease() {
         {/* Overlay Layer */}
         <div className="landing-overlay"></div>
 
-        {/* Content Layer */}
-        <div className="landing-content fade-in">
+        
+      
+
+<div className="landing-content fade-in text-center">
           {/* First Line */}
           <h1
-            className="text-4xl font-bold mb-2"
+            className="text-4xl font-[playfair] font-bold mb-2 mx-auto md:mx-0 md:ml-[190px] md:text-left"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
+              
+              color: 'white',  
               fontWeight: 500,
-              marginLeft: "150px", // Move the text slightly to the right
               fontSize: "3rem",
             }}
           >
             Ayurvedic Treatments for
           </h1>
 
-          {/* Second Line with Padding */}
+          {/* Second Line */}
           <h1
-            className="text-4xl font-bold"
+            className="text-4xl font-[playfair] font-bold mb-2 mx-auto md:mx-0 md:ml-[240px] md:text-left"
             style={{
-              fontFamily: "'Playfair Display SC', serif",
               fontWeight: 500,
-              marginLeft: "200px", // Additional margin for the second line
+              color:'white',
               fontSize: "3rem",
             }}
           >
@@ -150,16 +191,13 @@ export default function liverdisease() {
 
       <section
         className="py-12 px-6 content-section"
-        style={{
-          backgroundColor: "#FEF7FF", // Light wheat background
-          height: "1000px", // Set the height to 500px
-        }}
+        
       >
         <h2
-          className="text-4xl font-bold"
+          className="text-4xl font-[playfair] font-bold"
           style={{
             color: "#5A3D00",
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 600,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "3rem",
@@ -168,10 +206,11 @@ export default function liverdisease() {
           Liver Disease
         </h2>
         <p
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
+            
           }}
         >
           Your liver is the largest organ inside your body which performs hundreds 
@@ -183,8 +222,9 @@ export default function liverdisease() {
         
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -194,16 +234,18 @@ export default function liverdisease() {
         </h2>
 
         <p
+          className="font-[Raleway] "
           style={{
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
+           
           }}
         >
           Liver diseases are categorized as follows,
         </p>
 
         <ul
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
             
@@ -217,8 +259,9 @@ export default function liverdisease() {
         </ul>
 
         <h2
+          className="font-[playfair]"
           style={{
-            fontFamily: "'Playfair Display SC', serif",
+            
             fontWeight: 500,
             marginLeft: "1px", // Additional margin for the second line
             fontSize: "2rem",
@@ -227,16 +270,18 @@ export default function liverdisease() {
           Symptoms
         </h2>
         <p
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
             marginTop: "20px", // Additional margin for the second line
-            fontSize: "1.2rem",
+           
           }}
         >
           Liver disease symptoms vary, depending on the underlying cause. 
           However, there are some general symptoms that may indicate some kind of liver disease.
         </p>
         <ul
+          className="font-[Raleway] text-justify"
           style={{
             fontWeight: 400,
             

@@ -1,33 +1,86 @@
+// import React from "react";
+// import { Link } from "react-router-dom";
+
+// const Card = ({ title, description, image, link }) => {
+//   return (
+//     <div className="w-full sm:w-[30%] md:w-[40%] lg:w-[32%]  bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300">
+//       {/* Image with overlay text */}
+//       <div className="relative w-full h-48">
+//         <img
+//           src={image}
+//           alt={title}
+//           className="w-full h-full object-cover"
+//         />
+//         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-4">
+//           <h2 className="text-2xl font-[playfair] font-bold text-white " style={{ marginTop: '130px' }}>
+//             {title}
+//           </h2>
+//         </div>
+//       </div>
+
+//       {/* Description */}
+//       <div className="p-4">
+//         <p className="text-gray-700 text-sm font-[Raleway]">{description}</p>
+//       </div>
+
+//       {/* Read More Button */}
+//       <div className="px-4 pb-4">
+//         <Link
+//           to={link}
+//           className="font-[Raleway] w-full block text-center bg-[#50270be4] text-white font-bold py-2 rounded-lg hover:bg-[#331806e4] transition"
+//         >
+//           Learn More
+//         </Link>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Card;
+
+
+
+
+
 
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({ title, description, image, link }) => {
+  // Function to navigate to the top of the page
+  const navigateToTop = () => {
+    window.location.href = "#"; // This will take you to the top of the page
+  };
+
   return (
-    <div className="bg-[rgba(219,185,98,0.8)]
-
-
-
-        relative w-auto sm:w-[20rem] h-auto rounded-lg p-4 border  dark:border-white/[0.2] border-black/[0.1] shadow-lg transform transition-transform duration-300 ease-out hover:scale-105 hover:shadow-2xl ml-4"> {/* Added ml-4 for shifting the card */}
-      <h2 className="text-lg font-bold  text-neutral-600 dark:text-black font-[Raleway]">
-        {title}
-      </h2>
-      <p className=" text-sm max-w-sm mt-2 font-[Raleway]">
-        {description}
-      </p>
-      <div className="w-full mt-3">
+    <div className="w-full sm:w-[30%] md:w-[40%] lg:w-[32%] bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300 group">
+      {/* Image with overlay text */}
+      <div className="relative w-full h-48 overflow-hidden">
         <img
           src={image}
           alt={title}
-          className="h-48 w-full object-cover rounded-lg shadow-md"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center p-4">
+          <h2 className="text-2xl font-[playfair] font-bold text-white" style={{ marginTop: '130px' }}>
+            {title}
+          </h2>
+        </div>
       </div>
-      <div className="flex justify-center mt-4">
+
+      {/* Description */}
+      <div className="p-4">
+        <p className="text-gray-700 text-sm font-[Raleway]">{description}</p>
+      </div>
+
+      {/* Learn More Button */}
+      <div className="px-4 pb-4">
         <Link
           to={link}
-          className="px-3 py-2 rounded-lg bg-black dark:bg-white dark:text-black text-white text-xs font-bold font-[Raleway] transition-colors duration-300 hover:bg-gray-700 dark:hover:bg-gray-500"
+          onClick={navigateToTop} // Navigate to the top when clicked
+          className="font-[Raleway] w-full block text-center bg-[#50270be4] text-white font-bold py-2 rounded-lg hover:bg-[#331806e4] transition"
         >
-          Learn more
+          Learn More
         </Link>
       </div>
     </div>

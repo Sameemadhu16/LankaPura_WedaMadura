@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Image from "../assets/Home_Assets/sam/1.png";
+import Image from "../assets/Contact_Assets/CONTACT.jpg";
 import RightImage from "../assets/Home_Assets/sam/5.png";
 
 const Contactus = () => {
