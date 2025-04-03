@@ -9,7 +9,7 @@ const Whoweare = () => {
       style={{
         marginTop: "30px",
         backgroundImage: `url(${WWA})`,
-        height: "900px",
+        height: "990px",
         width: "100%",
       }}
     >
