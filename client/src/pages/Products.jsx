@@ -38,6 +38,7 @@ const Products = () => {
       {/* Banner Image */}
       <div className="relative w-full h-96">
         <img src={landing} alt="Banner" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       </div>
 
       <div className="flex justify-center">

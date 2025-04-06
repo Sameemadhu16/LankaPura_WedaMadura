@@ -64,7 +64,7 @@ const Roundanimation = () => {
   const arrowTop = isMobile ? `${cardSize/2 + 20}px` : `${cardSize/2 + 40}px`;
 
   return (
-    <div className="relative w-full flex flex-col overflow-hidden py-8 md:py-12">
+    <div className="relative w-full flex flex-col py-8 md:py-16"> {/* Removed overflow-hidden, increased padding */}
       <div className="flex justify-center items-center w-full">
         <div className="flex transition-transform duration-1000 ease-in-out">
           {getVisibleCards().map((card, index) => (
@@ -100,7 +100,7 @@ const Roundanimation = () => {
         </div>
       </div>
 
-      {/* Perfectly aligned arrows */}
+      {/* Arrows (unchanged) */}
       <button
         onClick={goPrev}
         style={{ top: arrowTop }}
@@ -117,9 +117,10 @@ const Roundanimation = () => {
         <MdOutlineArrowForward />
       </button>
 
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2  ">
+      {/* VIEW ALL button (moved down) */}
+      <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2">
         <button
-          className="border  border-black bg-transparent text-black hover:text-white px-4 sm:px-6 py-1 sm:py-2 rounded-lg font-semibold hover:bg-[#2e6900] hover:border-transparent transition-colors duration-300 text-sm sm:text-base"
+          className="border border-black bg-transparent text-black hover:text-white px-4 sm:px-6 py-1 sm:py-2 rounded-lg font-semibold hover:bg-[#2e6900] hover:border-transparent transition-colors duration-300 text-sm sm:text-base"
           onClick={() => alert("View All Clicked!")}
         >
           VIEW ALL

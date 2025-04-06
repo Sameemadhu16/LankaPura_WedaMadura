@@ -7,7 +7,6 @@ const AyurvedaTwoColumnCommentSection = () => {
   const [email, setEmail] = useState("");
   const [currentCommentIndex, setCurrentCommentIndex] = useState(0);
 
-  // Fetch all comments from backend
   useEffect(() => {
     fetch("http://localhost:3000/api/comments/allcomments")
       .then((res) => res.json())
@@ -15,7 +14,6 @@ const AyurvedaTwoColumnCommentSection = () => {
       .catch((err) => console.error("Error fetching comments:", err));
   }, []);
 
-  // Auto-rotate comments
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentCommentIndex((prevIndex) =>
@@ -67,13 +65,16 @@ const AyurvedaTwoColumnCommentSection = () => {
   return (
     <div className="w-full max-w-6xl mx-auto my-16 px-6">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-serif text-green-800" style={{ fontFamily: 'Playfair Display, serif' }}>Community Experiences</h2>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-[playfair] font-semibold">
+          <span className="text-black">COMMUNITY </span>
+          <span className="text-[#348101]">EXPERIENCE</span>
+        </h1>
         <div className="mt-3 h-1 w-24 bg-green-600 mx-auto"></div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* Left side: Comment Slideshow */}
-        <div className="bg-green-50 rounded-lg shadow-lg p-8 h-full flex flex-col">
+        {/* Comment Slideshow */}
+        <div className="bg-green-50 rounded-lg shadow-lg p-8 h-full flex flex-col min-h-[460px] md:min-h-full">
           <h3 className="text-2xl text-green-800 mb-8 flex items-center" style={{ fontFamily: 'Playfair Display, serif' }}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
@@ -131,7 +132,7 @@ const AyurvedaTwoColumnCommentSection = () => {
           </div>
         </div>
 
-        {/* Right side: Comment Form */}
+        {/* Comment Form */}
         <div className="bg-white rounded-lg shadow-lg border border-green-200 p-8">
           <h3 className="text-2xl text-green-800 mb-8 flex items-center" style={{ fontFamily: 'Playfair Display, serif' }}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -140,8 +141,8 @@ const AyurvedaTwoColumnCommentSection = () => {
             Share Your Experience
           </h3>
 
-          <form onSubmit={handleSubmit}>
-            <div className="mb-5">
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div>
               <label className="block text-base font-medium text-gray-700 mb-2">Your Name*</label>
               <input
                 type="text"
@@ -152,7 +153,7 @@ const AyurvedaTwoColumnCommentSection = () => {
                 placeholder="Enter your name"
               />
             </div>
-            <div className="mb-5">
+            <div>
               <label className="block text-base font-medium text-gray-700 mb-2">Email (will not be published)</label>
               <input
                 type="email"
@@ -162,7 +163,7 @@ const AyurvedaTwoColumnCommentSection = () => {
                 placeholder="Enter your email"
               />
             </div>
-            <div className="mb-6">
+            <div>
               <label className="block text-base font-medium text-gray-700 mb-2">Your Comment*</label>
               <textarea
                 rows="6"
@@ -173,17 +174,17 @@ const AyurvedaTwoColumnCommentSection = () => {
                 placeholder="Share your experience with our Ayurvedic treatments..."
               ></textarea>
             </div>
-            <div className="flex items-center">
+            <div className="flex flex-col sm:flex-row sm:items-center">
               <button
                 type="submit"
-                className="px-8 py-3 bg-green-700 text-white text-lg rounded-md hover:bg-green-800 transition duration-200 flex items-center"
+                className="px-8 py-3 bg-green-700 text-white text-lg rounded-md hover:bg-green-800 transition duration-200 flex items-center mb-4 sm:mb-0"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                 </svg>
                 Post Comment
               </button>
-              <p className="text-base text-gray-500 ml-4">* Required fields</p>
+              <p className="text-base text-gray-500 sm:ml-4">* Required fields</p>
             </div>
           </form>
 
