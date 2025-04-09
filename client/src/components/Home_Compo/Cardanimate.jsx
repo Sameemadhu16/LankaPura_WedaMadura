@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Treatcard from "./Treatcard";
 import { MdOutlineArrowBack } from "react-icons/md";
 import { MdOutlineArrowForward } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 import cancer from '../../assets/Home_Assets/disease images/All type of cancers.jpg';
 import art from '../../assets/Home_Assets/disease images/Arthritis.jpg';
@@ -21,22 +22,23 @@ import Sciatica from '../../assets/Home_Assets/disease images/Sciatica.webp';
 import STD from '../../assets/Home_Assets/disease images/STD.webp';
 
 const SlidingCard = () => {
+  const navigate = useNavigate();
   const treatCardsData = [
-    { id: 3, imageUrl: cancer, title: "ALL TYPE OF CANCERS" },
-    { id: 4, imageUrl: art, title: "ARTHRITIS" },
-    { id: 5, imageUrl: Catarrh, title: "CATARRH" },
-    { id: 6, imageUrl: Diabetic, title: "DIABETIC" },
-    { id: 7, imageUrl: Infertility, title: "INFERTILITY" },
-    { id: 8, imageUrl: ITP, title: "I.T.P" },
-    { id: 9, imageUrl: Kidney, title: "KIDNEY DISEASES" },
-    { id: 10, imageUrl: Leptospirosis, title: "LEPTOSPIROSIS" },
-    { id: 11, imageUrl: Liver, title: "LIVER DISEASES" },
-    { id: 12, imageUrl: Lung, title: "LUNG DISEASES" },
-    { id: 13, imageUrl: LungInsfection, title: "LUNG INFECTIONS" },
-    { id: 14, imageUrl: Migraine, title: "MIGRAINE" },
-    { id: 15, imageUrl: Nervous, title: "NERVOUS SYSTEM DISEASES" },
-    { id: 16, imageUrl: Sciatica, title: "SCIATICA" },
-    { id: 17, imageUrl: STD, title: "S.T.D" },
+    { id: 3, imageUrl: cancer, title: "ALL TYPE OF CANCERS" ,path:'/alltypeofcancers'},
+    { id: 4, imageUrl: art, title: "ARTHRITIS",path: '/arthritis' },
+    { id: 5, imageUrl: Catarrh, title: "CATARRH",path: '/catarrh' },
+    { id: 6, imageUrl: Diabetic, title: "DIABETIC",path: '/diabetic' },
+    { id: 7, imageUrl: Infertility, title: "INFERTILITY",path: '/infertility' },
+    { id: 8, imageUrl: ITP, title: "I.T.P" ,path: '/itp' },
+    { id: 9, imageUrl: Kidney, title: "KIDNEY DISEASES" ,path: '/kidneydisease'},
+    { id: 10, imageUrl: Leptospirosis, title: "LEPTOSPIROSIS" ,path: '/leptospirosis'},
+    { id: 11, imageUrl: Liver, title: "LIVER DISEASES" ,path: '/liverdisease'},
+    { id: 12, imageUrl: Lung, title: "LUNG DISEASES" ,path: '/lungdiseases'},
+    { id: 13, imageUrl: LungInsfection, title: "LUNG INFECTIONS",path: '/lunginfection' },
+    { id: 14, imageUrl: Migraine, title: "MIGRAINE",path: '/migraine' },
+    { id: 15, imageUrl: Nervous, title: "NERVOUS SYSTEM DISEASES",path: '/nsd' },
+    { id: 16, imageUrl: Sciatica, title: "SCIATICA",path: '/sciatica' },
+    { id: 17, imageUrl: STD, title: "S.T.D",path: '/std' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -151,7 +153,7 @@ const SlidingCard = () => {
             <Treatcard
               imageUrl={card.imageUrl}
               title={card.title}
-              onButtonClick={() => alert(`You clicked ${card.title}`)}
+              onButtonClick={() => navigate(card.path)}
             />
           </motion.div>
         ))}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MdOutlineArrowBack, MdOutlineArrowForward } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 // Product images
 import img1 from "../../assets/Home_Assets/products/products/1.png";
@@ -9,15 +10,17 @@ import img3 from "../../assets/Home_Assets/products/products/3.png";
 import img4 from "../../assets/Home_Assets/products/products/4.png";
 import img5 from "../../assets/Home_Assets/products/products/5.png";
 
+
 const productData = [
-  { id: 1, imageUrl: img1, title: "Product 1" },
-  { id: 2, imageUrl: img2, title: "Product 2" },
-  { id: 3, imageUrl: img3, title: "Product 3" },
-  { id: 4, imageUrl: img4, title: "Product 4" },
-  { id: 5, imageUrl: img5, title: "Product 5" },
+  { id: 1, imageUrl: img1, title: "Product 1" , path:'/productdes/67b6dc23cb72ff4ab0a46789'},
+  { id: 2, imageUrl: img2, title: "Product 2",path:'/productdes/67cbc86f77cd34f38533d45c' },
+  { id: 3, imageUrl: img3, title: "Product 3" ,path:'/productdes/67b6cfa4cb72ff4ab0a46782'},
+  { id: 4, imageUrl: img4, title: "Product 4",path:'/productdes/67b6d447cb72ff4ab0a46788' },
+  { id: 5, imageUrl: img5, title: "Product 5" ,path:'/productdes/67cbc83b77cd34f38533d45a'},
 ];
 
 const Roundanimation = () => {
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1024);
@@ -90,7 +93,7 @@ const Roundanimation = () => {
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-full"></div>
                 <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <button className="bg-[#348101] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-lg font-semibold hover:bg-[#2e6900] text-sm sm:text-base">
+                  <button onClick={()=>navigate(card.path)}className="bg-[#348101] text-white px-4 sm:px-6 py-1 sm:py-2 rounded-lg font-semibold hover:bg-[#2e6900] text-sm sm:text-base">
                     Read More
                   </button>
                 </div>
@@ -121,7 +124,7 @@ const Roundanimation = () => {
       <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2">
         <button
           className="border border-black bg-transparent text-black hover:text-white px-4 sm:px-6 py-1 sm:py-2 rounded-lg font-semibold hover:bg-[#2e6900] hover:border-transparent transition-colors duration-300 text-sm sm:text-base"
-          onClick={() => alert("View All Clicked!")}
+          onClick={() => navigate('/products')}
         >
           VIEW ALL
         </button>
