@@ -1,8 +1,10 @@
 import React from "react";
 import banner from "../../assets/Home_Assets/OTHERBANNER.jpg";
 import SlidingCard from "./Cardanimate";
+import { useNavigate } from "react-router-dom";
 
 const Othertreatment = () => {
+  const navigate = useNavigate();
   const tap = {
     backgroundImage: `url(${banner})`,
     backgroundSize: "cover",
@@ -27,7 +29,7 @@ const Othertreatment = () => {
 
       {/* View All Button */}
       <div className="mt-8">
-        <button className="bg-transparent border border-black hover:bg-[#348101] hover:border-[#348101] text-black hover:text-white px-6 py-2 rounded-lg font-[Raleway] font-semibold transition-colors duration-300">
+        <button  onClick={()=>navigate('/ourtreat')}  className="bg-transparent border border-black hover:bg-[#348101] hover:border-[#348101] text-black hover:text-white px-6 py-2 rounded-lg font-[Raleway] font-semibold transition-colors duration-300">
           VIEW ALL
         </button>
       </div>

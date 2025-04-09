@@ -4,6 +4,7 @@ import Roundanimation from "./Roundanimation";
 import Whypp2 from "./Whypp2";
 import Archivement from "./Archivement";
 import Ourlocation from "./Ourlocation";
+import Pcetification from "./Product_cerifications";
 
 const Whypeople = () => {
   const back = {
@@ -42,6 +43,9 @@ const Whypeople = () => {
       </div>
       <div className="w-full ">
         <Archivement />
+      </div>
+      <div className="w-full">
+        <Pcetification />
       </div>
       <div className="w-full">
         <Ourlocation />

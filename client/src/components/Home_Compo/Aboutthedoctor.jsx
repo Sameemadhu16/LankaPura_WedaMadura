@@ -1,8 +1,10 @@
 import React from 'react';
 import Checkmark from './Checkmark';
 import DoctorImage from './Doctor';
+import { useNavigate } from 'react-router-dom';
 
 const Aboutthedoctor = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center w-full px-4 sm:px-6 md:px-8 lg:px-4 bg">
       {/* Doctor's Image - Stacked on top for mobile/tablet, side by side for laptop */}
@@ -52,7 +54,7 @@ const Aboutthedoctor = () => {
           
           {/* Read More Button - Always centered */}
           <div className="w-full flex justify-center mt-6">
-            <button className="px-6 py-3 text-black rounded-lg shadow-md border border-black hover:bg-[#348101] hover:text-white hover:border-transparent">
+            <button  onClick={() => navigate('/abd')} className="px-6 py-3 text-black rounded-lg shadow-md border border-black hover:bg-[#348101] hover:text-white hover:border-transparent">
               Read More {'>>>'}
             </button>
           </div>

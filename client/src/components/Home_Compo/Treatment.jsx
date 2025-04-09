@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import background from '../../assets/Home_Assets/Treatmentbackground.png';
 import virus from '../../assets/Home_Assets/virus.png';
 import den from '../../assets/Home_Assets/Mosquito.png';
 
 const Treatment = () => {
-  
+  const navigate = useNavigate();
+
   const tap = {
     backgroundImage: `url(${background})`,
     backgroundSize: 'cover',
@@ -32,7 +34,7 @@ const Treatment = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const Section = ({ title, highlight, description, buttonText }) => (
+  const Section = ({ title, highlight, description, buttonText, path }) => (
     <div className="w-full px-4 text-center">
       <h1 className="font-[Raleway] text-black text-3xl md:text-4xl font-semibold">
         {title}{' '}
@@ -43,11 +45,15 @@ const Treatment = () => {
           {line}
         </p>
       ))}
-      <button className="border border-black bg-black text-white px-6 py-2 rounded-lg mt-6 font-[Raleway] hover:bg-[#348101] hover:border-transparent transition duration-300">
+      <button
+        onClick={() => navigate(path)}
+        className="border border-black bg-black text-white px-6 py-2 rounded-lg mt-6 font-[Raleway] hover:bg-[#348101] hover:border-transparent transition duration-300"
+      >
         {buttonText}
       </button>
     </div>
   );
+
 
   return (
     <div style={tap} className="relative flex flex-col ">
@@ -73,6 +79,7 @@ const Treatment = () => {
             'by boosting your immunity system.',
           ]}
           buttonText="Read more"
+          path="/covid19"
         />
       </div>
 
@@ -87,6 +94,7 @@ const Treatment = () => {
             'of patients throughout the country.',
           ]}
           buttonText="Read more"
+          path="/dengue"
         />
       </div>
 

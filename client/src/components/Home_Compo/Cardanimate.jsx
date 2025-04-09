@@ -4,8 +4,6 @@ import Treatcard from "./Treatcard";
 import { MdOutlineArrowBack } from "react-icons/md";
 import { MdOutlineArrowForward } from "react-icons/md";
 
-import Covid from '../../assets/Home_Assets/disease images/Covid19.jpg';
-import dengu from '../../assets/Home_Assets/disease images/Dengue.jpg';
 import cancer from '../../assets/Home_Assets/disease images/All type of cancers.jpg';
 import art from '../../assets/Home_Assets/disease images/Arthritis.jpg';
 import Catarrh from '../../assets/Home_Assets/disease images/Catarrh.webp';
@@ -24,8 +22,6 @@ import STD from '../../assets/Home_Assets/disease images/STD.webp';
 
 const SlidingCard = () => {
   const treatCardsData = [
-    { id: 1, imageUrl: Covid, title: "COVID 19" },
-    { id: 2, imageUrl: dengu, title: "DENGUE" },
     { id: 3, imageUrl: cancer, title: "ALL TYPE OF CANCERS" },
     { id: 4, imageUrl: art, title: "ARTHRITIS" },
     { id: 5, imageUrl: Catarrh, title: "CATARRH" },

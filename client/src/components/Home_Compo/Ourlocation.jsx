@@ -36,16 +36,13 @@ const Ourlocation = () => {
             Explore our Herbal Palace, where nature and wellness meet
           </h2>
           <h1 className="text-4xl md:text-6xl font-[playfair] font-bold text-black">
-            OUR <span className="text-[#348101]">LOCATION</span>
+            OUR <span className="text-[#348101]">GALLERY</span>
           </h1>
         </div>
       </div>
 
       {/* Gallery Section */}
       <div className="container mx-auto px-2 md:px-4 py-6 md:py-10">
-        <h2 className="text-2xl md:text-3xl font-semibold font-[playfair] text-center mb-4 md:mb-6">
-          Gallery
-        </h2>
         <div className="max-w-full md:max-w-[1000px] mx-auto border border-gray-300 rounded-lg shadow-md p-2 md:p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 max-h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
             {images.slice(0, 8).map((src, index) => (
@@ -80,3 +77,4 @@ const Ourlocation = () => {
 };
 
 export default Ourlocation;
+
