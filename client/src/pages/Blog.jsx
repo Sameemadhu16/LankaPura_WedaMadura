@@ -14,32 +14,27 @@ const Blog = () => {
         className="relative flex flex-col items-center justify-center h-screen px-4 text-white bg-center bg-cover md:px-0"
         style={{ backgroundImage: `url(${landing3})` }}
       >
+        <div className="mb-4 text-center font-medium " style={{ marginTop: '350px' }}>  
         <h1
-          className="mb-4 text-4xl font-bold text-center md:text-5xl lg:text-5xl"
-          style={{
-            fontFamily: "'Merriweather', serif",
-            fontWeight: 200,
-          }}
+          className="title font-[playfair] text-7xl"
+          initial={{ opacity: 0, y: 30 }} // Start slightly lower
+          animate={{ opacity: 1, y: 0 }} // Move to final position
+          transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1] }} // Smooth cubic bezier easing
+
         >
-          Welcome To Lankapura Ayurweda Medical Center
+          Welcome to the LankaPura Ayurveda Blog
         </h1>
+        </div>
 
-        <p className="max-w-2xl px-4 mb-8 text-base text-center md:text-lg lg:text-xl">
-  Which has found many successful medicines for many diseases, relying only on Herbs.
-  <br />
-  <strong>Dr. Tharanga Wickramasooriya</strong>
-</p>
-
-        <br />
-
-        {/* Scroll Down Button */}
-        <button
-          onClick={scrollToContent}
-          className="text-white transition-colors transform -translate-x-1/2 cursor-pointer lg:bottom-60 md:bottom-60 left-1/2 hover:text-gray-300 animate-bounce"
-          aria-label="Scroll to content"
-        >
-          <ChevronDown size={50} />
-        </button>
+        <h1 className="text-center font-[Raleway] text-2xl text-[#EEE183]" style={{ marginTop: '20px' }}>
+        “Discover the Healing Power of Herbs
+        </h1>
+        <h1 className="text-center font-[Raleway] text-2xl text-[#EEE183]">
+        Ancient Wisdom, and Natural Remedies...!”
+        </h1>
+        <div className="animated-arrow-container">
+          <span className="animated-arrow"></span> {/* Retain only the arrow */}
+        </div>
       </main>
 
       {/* Vcards Section */}

@@ -1,15 +1,17 @@
 import React from "react";
 import WWA from "../../assets/Home_Assets/WWA.png";
 import logo from "../../assets/Home_Assets/Logoblack.png";
+import { useNavigate } from "react-router-dom";
 
 const Whoweare = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="flex justify-center items-center w-full relative bg-cover bg-center"
       style={{
         marginTop: "30px",
         backgroundImage: `url(${WWA})`,
-        height: "900px",
+        height: "990px",
         width: "100%",
       }}
     >
@@ -40,7 +42,7 @@ const Whoweare = () => {
         </p>
 
         {/* Read More Button */}
-        <button className="mt-6 sm:mt-8 px-4 sm:px-6 py-2 bg-black text-white rounded-lg hover:bg-[#348101] transition duration-300">
+        <button onClick={()=>navigate('/aboutus')}   className="mt-6 sm:mt-8 px-4 sm:px-6 py-2 bg-black text-white rounded-lg hover:bg-[#348101] transition duration-300">
           Read More &gt;&gt;&gt;
         </button>
       </div>
