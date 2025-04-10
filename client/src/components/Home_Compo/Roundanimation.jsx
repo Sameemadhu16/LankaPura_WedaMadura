@@ -89,7 +89,7 @@ const Roundanimation = () => {
                 <img
                   src={card.imageUrl}
                   alt={card.title}
-                  className={`w-full h-full object-cover border-4 border-[#E2B68F] rounded-full shadow-xl`}
+                  className={`w-full h-full object-cover border-4 border-[#34810185] rounded-full shadow-xl`}
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-full"></div>
                 <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
