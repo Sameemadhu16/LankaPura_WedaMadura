@@ -3,18 +3,24 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 // Product images
-import img1 from "../../assets/Home_Assets/products/products/1.png";
-import img2 from "../../assets/Home_Assets/products/products/2.png";
-import img3 from "../../assets/Home_Assets/products/products/3.png";
-import img4 from "../../assets/Home_Assets/products/products/4.png";
-import img5 from "../../assets/Home_Assets/products/products/5.png";
+import img1 from "../../assets/Home_Assets/products/products/Clear liver.png";
+import img2 from "../../assets/Home_Assets/products/products/Dengue Medicine.png";
+import img3 from "../../assets/Home_Assets/products/products/Epi oil.png";
+import img4 from "../../assets/Home_Assets/products/products/Epirepies.png";
+import img5 from "../../assets/Home_Assets/products/products/Hair oil.png";
+import img6 from "../../assets/Home_Assets/products/products/Hebal Balm.png";
+import img7 from "../../assets/Home_Assets/products/products/Real ph.png";
+import img8 from "../../assets/Home_Assets/products/products/Kidney Clear.png";
 
 const productData = [
-  { id: 1, imageUrl: img1, title: "Product 1", path: '/productdes/67b6dc23cb72ff4ab0a46789' },
-  { id: 2, imageUrl: img2, title: "Product 2", path: '/productdes/67cbc86f77cd34f38533d45c' },
-  { id: 3, imageUrl: img3, title: "Product 3", path: '/productdes/67b6cfa4cb72ff4ab0a46782' },
-  { id: 4, imageUrl: img4, title: "Product 4", path: '/productdes/67b6d447cb72ff4ab0a46788' },
-  { id: 5, imageUrl: img5, title: "Product 5", path: '/productdes/67cbc83b77cd34f38533d45a' },
+  { id: 1, imageUrl: img1, title: "Clear Liver", path: '/productdes/67b6dc23cb72ff4ab0a46789' },
+  { id: 2, imageUrl: img2, title: "Dengue Medicine", path: '/productdes/67cbc86f77cd34f38533d45c' },
+  { id: 3, imageUrl: img3, title: "Epi Oil", path: '/productdes/67b6cfa4cb72ff4ab0a46782' },
+  { id: 4, imageUrl: img4, title: "Epirepies", path: '/productdes/67b6d447cb72ff4ab0a46788' },
+  { id: 5, imageUrl: img5, title: "Hair Oil", path: '/productdes/67cbc83b77cd34f38533d45a' },
+  { id: 6, imageUrl: img6, title: "Herbal Balm", path: '/productdes/67cbc89577cd34f38533d45d' },
+  { id: 7, imageUrl: img7, title: "Real Ph", path: '/productdes/687155995b6371c89fa5649f' },
+  { id: 8, imageUrl: img8, title: "Kidney CleaR", path: '/productdes/67b6d447cb72ff4ab0a46788' },
 ];
 
 const EnhancedProductCarousel = () => {

@@ -95,7 +95,7 @@ export default function Awards() {
 
       {/* Image Carousel */}
       <div 
-        className="relative h-[550px] flex flex-col justify-center items-center w-full max-w-xl md:max-w-3xl lg:max-w-4xl rounded-3xl shadow-2xl overflow-hidden bg-green-50 p-8"
+        className="relative h-[550px] flex flex-col justify-center items-center w-full max-w-xl md:max-w-3xl lg:max-w-4xl rounded-3xl overflow-hidden bg-transparent p-8"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >

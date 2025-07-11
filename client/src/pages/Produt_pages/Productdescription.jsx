@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import proback from '../../assets/Produt_Assets/proback.jpg';
-import p from '../../assets/Home_Assets/products/products/1.png'; 
+import proback from '../../assets/Produt_Assets/proback.jpg'; 
 import { FaStar,  FaExpand, 
   FaShoppingCart, 
   FaHeart, 
@@ -49,7 +48,7 @@ const ProductDescription = () => {
   <div className="w-full md:w-2/5 flex-shrink-0">
     <div className="relative group overflow-hidden rounded-xl bg-white p-4 shadow-md">
       <img 
-        src={product?.image || p} 
+        src={product?.image || 'https://via.placeholder.com/300'} 
         alt={product?.name || 'Product'} 
         className="w-full h-auto object-contain transform group-hover:scale-105 transition-transform duration-500 ease-in-out" 
       />
