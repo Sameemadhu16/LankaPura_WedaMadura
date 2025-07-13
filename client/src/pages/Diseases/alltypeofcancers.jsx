@@ -1,6 +1,7 @@
 import React from 'react'
 
 import landing from "../../assets/Home_Assets/landing_banner.jpg"
+import DiseaseNavigator from './diseaseNavigator';
 
 import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 
@@ -304,8 +305,7 @@ export default function alltypeofcancers() {
           className="right-image"
         />
       </section>
-
-      {/* <Footer /> */}
+      <DiseaseNavigator />
     </div>
   )
 }

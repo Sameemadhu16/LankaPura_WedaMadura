@@ -1,6 +1,7 @@
 import React from 'react'
+import DiseaseNavigator from './diseaseNavigator';
 
-import landing from "../../assets/lankapura.jpg";
+import landing from "../../assets/Home_Assets/landing_banner.jpg"
 import plantImage from "../../assets/plantcrop.png"; // Replace with your actual image for the right side
 import EpirepiesImage from "../../assets/epi.jpg"; 
 
@@ -441,7 +442,7 @@ export default function covid19() {
 
       </section>
 
-      {/* <Footer /> */}
+      <DiseaseNavigator/>
     </div>
   )
 }

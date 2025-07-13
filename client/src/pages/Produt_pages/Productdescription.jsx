@@ -149,11 +149,11 @@ const ProductDescription = () => {
           className="flex items-center gap-2 px-6 py-3 text-black  hover:text-[#348101]  "
         >
           <FaArrowLeft className="text-sm" />
-          <span className="font-medium">Previous</span>
+          <span className="font-medium font-Raleway">Previous</span>
         </button>
 
         <div className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
-          <span className="text-sm text-gray-600 font-medium">
+          <span className="text-sm text-gray-600 font-medium font-Raleway">
             {currentIndex + 1} of {allProducts.length}
           </span>
         </div>
@@ -162,7 +162,7 @@ const ProductDescription = () => {
           onClick={() => navigate(`/productdes/${nextProductId}`)}
           className="flex items-center gap-2 px-6 py-3 text-black  hover:text-[#348101]   "
         >
-          <span className="font-medium">Next</span>
+          <span className="font-medium font-Raleway">Next</span>
           <FaArrowRight className="text-sm" />
         </button>
       </div>
