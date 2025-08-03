@@ -1,6 +1,7 @@
 import React from 'react'
+import DiseaseNavigator from './diseaseNavigator';
 
-import landing from "../../assets/lankapura.jpg";
+import landing from "../../assets/Home_Assets/landing_banner.jpg"
 import plantImage from "../../assets/plantcrop.png"; 
 
 export default function sciatica() {
@@ -340,7 +341,7 @@ export default function sciatica() {
           className="right-image"
         />
       </section>
-
+        <DiseaseNavigator/>
       {/* <Footer /> */}
     </div>
   )

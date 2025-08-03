@@ -17,23 +17,9 @@ const Whypeople = () => {
 
   return (
     <div style={back} className="flex flex-col items-center">
-      {/* Heading */}
-      <div className="text-center mt-20 px-4">
-        <h1 className="font-[Raleway] text-lg md:text-2xl tracking-[.4em]">
-          Lankapura - Where Nature Meets Pure Wellness
-        </h1>
-        <div className="flex justify-center flex-wrap">
-          <span className="text-4xl md:text-6xl font-[playfair] font-bold text-black">
-            OUR{" "}
-          </span>
-          <span className="text-4xl md:text-6xl font-[playfair] font-bold text-[#348101] ml-2 md:ml-4">
-            PRODUCTS
-          </span>
-        </div>
-      </div>
 
       {/* Round Animation */}
-      <div className="flex justify-center w-full px-2 mt-5">
+      <div className="flex justify-center w-full ">
         <Roundanimation />
       </div>
 

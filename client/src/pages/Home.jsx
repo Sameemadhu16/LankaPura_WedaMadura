@@ -5,11 +5,10 @@ import Aboutthedoctor from '../components/Home_Compo/Aboutthedoctor';
 import Whoweare from '../components/Home_Compo/Whoweare';
 import Landingview from '../components/Home_Compo/Landingview';
 import Treatment from '../components/Home_Compo/Treatment';
-import Othertreatment from '../components/Home_Compo/Othertreatment';
 import Whypeople from '../components/Home_Compo/Whypeople';
 import Treatmenthours from '../components/Home_Compo/Treatmenthours';
 import Comment from '../components/Home_Compo/Comment';
-
+import EnhancedTreatmentCarousel from '../components/Home_Compo/Cardanimate';
 
 const Home = () => {
   return (
@@ -25,7 +24,7 @@ const Home = () => {
         {/*Treatment*/}
         <Treatment/>
         {/* Other traeatment */}
-        <Othertreatment/>
+        <EnhancedTreatmentCarousel/>
         {/* Why people choose us  */}
         <Whypeople/>
         {/* Comment section */}

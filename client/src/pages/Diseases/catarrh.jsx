@@ -1,6 +1,6 @@
 import React from 'react'
-
-import landing from "../../assets/lankapura.jpg";
+import DiseaseNavigator from './diseaseNavigator';
+import landing from "../../assets/Home_Assets/landing_banner.jpg"
 import plantImage from "../../assets/plantcrop.png";
 
 export default function catarrh() {
@@ -282,8 +282,7 @@ export default function catarrh() {
           className="right-image"
         />
       </section>
-
-      {/* <Footer /> */}
+          <DiseaseNavigator/>
     </div>
   )
 }
