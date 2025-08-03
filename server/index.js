@@ -8,6 +8,7 @@ import blogRouts from './routes/blogRouts.js';
 import productRoutes from './routes/productRoutes.js';  
 
 import contactusRoutes from './routes/contactus.route.js';
+import commentRoutes from './routes/commentRoutes.js';
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ app.use('/api/appointments', appointmentRoutes);
 app.use('/api/blogs', blogRouts);
 app.use('/api/contactus', contactusRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/comments', commentRoutes);
 
 
 app.listen(process.env.PORT,() =>{

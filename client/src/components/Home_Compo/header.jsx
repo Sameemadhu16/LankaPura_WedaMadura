@@ -41,18 +41,18 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full p-3 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full p-2 z-50 transition-all duration-300 ${
         isScrolled ? "bg-[#331806e4] shadow-lg" : "bg-transparent"
       } ${headerVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4">
+      <div className="container mx-auto flex items-center justify-between px-1 ">
         {/* Logo Section */}
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <a href="/">
             <img
               src={logo}
               alt="Logo"
-              className="h-[50px] md:h-[60px] lg:h-[70px] w-auto"
+              className="h-[30px] md:h-[40px] lg:h-[50px] w-auto "
             />
           </a>
           <div className="flex flex-col text-white ml-2">

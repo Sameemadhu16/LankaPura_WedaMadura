@@ -164,7 +164,7 @@ const Ourtreat = () => {
         “Experience the perfect blend of care and expertise with 
         </h1>
         <h1 className="text-center font-[Raleway] text-2xl text-[#EEE183]">
-        our personalized treatments designed just for you...”
+        our personalized treatments designed just for you...!”
         </h1>
 
         
@@ -218,7 +218,6 @@ const Ourtreat = () => {
           </div>
         </div>
       </section>
-      {/* <Footer /> */}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import Roundanimation from "./Roundanimation";
 import Whypp2 from "./Whypp2";
 import Archivement from "./Archivement";
 import Ourlocation from "./Ourlocation";
+import Pcetification from "./Product_cerifications";
 
 const Whypeople = () => {
   const back = {
@@ -16,23 +17,9 @@ const Whypeople = () => {
 
   return (
     <div style={back} className="flex flex-col items-center">
-      {/* Heading */}
-      <div className="text-center mt-20 px-4">
-        <h1 className="font-[Raleway] text-lg md:text-2xl tracking-[.4em]">
-          Lankapura - Where Nature Meets Pure Wellness
-        </h1>
-        <div className="flex justify-center flex-wrap">
-          <span className="text-4xl md:text-6xl font-[playfair] font-bold text-black">
-            OUR{" "}
-          </span>
-          <span className="text-4xl md:text-6xl font-[playfair] font-bold text-[#348101] ml-2 md:ml-4">
-            PRODUCTS
-          </span>
-        </div>
-      </div>
 
       {/* Round Animation */}
-      <div className="flex justify-center w-full px-2 mt-5">
+      <div className="flex justify-center w-full ">
         <Roundanimation />
       </div>
 
@@ -42,6 +29,9 @@ const Whypeople = () => {
       </div>
       <div className="w-full ">
         <Archivement />
+      </div>
+      <div className="w-full">
+        <Pcetification />
       </div>
       <div className="w-full">
         <Ourlocation />

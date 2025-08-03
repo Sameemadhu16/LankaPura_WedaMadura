@@ -2,27 +2,36 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { X } from "lucide-react";
 
-import Covid from '../../assets/Home_Assets/disease images/Covid19.jpg';
-import Dengue from '../../assets/Home_Assets/disease images/Dengue.jpg';
-import Cancer from '../../assets/Home_Assets/disease images/All type of cancers.jpg';
-import Arthritis from '../../assets/Home_Assets/disease images/Arthritis.jpg';
-import Catarrh from '../../assets/Home_Assets/disease images/Catarrh.webp';
-import Diabetic from '../../assets/Home_Assets/disease images/Diabetic.jpg';
-import Infertility from '../../assets/Home_Assets/disease images/Infertility.jpg';
-import ITP from '../../assets/Home_Assets/disease images/ITP.webp';
-import Kidney from '../../assets/Home_Assets/disease images/Kidney disease.jpg';
-import Leptospirosis from '../../assets/Home_Assets/disease images/Leptospirosis.jpg';
-import Liver from '../../assets/Home_Assets/disease images/Liver disease.jpg';
-import Lung from '../../assets/Home_Assets/disease images/Lung diseases.webp';
-import LungInfection from '../../assets/Home_Assets/disease images/Lung Insfection.webp';
-import Migraine from '../../assets/Home_Assets/disease images/Migraine.webp';
-import Nervous from '../../assets/Home_Assets/disease images/Nervous System Diseases.jpg';
-import Sciatica from '../../assets/Home_Assets/disease images/Sciatica.webp';
-import STD from '../../assets/Home_Assets/disease images/STD.webp';
+import img1 from "../../assets/Home_Assets/Gallery_Assets/1_(1).jpg";
+import img2 from "../../assets/Home_Assets/Gallery_Assets/1 (2).jpg";
+import img3 from "../../assets/Home_Assets/Gallery_Assets/1 (3).jpg";
+import img4 from "../../assets/Home_Assets/Gallery_Assets/1 (4).jpg";
+import img5 from "../../assets/Home_Assets/Gallery_Assets/1 (5).jpg";
+import img6 from "../../assets/Home_Assets/Gallery_Assets/1 (6).jpg";
+import img7 from "../../assets/Home_Assets/Gallery_Assets/1 (7).jpg";
+import img8 from "../../assets/Home_Assets/Gallery_Assets/1 (8).jpg";
+import img9 from "../../assets/Home_Assets/Gallery_Assets/1 (9).jpg";
+import img10 from "../../assets/Home_Assets/Gallery_Assets/1 (10).jpg";
+import img11 from "../../assets/Home_Assets/Gallery_Assets/1 (11).jpg";
+import img12 from "../../assets/Home_Assets/Gallery_Assets/1 (12).jpg";
+import img13 from "../../assets/Home_Assets/Gallery_Assets/1 (13).jpg";
+import img14 from "../../assets/Home_Assets/Gallery_Assets/1 (14).jpg";
 
 const images = [
-  Covid, Dengue, Cancer, Arthritis, Catarrh, Diabetic, Infertility, ITP, Kidney,
-  Leptospirosis, Liver, Lung, LungInfection, Migraine, Nervous, Sciatica, STD
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
 ];
 
 const Ourlocation = () => {
@@ -36,16 +45,13 @@ const Ourlocation = () => {
             Explore our Herbal Palace, where nature and wellness meet
           </h2>
           <h1 className="text-4xl md:text-6xl font-[playfair] font-bold text-black">
-            OUR <span className="text-[#348101]">LOCATION</span>
+            OUR <span className="text-[#348101]">GALLERY</span>
           </h1>
         </div>
       </div>
 
       {/* Gallery Section */}
       <div className="container mx-auto px-2 md:px-4 py-6 md:py-10">
-        <h2 className="text-2xl md:text-3xl font-semibold font-[playfair] text-center mb-4 md:mb-6">
-          Gallery
-        </h2>
         <div className="max-w-full md:max-w-[1000px] mx-auto border border-gray-300 rounded-lg shadow-md p-2 md:p-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 max-h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
             {images.slice(0, 8).map((src, index) => (
@@ -80,3 +86,4 @@ const Ourlocation = () => {
 };
 
 export default Ourlocation;
+

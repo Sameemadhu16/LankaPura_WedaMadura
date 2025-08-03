@@ -38,6 +38,7 @@ const Products = () => {
       {/* Banner Image */}
       <div className="relative w-full h-96">
         <img src={landing} alt="Banner" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       </div>
 
       <div className="flex justify-center">
@@ -79,7 +80,10 @@ const Products = () => {
               {/* Name and Price (Left Side) */}
               <div>
                 <h2 className="text-lg font-semibold font-[Raleway]">{product.name}</h2>
-                <p className="text-md font-bold text-[#348101]">Rs {product.price}</p>
+                <button className=" hover:bg-[#348101] transition-colors duration-300 text-black hover:text-white font-semibold px-4 py-1 rounded-xl shadow-md hover:shadow-lg">
+                  <p className="text-md">VISIT OUR STORE</p>
+                </button>
+
               </div>
 
               {/* Review Stars (Right Side) */}

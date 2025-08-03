@@ -32,6 +32,8 @@ import Header from './components/Home_Compo/header.jsx'
 import Footer from './components/Home_Compo/footer.jsx'
 import Prd from './pages/Produt_pages/Productdescription.jsx'
 import Abd from './pages/Aboutthedoctor.jsx'
+import WhatsAppButton from './components/Home_Compo/Whatsapp';
+import Scroltop from './components/Scrolltop.jsx';
 
 
 
@@ -42,6 +44,8 @@ function App()
     <Router>
       
       <Header/>
+      <Scroltop/>
+      <WhatsAppButton />
       
         <Routes>
           <Route path="/" element={<Home />} />
