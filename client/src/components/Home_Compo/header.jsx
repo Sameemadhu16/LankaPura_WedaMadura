@@ -52,7 +52,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-[60px] md:h-[70px] lg:h-[80px] w-auto "
+              className="h-[40px] md:h-[50px] lg:h-[60px] w-auto "
             />
           </a>
           <div className="flex flex-col text-white ml-2">
